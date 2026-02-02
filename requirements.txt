@@ -1,0 +1,12 @@
+torch==2.9.1
+torch-geometric
+porespy
+openpnm
+numpy<2.0.0
+scipy
+matplotlib
+scikit-learn
+h5py
+pyvista
+streamlit
+networkx

@@ -1,0 +1,52 @@
+# Data folder (large datasets)
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Temporary files
+temp_*.npy
+*.tmp
+
+# Model checkpoints (optional - keep if models are small)
+# models/*.pth
+
+# Output files
+*.png
+*.jpg
+*.gif
+!streamlit_output.png
+
+# Logs
+*.log
+
+# Results
+*_results.txt
