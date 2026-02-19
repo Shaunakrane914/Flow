@@ -1,7 +1,8 @@
-# Data folder (large datasets)
-data/
+# ── Secrets ───────────────────────────────────────────────────────
+.env
+.streamlit/
 
-# Python cache
+# ── Python ────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
@@ -13,40 +14,31 @@ __pycache__/
 dist/
 build/
 
-# Virtual environment
+# ── Virtual Environments ──────────────────────────────────────────
 venv/
 env/
 ENV/
+.venv/
 
-# IDE
+# ── IDE ───────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# ── OS ────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# ── Jupyter ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
 
-# Temporary files
+# ── Data & Models (large binary files) ───────────────────────────
+data/
+# models/   ← uncomment to exclude trained weights from git
+
+# ── Temp / Logs ───────────────────────────────────────────────────
 temp_*.npy
 *.tmp
-
-# Model checkpoints (optional - keep if models are small)
-# models/*.pth
-
-# Output files
-*.png
-*.jpg
-*.gif
-!streamlit_output.png
-
-# Logs
 *.log
-
-# Results
-*_results.txt

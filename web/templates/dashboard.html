@@ -1,0 +1,96 @@
+<!-- ══ DASHBOARD PAGE ═══════════════════════════════════════════════ -->
+
+<h1 class="gradient-title">📊 Scientific Validation Dashboard</h1>
+<p class="page-subtitle">GNN vs Kozeny-Carman across 5 geological formations.</p>
+
+<!-- ── Row 1: MSE + Improvement ──────────────── -->
+<h2 class="section-title">GNN vs Physics — Error Comparison</h2>
+<div class="two-col">
+    <div class="chart-card">
+        <div class="chart-title">Test MSE (log₁₀ K) — Lower is Better</div>
+        <div class="chart-div" id="chart-mse"></div>
+    </div>
+    <div class="chart-card">
+        <div class="chart-title">GNN Improvement % per Rock Type</div>
+        <div class="chart-div" id="chart-improvement"></div>
+    </div>
+</div>
+
+<!-- ── Row 2: Threshold Scatter ──────────────── -->
+<hr class="divider" />
+<h2 class="section-title">The Topological Threshold — Cv = 1.5</h2>
+
+<div class="two-col" style="grid-template-columns: 2fr 1fr;">
+    <div class="chart-card">
+        <div class="chart-title">Pore Heterogeneity (Cv) vs GNN Improvement</div>
+        <div class="chart-div chart-div--tall" id="chart-threshold"></div>
+    </div>
+
+    <div class="card card--secondary" style="align-self:start;">
+        <h3 style="color:var(--secondary);margin-top:0;font-size:1.05rem;">What is Cv?</h3>
+        <p style="font-size:0.88rem;line-height:1.7;margin-bottom:14px;">
+            <strong class="mono">Cv = σ / μ</strong> — coefficient of variation of pore body sizes.
+            Measures how <em>unequal</em> the pore size distribution is.
+        </p>
+        <div
+            style="background:var(--card-deep);border-radius:var(--radius);padding:14px;font-size:0.83rem;color:var(--muted);">
+            <div style="margin-bottom:8px;">
+                <strong class="text-secondary">Cv &lt; 1.5</strong><br>
+                Uniform pores → Kozeny-Carman works well
+            </div>
+            <hr style="border-color:var(--border);margin:10px 0;">
+            <div>
+                <strong class="text-primary">Cv &gt; 1.5</strong><br>
+                Vugs + narrow throats → GNN captures topology
+            </div>
+        </div>
+        <p class="text-muted mt-md" style="font-size:0.75rem;">Bubble size = sample count</p>
+    </div>
+</div>
+
+<!-- ── Row 3: Donut + Table ──────────────────── -->
+<hr class="divider" />
+<div class="two-col" style="grid-template-columns: 1fr 2fr;">
+    <div>
+        <h2 class="section-title">Dataset Distribution</h2>
+        <div class="chart-card">
+            <div class="chart-div" id="chart-donut" style="height:320px;"></div>
+        </div>
+    </div>
+    <div>
+        <h2 class="section-title">Full Results Table</h2>
+        <div class="table-wrapper">
+            <table class="data-table" id="results-table">
+                <thead>
+                    <tr>
+                        <th>Rock Type</th>
+                        <th>Samples</th>
+                        <th>Cv</th>
+                        <th>Baseline MSE</th>
+                        <th>GNN MSE</th>
+                        <th>Winner</th>
+                        <th>Δ%</th>
+                    </tr>
+                </thead>
+                <tbody id="results-tbody">
+                    <tr>
+                        <td colspan="7" class="text-muted" style="text-align:center;padding:20px;">Loading…</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- ── Key Insight ────────────────────────────── -->
+<hr class="divider" />
+<div class="info-panel">
+    <div class="info-panel__title">🔑 Key Finding</div>
+    <p>
+        The <strong>Topological Threshold</strong> at Cv ≈ 1.5 separates two fundamentally different
+        flow regimes. In heterogeneous carbonates (Savonnières, Estaillades), connected vugs create
+        super-highways that violate the uniform-pore assumption of Kozeny-Carman. The GNN, operating
+        on the pore network graph, captures this topology and achieves up to <strong class="text-primary">46.2% lower
+            MSE</strong>.
+    </p>
+</div>

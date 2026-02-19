@@ -18,7 +18,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
     Blue pores → Red flow paths (like reference image)
     """
     print("="*60)
-    print("🎨 CLEAR PORE NETWORK VISUALIZATION")
+    print("CLEAR PORE NETWORK VISUALIZATION")
     print("="*60)
     
     # Load chunk
@@ -28,7 +28,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
     print(f"Porosity: {phi:.3f}")
     
     # Extract network
-    print("\n🧬 Extracting pore network...")
+    print("\nExtracting pore network...")
     try:
         snow_output = ps.networks.snow2(chunk, voxel_size=2.68e-6)
         network = snow_output.network
@@ -51,10 +51,10 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
                 coords[conns[:, 0]] - coords[conns[:, 1]], axis=1
             )
         
-        print(f"  ✅ {network['pore.coords'].shape[0]} pores, {network['throat.conns'].shape[0]} throats")
+        print(f"  [OK] {network['pore.coords'].shape[0]} pores, {network['throat.conns'].shape[0]} throats")
         
         # Simulate flow
-        print("  💧 Simulating flow...")
+        print("  Simulating flow...")
         pn = op.network.Network()
         pn.update(network)
         
@@ -116,7 +116,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
                                     stokes['pore.pressure'][conns[:, 1]]))
                 
                 has_flow = True
-                print(f"  ✅ Flow simulation complete")
+                print(f"  [OK] Flow simulation complete")
                 
             except:
                 # Fallback: use throat diameter
@@ -126,21 +126,21 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
             has_flow = False
             
     except Exception as e:
-        print(f"  ⚠️  Network extraction failed: {e}")
+        print(f"  [WARN] Network extraction failed: {e}")
         has_flow = False
     
     if not has_flow:
-        print("  ℹ️  Using simplified visualization")
+        print("  Using simplified visualization")
         return create_simple_viz(chunk, output_file, window_size)
     
     # Create visualization
-    print("\n🖼️  Creating 3D rendering...")
+    print("\nCreating 3D rendering...")
     
     plotter = pv.Plotter(off_screen=True, window_size=window_size)
     plotter.background_color = 'white'
     
     # 1. Draw pores as spheres (BLUE - like reference)
-    print("  🔵 Adding pores...")
+    print("  Adding pores...")
     pore_coords = pn['pore.coords']
     pore_diameters = pn['pore.diameter']
     
@@ -155,7 +155,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
             )
     
     # 2. Draw throats as tubes (COLORED by flow rate)
-    print("  🌈 Adding flow-colored throats...")
+    print("  Adding flow-colored throats...")
     
     conns = pn['throat.conns']
     lines = []
@@ -176,7 +176,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
         cmap='coolwarm',  # Blue (low) → Red (high)
         show_scalar_bar=True,
         scalar_bar_args={
-            'title': 'Flow Rate (m³/s)',
+            'title': 'Flow Rate (m^3/s)',
             'title_font_size': 18,
             'label_font_size': 14,
             'position_x': 0.85,
@@ -215,10 +215,10 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
     plotter.camera.zoom(1.2)
     
     # Render
-    print("  📸 Rendering...")
+    print("  Rendering...")
     plotter.show(screenshot=output_file)
     
-    print(f"\n✅ Saved: {output_file}")
+    print(f"\nSaved: {output_file}")
     print("="*60)
     
     return output_file
@@ -226,7 +226,7 @@ def render_flow(chunk_path, output_file='output_flow.png', window_size=(1920, 10
 
 def create_simple_viz(chunk, output_file, window_size):
     """Fallback: just show the pore space clearly"""
-    print("  📦 Creating simple pore visualization...")
+    print("  Creating simple pore visualization...")
     
     plotter = pv.Plotter(off_screen=True, window_size=window_size)
     plotter.background_color = 'white'

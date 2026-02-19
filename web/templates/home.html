@@ -1,0 +1,278 @@
+<!-- ══ HOME PAGE — Redesigned ══════════════════════════════════════ -->
+
+<!-- ── 1. HERO SECTION ─────────────────────────────────────────────── -->
+<section class="hero">
+    <div class="hero-text">
+        <p class="hero-eyebrow">GNN · Permeability Prediction · Pore Networks</p>
+        <h1 class="hero-headline">Predict Rock Permeability<br>in Seconds.</h1>
+        <p class="hero-sub">
+            Upload your micro-CT pore networks. Our GNN automatically detects the
+            topological threshold and delivers higher accuracy than standard physics formulas.
+        </p>
+        <div class="hero-ctas">
+            <button class="btn btn--primary btn--lg hero-cta-primary" data-page="predictor">
+                🚀 Launch Predictor
+            </button>
+            <button class="btn btn--hero-ghost" data-page="methodology">
+                Read Methodology →
+            </button>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <!-- Animated SVG pore network — nodes & edges -->
+        <svg class="pore-canvas" viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <filter id="glow-green">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <filter id="glow-blue">
+                    <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <style>
+                    .pore-edge {
+                        stroke: #2D5BFF;
+                        stroke-opacity: 0.35;
+                        fill: none;
+                        stroke-dasharray: 80;
+                        animation: flow-edge 3s linear infinite;
+                    }
+
+                    .pore-edge-slow {
+                        animation-duration: 5s;
+                    }
+
+                    .pore-edge-fast {
+                        animation-duration: 1.8s;
+                    }
+
+                    .pore-node {
+                        fill: #00FF9D;
+                        filter: url(#glow-green);
+                        animation: pulse-node 2.5s ease-in-out infinite;
+                    }
+
+                    .pore-node-big {
+                        fill: #00FF9D;
+                        opacity: 0.18;
+                        animation: pulse-node 3.5s ease-in-out infinite;
+                    }
+
+                    .pore-node-blue {
+                        fill: #2D5BFF;
+                        filter: url(#glow-blue);
+                        animation: pulse-node 3s ease-in-out infinite;
+                    }
+
+                    .pore-node-2 {
+                        animation-delay: 0.8s;
+                    }
+
+                    .pore-node-3 {
+                        animation-delay: 1.6s;
+                    }
+
+                    .pore-node-4 {
+                        animation-delay: 0.4s;
+                    }
+
+                    .pore-node-5 {
+                        animation-delay: 2.1s;
+                    }
+
+                    .pore-node-6 {
+                        animation-delay: 1.2s;
+                    }
+                </style>
+            </defs>
+
+            <!-- Large background "vug" spheres -->
+            <circle class="pore-node-big" cx="180" cy="200" r="55" />
+            <circle class="pore-node-big" cx="320" cy="150" r="38" style="animation-delay:1.5s" />
+            <circle class="pore-node-big" cx="100" cy="330" r="28" style="animation-delay:0.7s" />
+
+            <!-- Edges (pore throats) -->
+            <line class="pore-edge" x1="180" y1="200" x2="320" y2="150" />
+            <line class="pore-edge pore-edge-slow" x1="180" y1="200" x2="80" y2="120" />
+            <line class="pore-edge pore-edge-fast" x1="180" y1="200" x2="100" y2="330" />
+            <line class="pore-edge" x1="320" y1="150" x2="400" y2="80" />
+            <line class="pore-edge pore-edge-slow" x1="320" y1="150" x2="360" y2="280" />
+            <line class="pore-edge pore-edge-fast" x1="100" y1="330" x2="230" y2="370" />
+            <line class="pore-edge" x1="230" y1="370" x2="360" y2="280" />
+            <line class="pore-edge pore-edge-slow" x1="80" y1="120" x2="160" y2="60" />
+            <line class="pore-edge" x1="160" y1="60" x2="320" y2="150" />
+            <line class="pore-edge pore-edge-fast" x1="400" y1="80" x2="420" y2="210" />
+            <line class="pore-edge" x1="420" y1="210" x2="360" y2="280" />
+            <line class="pore-edge pore-edge-slow" x1="180" y1="200" x2="230" y2="370" />
+
+            <!-- Primary green nodes -->
+            <circle class="pore-node" cx="180" cy="200" r="9" />
+            <circle class="pore-node pore-node-2" cx="320" cy="150" r="7" />
+            <circle class="pore-node pore-node-3" cx="100" cy="330" r="6" />
+            <circle class="pore-node pore-node-4" cx="230" cy="370" r="6" />
+            <circle class="pore-node pore-node-5" cx="360" cy="280" r="7" />
+            <circle class="pore-node pore-node-6" cx="80" cy="120" r="5" />
+            <circle class="pore-node pore-node-2" cx="160" cy="60" r="5" />
+            <circle class="pore-node pore-node-4" cx="400" cy="80" r="5" />
+            <circle class="pore-node pore-node-5" cx="420" cy="210" r="6" />
+
+            <!-- Blue accent nodes -->
+            <circle class="pore-node-blue pore-node-3" cx="250" cy="100" r="4" />
+            <circle class="pore-node-blue pore-node-6" cx="50" cy="220" r="4" />
+            <circle class="pore-node-blue pore-node-2" cx="440" cy="340" r="4" />
+            <line class="pore-edge" x1="250" y1="100" x2="320" y2="150" style="stroke-opacity:0.2" />
+            <line class="pore-edge" x1="50" y1="220" x2="80" y2="120" style="stroke-opacity:0.2" />
+        </svg>
+    </div>
+</section>
+
+<!-- ── 2. TRUST BANNER ──────────────────────────────────────────────── -->
+<div class="trust-banner">
+    <span class="trust-dot"></span>
+    Trained on 1,200+ samples across 5 geological formations, including
+    <strong>Savonnières</strong> and <strong>Estaillades</strong>.
+    &nbsp;·&nbsp; Up to <strong>+46% accuracy</strong> over Kozeny-Carman.
+</div>
+
+<!-- ── 3. HOW IT WORKS ─────────────────────────────────────────────── -->
+<section class="home-section">
+    <h2 class="home-section-title">How It Works</h2>
+    <p class="home-section-sub">Three steps from raw data to prediction.</p>
+
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon-lg">📦</div>
+            <h3 class="step-title">Upload Data</h3>
+            <p class="step-desc">
+                Drop your rock sample <code>.npy</code> file or pick from our cloud library
+                of 15 pre-validated micro-CT samples.
+            </p>
+        </div>
+        <div class="step-connector">→</div>
+
+        <div class="step-card step-card--active">
+            <div class="step-number">02</div>
+            <div class="step-icon-lg">🧬</div>
+            <h3 class="step-title">Smart Analysis</h3>
+            <p class="step-desc">
+                SNOW2 extracts the pore network. The system calculates the <strong>coefficient
+                    of variation (Cv = σ/μ)</strong> of pore sizes to detect structural complexity.
+            </p>
+        </div>
+        <div class="step-connector">→</div>
+
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon-lg">📊</div>
+            <h3 class="step-title">Get Results</h3>
+            <p class="step-desc">
+                If <strong class="text-primary">Cv &gt; 1.5</strong>, TopoFlow GNN takes over —
+                up to <strong class="text-primary">+46% better accuracy</strong>.
+                If <strong class="text-secondary">Cv &lt; 1.5</strong>, physics formulas apply.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ── 4. WHY TOPOFLOW ──────────────────────────────────────────────── -->
+<section class="home-section">
+    <h2 class="home-section-title">Why TopoFlow?</h2>
+    <p class="home-section-sub">Standard formulas fail on complex pore networks. TopoFlow adapts.</p>
+
+    <div class="why-grid">
+        <!-- Left: text explanation -->
+        <div>
+            <div class="why-block">
+                <div class="why-block-icon">📐</div>
+                <div>
+                    <h4 class="why-block-title">The Problem with Kozeny-Carman</h4>
+                    <p class="why-block-desc">
+                        The century-old Kozeny-Carman formula assumes uniform, well-connected spherical
+                        pores. It works fine for simple sandstones — but <strong>complex vuggy
+                            carbonates</strong> (Savonnières, Estaillades) have giant connected pores
+                        surrounded by narrow micro-throats. This bimodal structure violates every
+                        assumption in the formula.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why-block why-block--primary">
+                <div class="why-block-icon">🤖</div>
+                <div>
+                    <h4 class="why-block-title" style="color:var(--primary);">How TopoFlow Adapts</h4>
+                    <p class="why-block-desc">
+                        Our GNN operates on the <strong>pore network graph</strong> — not raw
+                        voxels. After 3 message-passing layers, each pore node captures its 3-hop
+                        connectivity, learning the difference between dead-end vugs and high-flow
+                        super-highways. The result: topology-aware predictions that outperform
+                        physics by up to <strong class="text-primary">46%</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: threshold graphic -->
+        <div class="threshold-graphic">
+            <div class="threshold-title">The Topological Threshold</div>
+
+            <div class="threshold-split">
+                <!-- Left half: Physics regime -->
+                <div class="regime-block regime-block--physics">
+                    <div class="regime-label">Cv &lt; 1.5</div>
+                    <div class="regime-icon">📐</div>
+                    <div class="regime-name">Physics<br>Wins</div>
+                    <div class="regime-rocks">MEC · ILS · Synthetic</div>
+                    <p class="regime-desc">Uniform pores → Kozeny-Carman<br>is sufficient</p>
+                </div>
+
+                <!-- Divider -->
+                <div class="threshold-divider">
+                    <div class="threshold-line"></div>
+                    <div class="threshold-badge">Cv = 1.5</div>
+                    <div class="threshold-line"></div>
+                </div>
+
+                <!-- Right half: GNN regime -->
+                <div class="regime-block regime-block--gnn">
+                    <div class="regime-label">Cv &gt; 1.5</div>
+                    <div class="regime-icon">🤖</div>
+                    <div class="regime-name">GNN<br>Wins</div>
+                    <div class="regime-rocks">Savonnières · Estaillades</div>
+                    <p class="regime-desc">Vugs + narrow throats →<br>GNN captures topology</p>
+                </div>
+            </div>
+
+            <div class="threshold-stat">
+                Best improvement: <strong class="text-primary">+46.2%</strong> on Savonnières
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Final CTA ────────────────────────────────────────────────────── -->
+<section class="home-final-cta">
+    <h2>Ready to predict permeability?</h2>
+    <p>Drop a <code>.npy</code> file and get results in under 30 seconds.</p>
+    <button class="btn btn--primary btn--lg" data-page="predictor">
+        🚀 Launch Predictor
+    </button>
+</section>
+
+<script>
+    // Wire hero and final CTA buttons to SPA navigation
+    document.querySelectorAll('[data-page]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (typeof navigate === 'function') navigate(btn.dataset.page);
+            else window.location.hash = btn.dataset.page;
+        });
+    });
+</script>

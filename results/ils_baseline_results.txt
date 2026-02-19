@@ -1,0 +1,12 @@
+ILS BASELINE RESULTS
+==================================================
+
+Samples: 266
+Training: 212
+Testing: 54
+
+Kozeny-Carman C: 1.42e-11
+
+Training MSE: 0.0526
+Testing MSE: 0.0251
+Testing R²: -0.0002

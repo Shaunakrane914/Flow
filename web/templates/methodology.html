@@ -1,0 +1,315 @@
+<!-- ══ METHODOLOGY PAGE ═════════════════════════════════════════════ -->
+
+<h1 class="gradient-title">🧬 How It Works</h1>
+<p class="page-subtitle">From raw micro-CT scan to permeability prediction — the complete pipeline.</p>
+
+<!-- Pipeline Steps -->
+<h2 class="section-title">End-to-End Pipeline</h2>
+<div class="pipeline">
+    <div class="pipeline-step passive-step">
+        <div class="step-icon">🧊</div>
+        <div class="step-num">Step 1</div>
+        <div class="step-label">Micro-CT Scan</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step passive-step">
+        <div class="step-icon">🔬</div>
+        <div class="step-num">Step 2</div>
+        <div class="step-label">SNOW2 Extract</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step passive-step">
+        <div class="step-icon">🕸️</div>
+        <div class="step-num">Step 3</div>
+        <div class="step-label">Graph Build</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step active-step">
+        <div class="step-icon">🧠</div>
+        <div class="step-num">Step 4</div>
+        <div class="step-label">GNN Predict</div>
+    </div>
+    <div class="pipeline-arrow">→</div>
+    <div class="pipeline-step active-step">
+        <div class="step-icon">📊</div>
+        <div class="step-num">Result</div>
+        <div class="step-label">K (m²)</div>
+    </div>
+</div>
+
+<hr class="divider" />
+
+<!-- Detail Tabs -->
+<div class="tab-list" id="method-tabs">
+    <button class="tab active" data-tab="data">🧊 Data</button>
+    <button class="tab" data-tab="snow2">🔬 SNOW2</button>
+    <button class="tab" data-tab="graph">🕸️ Graph</button>
+    <button class="tab" data-tab="gnn">🧠 GNN</button>
+    <button class="tab" data-tab="hybrid">⚗️ Hybrid</button>
+</div>
+
+<!-- Tab: Data Acquisition -->
+<div class="tab-panel active" id="tab-data">
+    <div class="two-col">
+        <div>
+            <h3 style="color:var(--text);margin-bottom:12px;">Micro-CT Rock Scanning</h3>
+            <p style="font-size:0.9rem;line-height:1.7;margin-bottom:16px;">
+                Each rock is scanned via <strong>high-resolution X-ray μCT</strong>, producing a 3D binary
+                voxel grid: <code>1</code> = pore space, <code>0</code> = solid rock matrix.
+            </p>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rock Type</th>
+                            <th>Source</th>
+                            <th>Chunks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MEC Carbonate</td>
+                            <td>Middle East Core</td>
+                            <td>398</td>
+                        </tr>
+                        <tr>
+                            <td>ILS Limestone</td>
+                            <td>Indiana Limestone</td>
+                            <td>266</td>
+                        </tr>
+                        <tr>
+                            <td>Synthetic</td>
+                            <td>PoreSpy Generator</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Estaillades</td>
+                            <td>Digital Rocks Portal</td>
+                            <td>176</td>
+                        </tr>
+                        <tr>
+                            <td>Savonnières</td>
+                            <td>Digital Rocks Portal</td>
+                            <td>191</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="card card--secondary">
+                <h4 style="color:var(--secondary);margin-top:0;">Chunking Strategy</h4>
+                <p style="font-size:0.88rem;line-height:1.7;">
+                    Large volumes (up to 1000³ voxels) are divided into
+                    <strong>non-overlapping 128³ chunks</strong> for memory-efficient processing.
+                    Each chunk is treated as an independent sample.
+                </p>
+            </div>
+            <div class="metric-card mt-md">
+                <div class="metric-label">Total Samples</div>
+                <div class="metric-value">1,231</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tab: SNOW2 -->
+<div class="tab-panel" id="tab-snow2">
+    <div class="two-col">
+        <div>
+            <h3 style="color:var(--text);margin-bottom:12px;">SNOW2 Algorithm (PoreSpy)</h3>
+            <p style="font-size:0.9rem;line-height:1.7;margin-bottom:16px;">
+                SNOW2 extracts an explicit pore network from binary voxel data in 4 steps:
+            </p>
+            <ol style="padding-left:20px;font-size:0.9rem;line-height:2;">
+                <li><strong>Distance Transform</strong> — distance from each pore voxel to nearest solid</li>
+                <li><strong>Peak Finding</strong> — local maxima become pore body centers</li>
+                <li><strong>Watershed</strong> — each pore body fills its region</li>
+                <li><strong>Throat Identification</strong> — region boundaries become connecting throats</li>
+            </ol>
+            <pre style="background:var(--card-deep);border:1px solid var(--border);border-radius:var(--radius);
+                 padding:14px;font-size:0.82rem;color:var(--primary);overflow-x:auto;margin-top:16px;"><code>import porespy as ps
+snow = ps.networks.snow2(
+    binary_image,
+    voxel_size=1e-6  # 1 μm
+)</code></pre>
+        </div>
+        <div>
+            <div class="card card--secondary">
+                <h4 style="color:var(--secondary);margin-top:0;">Performance</h4>
+                <p style="font-size:0.88rem;line-height:1.7;">
+                    Extracts <strong>50–500 pore bodies</strong> from a 128³ chunk in
+                    <strong>1–3 seconds</strong> on CPU.
+                </p>
+            </div>
+            <div class="card card--primary mt-md">
+                <h4 style="color:var(--primary);margin-top:0;">Output</h4>
+                <ul style="padding-left:16px;font-size:0.88rem;line-height:1.8;">
+                    <li>Pore body properties (volume, radius, centroid)</li>
+                    <li>Throat properties (area, length, perimeter)</li>
+                    <li>Adjacency: which pores connect to which</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tab: Graph Construction -->
+<div class="tab-panel" id="tab-graph">
+    <div class="two-col">
+        <div>
+            <h3 style="color:var(--text);margin-bottom:12px;">PyTorch Geometric Graph</h3>
+            <p style="font-size:0.9rem;line-height:1.7;margin-bottom:16px;">
+                The SNOW2 pore network is converted to a PyG <code>Data</code> object:
+            </p>
+            <div class="card" style="margin-bottom:14px;">
+                <div class="metric-label" style="color:var(--primary);">Node Features (per pore)</div>
+                <div style="font-size:0.85rem;color:var(--text);margin-top:8px;font-family:monospace;">
+                    volume, radius, x, y, z, surface_area
+                </div>
+            </div>
+            <div class="card">
+                <div class="metric-label" style="color:var(--secondary);">Edge Features (per throat)</div>
+                <div style="font-size:0.85rem;color:var(--text);margin-top:8px;font-family:monospace;">
+                    cross_sectional_area, length, perimeter
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card card--primary">
+                <h4 style="color:var(--primary);margin-top:0;">Why Graphs?</h4>
+                <p style="font-size:0.88rem;line-height:1.7;">
+                    GNNs see <strong>topology</strong>. Dead-end vugs vs connected pathways look
+                    identical in a raw voxel array but are structurally different in a graph.
+                    After 3 message-passing layers, each node captures its
+                    <strong>3-hop neighbourhood</strong> — the local flow connectivity.
+                </p>
+            </div>
+            <div class="metrics-row mt-md" style="grid-template-columns:1fr 1fr;">
+                <div class="metric-card">
+                    <div class="metric-label">Avg Degree</div>
+                    <div class="metric-value">4–8</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Nodes/Graph</div>
+                    <div class="metric-value">50–500</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tab: GNN Architecture -->
+<div class="tab-panel" id="tab-gnn">
+    <div class="two-col">
+        <div>
+            <h3 style="color:var(--text);margin-bottom:12px;">GraphSAGE Architecture</h3>
+            <pre style="background:var(--card-deep);border:1px solid var(--border);border-radius:var(--radius);
+                 padding:16px;font-size:0.85rem;color:var(--primary);overflow-x:auto;line-height:1.8;"><code>Input (6 node features)
+  │
+  SAGEConv(6→128) + BatchNorm + ReLU
+  │
+  SAGEConv(128→64) + BatchNorm + ReLU
+  │
+  SAGEConv(64→32) + BatchNorm + ReLU
+  │
+  Global Mean Pooling → 32-D graph embedding
+  │
+  Linear(32→16) + ReLU
+  │
+  Linear(16→1) → log₁₀(K)</code></pre>
+        </div>
+        <div>
+            <div class="card card--secondary">
+                <h4 style="color:var(--secondary);margin-top:0;">Training Details</h4>
+                <ul style="padding-left:16px;font-size:0.88rem;line-height:1.9;">
+                    <li>Loss: <strong>MSE</strong> on log₁₀(K)</li>
+                    <li>Optimizer: <strong>Adam</strong> (lr=0.001)</li>
+                    <li>Epochs: <strong>200</strong></li>
+                    <li>Validation: <strong>5-fold cross-validation</strong></li>
+                </ul>
+            </div>
+            <div class="metrics-row mt-md" style="grid-template-columns:1fr 1fr;">
+                <div class="metric-card">
+                    <div class="metric-label">Parameters</div>
+                    <div class="metric-value">~40K</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Inference</div>
+                    <div class="metric-value" style="font-size:1.4rem;">CPU</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tab: Hybrid Model -->
+<div class="tab-panel" id="tab-hybrid">
+    <h3 style="color:var(--text);margin-bottom:16px;">Hybrid Physics-Informed Model</h3>
+    <div class="two-col">
+        <div class="card card--secondary">
+            <h4 style="color:var(--secondary);margin-top:0;">Kozeny-Carman Baseline</h4>
+            <div class="formula-box" style="color:var(--secondary);">
+                K = φ³ / (180 × (1−φ)²) × d²
+            </div>
+            <p style="font-size:0.85rem;color:var(--muted);margin-top:10px;">
+                Assumes uniform, well-connected spherical pores. Works well when Cv &lt; 1.5.
+            </p>
+        </div>
+        <div class="card card--primary">
+            <h4 style="color:var(--primary);margin-top:0;">Hybrid GNN</h4>
+            <div class="formula-box" style="color:var(--primary);">
+                K = K_KC × (1 + GNN_correction)
+            </div>
+            <p style="font-size:0.85rem;color:var(--muted);margin-top:10px;">
+                GNN learns when — and how much — to deviate from the physics formula
+                based on pore network topology.
+            </p>
+        </div>
+    </div>
+    <div class="info-panel mt-md">
+        <div class="info-panel__title">When to Use Hybrid Mode</div>
+        <p>
+            Select <strong>Hybrid (GNN + KC)</strong> in the Predictor when you want an explainable correction factor
+            on top of the physics formula. Useful for MEC rocks where the baseline is already competitive.
+        </p>
+    </div>
+</div>
+
+<!-- Tech Stack -->
+<hr class="divider" />
+<h2 class="section-title">Technology Stack</h2>
+<div class="tech-grid">
+    <div class="tech-item">
+        <div class="tech-item-icon">🐍</div>
+        <div class="tech-item-name" style="color:var(--primary);">Python</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">🔥</div>
+        <div class="tech-item-name" style="color:var(--primary);">PyTorch</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">🕸️</div>
+        <div class="tech-item-name" style="color:var(--secondary);">PyG</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">🔬</div>
+        <div class="tech-item-name" style="color:var(--secondary);">PoreSpy</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">⚡</div>
+        <div class="tech-item-name" style="color:var(--primary);">FastAPI</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">☁️</div>
+        <div class="tech-item-name" style="color:var(--primary);">Supabase</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">📈</div>
+        <div class="tech-item-name" style="color:var(--secondary);">Plotly.js</div>
+    </div>
+    <div class="tech-item">
+        <div class="tech-item-icon">🧪</div>
+        <div class="tech-item-name" style="color:var(--secondary);">OpenPNM</div>
+    </div>
+</div>

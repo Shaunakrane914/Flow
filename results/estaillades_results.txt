@@ -1,0 +1,8 @@
+ESTAILLADES FINAL RESULTS
+==================================================
+
+Baseline MSE: 0.1120
+Baseline R²: -0.5466
+GNN MSE: 0.0802
+
+WINNER: GNN

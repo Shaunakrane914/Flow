@@ -1,0 +1,196 @@
+<!-- ══ PREDICTOR PAGE ═══════════════════════════════════════════════ -->
+
+<h1 class="gradient-title">🚀 Permeability Predictor</h1>
+<p class="page-subtitle">Load a rock sample, visualize its microstructure, and run GNN prediction.</p>
+
+<!-- Source Tabs -->
+<div class="tab-list" id="source-tabs">
+    <button class="tab active" data-tab="cloud">☁️ Cloud Library</button>
+    <button class="tab" data-tab="upload">📤 Upload .npy File</button>
+</div>
+
+<!-- Cloud Library Panel -->
+<div class="tab-panel active" id="tab-cloud">
+    <div id="sample-grid" class="sample-grid">
+        <div class="flex-center" style="grid-column:1/-1; padding:40px; color:var(--muted);">
+            <span class="spinner"></span>&nbsp;&nbsp;Loading cloud samples…
+        </div>
+    </div>
+</div>
+
+<!-- Upload Panel -->
+<div class="tab-panel" id="tab-upload">
+    <div class="upload-zone" id="upload-zone">
+        <input type="file" id="file-input" accept=".npy" />
+        <div class="upload-icon">📦</div>
+        <div class="upload-title">Drop your .npy file here</div>
+        <div class="upload-sub">or click to browse — 128³ voxel binary array</div>
+        <div class="upload-filename hidden" id="upload-filename"></div>
+    </div>
+
+    <div class="mt-md two-col">
+        <div>
+            <label class="metric-label" style="display:block;margin-bottom:6px;">Rock Type</label>
+            <select id="rock-type-select" class="quality-select" style="width:100%;padding:10px;">
+                <option value="MEC">MEC Carbonate</option>
+                <option value="ILS">ILS Limestone</option>
+                <option value="Savonnières">Savonnières</option>
+                <option value="Estaillades">Estaillades</option>
+                <option value="Synthetic">Synthetic</option>
+            </select>
+        </div>
+        <div>
+            <label class="metric-label" style="display:block;margin-bottom:6px;">Prediction Mode</label>
+            <div style="display:flex;gap:10px;margin-top:6px;">
+                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.9rem;">
+                    <input type="radio" name="model-mode" value="standard" checked /> Standard GNN
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:0.9rem;">
+                    <input type="radio" name="model-mode" value="hybrid" /> Hybrid (GNN + KC)
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Selected Sample Info -->
+<div id="selected-info" class="card card--primary hidden mt-md">
+    <div class="flex-between">
+        <div>
+            <div id="selected-name" style="font-weight:700;color:var(--primary);font-size:1.1rem;"></div>
+            <div id="selected-meta" class="text-muted" style="font-size:0.85rem;margin-top:4px;"></div>
+        </div>
+        <span id="selected-icon" style="font-size:1.6rem;"></span>
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<hr class="divider" />
+<div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <button class="btn btn--ghost" id="btn-visualize" disabled>👁 Visualize 3D Structure</button>
+    <button class="btn btn--primary btn--lg" id="btn-predict" disabled>🚀 Run TopoFlow Prediction</button>
+    <button class="btn btn--secondary btn--sm" id="btn-clear">🗑 Clear</button>
+</div>
+
+<!-- ── PROGRESS SECTION ──────────────────────── -->
+<div class="progress-section hidden" id="progress-section">
+    <div class="flex-between">
+        <div class="progress-step" id="progress-step-text">Initializing…</div>
+        <div class="progress-pct" id="progress-pct-text">0%</div>
+    </div>
+    <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div id="progress-detail" class="text-muted" style="font-size:0.82rem;"></div>
+</div>
+
+<!-- ── RESULTS SECTION ───────────────────────── -->
+<div id="results-section" class="hidden">
+
+    <hr class="divider" />
+    <h2 class="section-title">🎯 Prediction Results</h2>
+
+    <!-- Metric Cards -->
+    <div class="metrics-row" id="result-metrics">
+        <div class="metric-card">
+            <div class="metric-label">Permeability (SI)</div>
+            <div class="metric-value" id="res-si" style="font-size:1.35rem;">—</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Permeability (mD)</div>
+            <div class="metric-value" id="res-md">—</div>
+        </div>
+        <div class="metric-card" style="border-left-color:var(--text);">
+            <div class="metric-label">Log₁₀(K)</div>
+            <div class="metric-value" id="res-log" style="color:var(--text);">—</div>
+        </div>
+        <div class="metric-card hidden" id="baseline-card" style="border-left-color:var(--secondary);">
+            <div class="metric-label">Kozeny-Carman</div>
+            <div class="metric-value" id="res-baseline" style="color:var(--secondary);font-size:1.35rem;">—</div>
+        </div>
+    </div>
+
+    <!-- Result Interpretation Panel -->
+    <div class="result-panel" id="result-panel">
+
+        <!-- Header: tier + quality -->
+        <div class="result-header">
+            <div class="tier-icon" id="tier-icon">🟢</div>
+            <div>
+                <div class="tier-name" id="tier-name">—</div>
+                <div class="tier-quality" id="tier-quality">—</div>
+            </div>
+        </div>
+
+        <!-- Scale Bar -->
+        <div class="scale-bar-wrapper">
+            <div class="scale-labels">
+                <span>Ultra-Tight</span><span>Tight</span><span>Low</span>
+                <span>Moderate</span><span>High</span><span>Very High</span>
+            </div>
+            <div class="scale-track">
+                <div class="scale-marker" id="scale-marker" style="left:0%"></div>
+            </div>
+        </div>
+
+        <!-- Winner Badge -->
+        <div id="winner-badge-container"></div>
+
+        <!-- Interpretation Grid -->
+        <div class="interp-grid">
+            <div class="interp-item">
+                <div class="interp-label">💧 Fluid Flow</div>
+                <div class="interp-text" id="interp-flow">—</div>
+            </div>
+            <div class="interp-item">
+                <div class="interp-label">🌍 Real-World Analogy</div>
+                <div class="interp-text" id="interp-analogy">—</div>
+            </div>
+            <div class="interp-item">
+                <div class="interp-label">⛽ Reservoir Quality</div>
+                <div class="interp-text" id="interp-reservoir">—</div>
+            </div>
+            <div class="interp-item">
+                <div class="interp-label">📊 Porosity Context</div>
+                <div class="interp-text" id="interp-porosity">—</div>
+            </div>
+        </div>
+
+        <!-- Hybrid Correction (conditional) -->
+        <div class="hybrid-panel hidden" id="hybrid-panel">
+            <div class="hybrid-title">🔬 Hybrid Model Correction</div>
+            <p style="font-size:0.85rem;color:var(--text);line-height:1.6;" id="hybrid-text">—</p>
+        </div>
+
+    </div><!-- /result-panel -->
+
+    <!-- ── 3D VISUALIZATION ──────────────────── -->
+    <h2 class="section-title">🧊 3D Rock Microstructure</h2>
+
+    <div class="viz-container" id="viz-container">
+        <div class="viz-header">
+            <div>
+                <div class="viz-title">Interactive 3D Pore Network</div>
+                <div class="viz-sub">Rotate · Zoom · Pan — Blue = water-filled pores · Black = solid rock</div>
+            </div>
+            <select class="quality-select" id="viz-quality">
+                <option value="low">⚡ Fast (Low Res)</option>
+                <option value="balanced" selected>⚖️ Balanced</option>
+                <option value="hd">🔬 HD</option>
+            </select>
+        </div>
+        <div id="viz-3d" style="width:100%;height:500px;">
+            <div class="flex-center" style="height:100%;color:var(--muted);">
+                Run a prediction to see the 3D structure
+            </div>
+        </div>
+        <div class="viz-stats" id="viz-stats" style="display:none;">
+            <span>Rendered: <strong id="viz-rendered">—</strong> voxels</span>
+            <span>|</span>
+            <span>Porosity: <strong id="viz-porosity" class="text-primary">—</strong></span>
+            <span>|</span>
+            <span>Step: <strong id="viz-step" class="text-secondary">—</strong></span>
+        </div>
+    </div>
+
+</div><!-- /results-section -->

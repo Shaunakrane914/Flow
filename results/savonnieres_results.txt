@@ -1,0 +1,9 @@
+SAVONNIÈRES FINAL RESULTS
+==================================================
+
+Baseline MSE: 5.5457
+Baseline R²: -1.0784
+GNN MSE: 2.9849
+
+WINNER: GNN
+Improvement: +46.2%
