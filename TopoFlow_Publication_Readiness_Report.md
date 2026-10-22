@@ -2,6 +2,15 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Originality review, 23 October 2026:** The
+[source-overlap and attribution review](TopoFlow_Originality_Review.md) and
+[paragraph audit](TopoFlow_Originality_Paragraph_Audit.md) inspect the current
+Word manuscript. No exact eight-token prose match was found against six
+downloaded source papers. This is not a Turnitin result or an AI-authorship
+score. The review identifies missing equation provenance for the LBM background
+and restriction readout, plus a distinction needed between Pore-GNN's CNN feature
+graphs and physical pore networks. The manuscript was not edited in this audit.
+
 **Current Word paper:** [TopoFlow IEEE revised manuscript](TopoFlow_IEEE_V4_Cited_Revised.docx)
 updates the existing paper while preserving its SNOW2–GAT permeability objective,
 section sequence, three-author block and two-column layout. The six-page revision
