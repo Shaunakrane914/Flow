@@ -1,0 +1,73 @@
+{
+  "evaluation_complete_sha256": "714123d7e9bf2e983515a87eca3a0dacef4c727c300dbe7e6178dce59d280cbb",
+  "graphs": 10,
+  "scan_ids": [
+    "S2",
+    "S4",
+    "S6",
+    "S7",
+    "S8"
+  ],
+  "primary_endpoint": [
+    {
+      "method": "guided_edge_gat",
+      "label": "Guided GAT",
+      "mean_actual_loss_pp": 3.5702569141007627,
+      "ci_low_pp": 1.1575983306729227,
+      "ci_high_pp": 7.257558743451395
+    },
+    {
+      "method": "guided_edge_sage",
+      "label": "Guided mean GNN",
+      "mean_actual_loss_pp": 1.8545396381612074,
+      "ci_low_pp": 0.5881240280901727,
+      "ci_high_pp": 3.112833908811787
+    },
+    {
+      "method": "guided_edge_mlp",
+      "label": "Guided edge MLP",
+      "mean_actual_loss_pp": 2.609383671653871,
+      "ci_low_pp": 0.9530595312477049,
+      "ci_high_pp": 4.265707812060038
+    },
+    {
+      "method": "edge_gat",
+      "label": "Unguided GAT",
+      "mean_actual_loss_pp": 1.5881943114667076,
+      "ci_low_pp": 0.3476454922912064,
+      "ci_high_pp": 3.4644541957673822
+    },
+    {
+      "method": "affine_pressure",
+      "label": "Affine pressure",
+      "mean_actual_loss_pp": 4.075688766537459,
+      "ci_low_pp": 0.8971464827846584,
+      "ci_high_pp": 8.481363804504982
+    },
+    {
+      "method": "conductance",
+      "label": "Conductance",
+      "mean_actual_loss_pp": 1.6929593472891302,
+      "ci_low_pp": 0.16258646724996054,
+      "ci_high_pp": 3.765962473203647
+    },
+    {
+      "method": "random",
+      "label": "Random",
+      "mean_actual_loss_pp": 0.36809057310159693,
+      "ci_low_pp": 0.11494742724718374,
+      "ci_high_pp": 0.6212337189560101
+    },
+    {
+      "method": "pnm_sensitivity_oracle",
+      "label": "PNM sensitivity (solver)",
+      "mean_actual_loss_pp": 11.145774795794953,
+      "ci_low_pp": 7.343459792858961,
+      "ci_high_pp": 17.41108552221581
+    }
+  ],
+  "common_pool_rows": 6279,
+  "primary_ensemble_fixed": true,
+  "source": "scripts\\build_discovery_report.py",
+  "source_sha256": "6b814da1ca75eeb693d48626b868a5b25456e0bc56ca3ade96de8c5528011229"
+}

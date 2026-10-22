@@ -1,0 +1,14 @@
+method,scope,scan_macro_median_ms,min_scan_ms,max_scan_ms
+affine_pressure,all_throat_scores,0.054279999999999995,0.03795,0.07865
+edge_gat,five_seed_ensemble_all_throats_three_doses,25.513875,17.9915,39.347249999999995
+edge_gat,single_seed_all_throats_three_doses,5.100995,3.5957,7.825775
+guided_edge_gat,five_seed_ensemble_all_throats_three_doses,25.693665,18.1016,40.16515
+guided_edge_gat,single_seed_all_throats_three_doses,5.3143650000000004,3.789425,7.849825
+guided_edge_mlp,five_seed_ensemble_all_throats_three_doses,6.90189,4.450825,11.4247
+guided_edge_mlp,single_seed_all_throats_three_doses,1.451315,0.9368000000000001,2.3693
+guided_edge_sage,five_seed_ensemble_all_throats_three_doses,13.528039999999999,8.66455,22.3736
+guided_edge_sage,single_seed_all_throats_three_doses,2.77562,1.82,4.517725
+pnm,base_solve,2.59862,1.962475,3.5763499999999997
+pnm,three_fresh_50pct_solves_base_excluded,7.808115000000001,5.8386499999999995,10.775500000000001
+pnm_exact,base_and_all_throat_leverage_precompute,13.672900000000002,4.63805,34.544200000000004
+pnm_exact,cached_all_throats_three_doses,0.057655,0.036750000000000005,0.091175

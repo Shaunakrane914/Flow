@@ -1,0 +1,43 @@
+ObjectType =  Image
+NDims =	   3
+ElementType = MET_UCHAR
+ElementByteOrderMSB = False
+ElementNumberOfChannels = 1
+CompressedData = True
+
+
+DimSize =    	300 300 300
+ElementSize =	4.803 	4.803 	4.803
+Offset =    	0.0   0.0   0.0
+
+ElementDataFile = S7.raw.gz
+
+
+
+
+
+
+end
+
+//! summary_results_2009:
+  Sandstone S7
+  
+  x: 300
+  y: 300
+  z: 300
+  
+  Resolution (�m) : 4.803
+  
+  Porosity(%)	25.1
+  Kx (mD) 	7268
+  Ky (mD)		7594
+  Kz (mD)		6037
+  Avg. K (mD) 	6966
+  Network K (mD) 	7926
+  	
+  FFx		9.58
+  FFy		9.28
+  FFz		11.17
+  Avg. FF		9.94
+  Network FF	5.41
+  

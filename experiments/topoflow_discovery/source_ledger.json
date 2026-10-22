@@ -1,0 +1,80 @@
+[
+  {
+    "path": "scripts/run_throat_discovery.py",
+    "snapshot": "source_snapshot/scripts/run_throat_discovery.py",
+    "sha256": "0dded6ac98495dbd0a22108cd5df07d667b55668e046c1d5bd5c6945e94e40b8",
+    "frozen_before_new_outcomes": true
+  },
+  {
+    "path": "src/throat_discovery.py",
+    "snapshot": "source_snapshot/src/throat_discovery.py",
+    "sha256": "a4b166c80411268dacb03d2e624a00a6c29104648fa2ef6ea3732f84c789676a",
+    "frozen_before_new_outcomes": true
+  },
+  {
+    "path": "src/critical_throat_model.py",
+    "snapshot": "source_snapshot/src/critical_throat_model.py",
+    "sha256": "38f7fe3eeb06691426a85e0f0b7a124ea740137f54d2f1ce3cb7b80cf17d3267",
+    "frozen_before_new_outcomes": true
+  },
+  {
+    "path": "src/research_pnm.py",
+    "snapshot": "source_snapshot/src/research_pnm.py",
+    "sha256": "7cfa62f004b47fef0e56aefec1d147a4c08bc96afc3fdb1206b14738ed393d2c",
+    "frozen_before_new_outcomes": true
+  },
+  {
+    "path": "scripts/prepare_locked_external.py",
+    "snapshot": "source_snapshot/scripts/prepare_locked_external.py",
+    "sha256": "9822c0423178eae9c351fa876c8701201d4cd43fbe51ac45b425e405e6675404",
+    "frozen_before_new_outcomes": true
+  },
+  {
+    "path": "scripts/build_discovery_report.py",
+    "snapshot": "source_snapshot/scripts/build_discovery_report.py",
+    "sha256": "6b814da1ca75eeb693d48626b868a5b25456e0bc56ca3ade96de8c5528011229",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "scripts/reproduce_throat_discovery.py",
+    "snapshot": "source_snapshot/scripts/reproduce_throat_discovery.py",
+    "sha256": "3917be87cf7d72f2428a02483387a51c65507cb13221010b604fd3f6533a4c5d",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "scripts/verify_throat_discovery.py",
+    "snapshot": "source_snapshot/scripts/verify_throat_discovery.py",
+    "sha256": "607dbda30cd2a7602950d2b0f9ed1bc7bc34488c354d81ec0b102fc8d2dc1345",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "tests/test_throat_discovery.py",
+    "snapshot": "source_snapshot/tests/test_throat_discovery.py",
+    "sha256": "5e96dc0a11e445530984c8e44cb344778b749b63675c43d9314620f8f7564a95",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "scripts/run_experiments.py",
+    "snapshot": "source_snapshot/scripts/run_experiments.py",
+    "sha256": "00dff01a1fb1bdfc54455aebadd904f883a42fdfe00d066f6b611b81bf152d31",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "src/experiment_data.py",
+    "snapshot": "source_snapshot/src/experiment_data.py",
+    "sha256": "5bab16aff9fa6974f9dc846eb4a65562ec680a3142b097e25c3410cd896ccbb8",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "src/experiment_models.py",
+    "snapshot": "source_snapshot/src/experiment_models.py",
+    "sha256": "0860a7a9140064a4a0c7a684c2ccc78af36bdb70f9586cc92f326086db6953fc",
+    "frozen_before_new_outcomes": false
+  },
+  {
+    "path": "src/experiment_metrics.py",
+    "snapshot": "source_snapshot/src/experiment_metrics.py",
+    "sha256": "ed5e134abc84377de1a2fd4e4b42f5eea6a7f58ba3b617cd4cde7652458bd9c8",
+    "frozen_before_new_outcomes": false
+  }
+]

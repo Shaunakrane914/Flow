@@ -1,0 +1,45 @@
+ObjectType =  Image
+NDims =	   3
+ElementType = MET_UCHAR
+ElementByteOrderMSB = False
+ElementNumberOfChannels = 1
+CompressedData = True
+
+
+DimSize =    	300 300 300
+ElementSize =	4.956 	4.956 	4.956
+Offset =    	0.0   0.0   0.0
+
+ElementDataFile = S2.raw.gz
+
+
+
+
+
+
+end
+
+//! summary_results_2009:
+  Sandstone S2
+  
+  x: 300
+  y: 300
+  z: 300
+  
+  Resolution (�m) : 4.956
+  
+  Porosity(%)	24.6
+  
+  Kx (mD) 	4318
+  Ky (mD)		3983
+  Kz (mD)		3394
+  Avg. K (mD) 	3898
+  Network K (mD) 	3951
+  	
+  FFx		10.85
+  FFy		11.32
+  FFz		12.55
+  Avg. FF		11.53
+  Network FF	6.53
+
+

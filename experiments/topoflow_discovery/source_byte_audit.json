@@ -1,0 +1,98 @@
+{
+  "prior_crops_checked": 56,
+  "new_crops_checked": 10,
+  "exact_crop_duplicates": 0,
+  "sources": [
+    {
+      "scan_id": "S2",
+      "phase_rule": "0 is pore",
+      "voxel_size_m": 4.9560000000000005e-06,
+      "whole_volume_porosity": 0.246277,
+      "header_porosity": 0.24600000000000002,
+      "source_raw_uint8_sha256": "3631584b756ff2327760a4b8d0df2b0425b96a5c2c9cd2e1c032f6f7d101ccef",
+      "crops": [
+        {
+          "sample_id": "discovery_S2_crop_00",
+          "pore_uint8_sha256": "acea3922761af6b8e7366a96d60bcb63df66f50c60d5ca873d1fa0893e78061f"
+        },
+        {
+          "sample_id": "discovery_S2_crop_01",
+          "pore_uint8_sha256": "885a99199fc9879bced7cc2bd945e7e351b63f1174237e2a194c0964def46c49"
+        }
+      ]
+    },
+    {
+      "scan_id": "S4",
+      "phase_rule": "0 is pore",
+      "voxel_size_m": 8.96e-06,
+      "whole_volume_porosity": 0.17125751851851853,
+      "header_porosity": 0.171,
+      "source_raw_uint8_sha256": "bc976f35d85c5cd776220d4724094e484ddba94b0dd705f9c4ceff738cfd41b6",
+      "crops": [
+        {
+          "sample_id": "discovery_S4_crop_00",
+          "pore_uint8_sha256": "378f26c20ecb31a79e4b5f3c53986d4b1a6e18fc638e64468fa7b2850260c1d4"
+        },
+        {
+          "sample_id": "discovery_S4_crop_01",
+          "pore_uint8_sha256": "47a3bb575dffca55aafc0509325000f50c1cc18729ae037b10a159407f04b0ea"
+        }
+      ]
+    },
+    {
+      "scan_id": "S6",
+      "phase_rule": "0 is pore",
+      "voxel_size_m": 5.0999999999999995e-06,
+      "whole_volume_porosity": 0.23959288888888888,
+      "header_porosity": 0.24,
+      "source_raw_uint8_sha256": "7c14af6399f16864a545fb6a94cedec55d3526b0f3e74f60a4f228d11a9f8c93",
+      "crops": [
+        {
+          "sample_id": "discovery_S6_crop_00",
+          "pore_uint8_sha256": "eaaa427563f58fedff08409b2f77a6a8c6bb0e9a3b239abe9553d7e844a70a12"
+        },
+        {
+          "sample_id": "discovery_S6_crop_01",
+          "pore_uint8_sha256": "3cf6c99cce4f0b2eb19deab84667bc15ef6635eadf502921e68ebb20f7f3940c"
+        }
+      ]
+    },
+    {
+      "scan_id": "S7",
+      "phase_rule": "0 is pore",
+      "voxel_size_m": 4.803e-06,
+      "whole_volume_porosity": 0.250482,
+      "header_porosity": 0.251,
+      "source_raw_uint8_sha256": "d4c65556df14bd5caf60278c6ceb855adf18d5741e8fe3495ff387a530060276",
+      "crops": [
+        {
+          "sample_id": "discovery_S7_crop_00",
+          "pore_uint8_sha256": "2be96692c7967abc8f3eb030572ba9476232efef99a9e45b21c22b4faf7f50ae"
+        },
+        {
+          "sample_id": "discovery_S7_crop_01",
+          "pore_uint8_sha256": "9201541c369a304fd10e62d51eba4b159b4a8befb9d5d5ceeab5e6bc1f174175"
+        }
+      ]
+    },
+    {
+      "scan_id": "S8",
+      "phase_rule": "0 is pore",
+      "voxel_size_m": 4.892e-06,
+      "whole_volume_porosity": 0.3398117407407407,
+      "header_porosity": 0.34,
+      "source_raw_uint8_sha256": "f4770fbce843b6c69ed7b7641704ebcb37dda5cda5b2ed5db46c00f1a2cb2cc4",
+      "crops": [
+        {
+          "sample_id": "discovery_S8_crop_00",
+          "pore_uint8_sha256": "87b1b34373da1acd253da6dc48f43cd5af7d12cfbac7737b72692ba2c2f1f6f3"
+        },
+        {
+          "sample_id": "discovery_S8_crop_01",
+          "pore_uint8_sha256": "549eeb45c4d1b7d13a85f5ccb407b0f0a3a84e7879cb3e2c31debbffaac3f4fb"
+        }
+      ]
+    }
+  ],
+  "scope": "Exact voxel duplicates ruled out for locally available prior crops; this does not certify geological independence"
+}

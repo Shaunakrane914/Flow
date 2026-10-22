@@ -2,6 +2,18 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Latest completed review response:** [The sealed discovery study](experiments/topoflow_discovery/REPORT.md)
+tests five previously unused Imperial scan IDs (S2/S4/S6/S7/S8), ten fixed crops
+and twenty frozen checkpoints. All geometry-driven selections precede outcome
+calculation; 966 fresh intervention solves check numerical consistency. GAT top
+throats yield 3.57% mean loss at 50% diameter restriction versus 0.37% for random,
+while the affine-pressure control reaches 4.08%. On the shared pool, guided GAT
+MAE is 2.04 percentage points versus 0.46 for no response. CPU timing establishes
+no GAT advantage over exact PNM alternatives. This strengthens the evaluation
+but weakens a claim of superior response prediction. The physical-reference
+discrepancy remains unresolved. Use the new [manuscript insert](experiments/topoflow_discovery/MANUSCRIPT_INSERT.md)
+for the completed findings; the earlier pilot below is historical context.
+
 **Further completed experiments:** [The follow-up report](experiments/topoflow_followup/FOLLOWUP_REPORT.md)
 now adds four named external scans and 32 crops, the controlled four-cell GAT
 ablation, and a trained critical-throat response pilot. The guided GAT achieves

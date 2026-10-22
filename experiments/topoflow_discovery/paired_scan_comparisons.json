@@ -1,0 +1,82 @@
+{
+  "guided_edge_gat_minus_affine_pressure": {
+    "scan_macro_difference": -0.005054318524366957,
+    "cluster_bootstrap_95_interval": [
+      -0.021912294165133673,
+      0.015641327220435854
+    ],
+    "two_sided_exact_sign_flip_p": 0.625,
+    "scan_differences": [
+      0.030311403252442363,
+      0.008699100958708001,
+      -0.02142667461385582,
+      -0.023852699378827398,
+      -0.019002722840301932
+    ],
+    "scope": "Five source-scan clusters; descriptive bootstrap; no intervention-level independence assumed"
+  },
+  "guided_edge_gat_minus_guided_edge_mlp": {
+    "scan_macro_difference": 0.009608732424468913,
+    "cluster_bootstrap_95_interval": [
+      -0.009922801209625864,
+      0.03463203760389238
+    ],
+    "two_sided_exact_sign_flip_p": 0.5625,
+    "scan_differences": [
+      0.001266559790104746,
+      0.005339792968461602,
+      0.05484050978359625,
+      0.007372098878568402,
+      -0.020775299298386438
+    ],
+    "scope": "Five source-scan clusters; descriptive bootstrap; no intervention-level independence assumed"
+  },
+  "guided_edge_gat_minus_guided_edge_sage": {
+    "scan_macro_difference": 0.01715717275939555,
+    "cluster_bootstrap_95_interval": [
+      0.001189180292610417,
+      0.0420061216018903
+    ],
+    "two_sided_exact_sign_flip_p": 0.125,
+    "scan_differences": [
+      0.009404240015215462,
+      0.009971738681255617,
+      0.06458614590827477,
+      0.00630043160337157,
+      -0.004476692411139665
+    ],
+    "scope": "Five source-scan clusters; descriptive bootstrap; no intervention-level independence assumed"
+  },
+  "guided_edge_gat_minus_random": {
+    "scan_macro_difference": 0.03202166340999165,
+    "cluster_bootstrap_95_interval": [
+      0.008848525471552886,
+      0.07014511477044656
+    ],
+    "two_sided_exact_sign_flip_p": 0.0625,
+    "scan_differences": [
+      0.02620543544749786,
+      0.007232302604901162,
+      0.10576261193327792,
+      0.008870055083680778,
+      0.012037911980600556
+    ],
+    "scope": "Five source-scan clusters; descriptive bootstrap; no intervention-level independence assumed"
+  },
+  "guided_edge_gat_minus_edge_gat": {
+    "scan_macro_difference": 0.01982062602634055,
+    "cluster_bootstrap_95_interval": [
+      0.00355837896390186,
+      0.040457450800591606
+    ],
+    "two_sided_exact_sign_flip_p": 0.0625,
+    "scan_differences": [
+      0.03214015945667507,
+      0.006119147115523394,
+      0.05500744970751133,
+      0.005124745423748996,
+      0.0007116284282439565
+    ],
+    "scope": "Five source-scan clusters; descriptive bootstrap; no intervention-level independence assumed"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "tests_passed": 25,
+  "test_output_sha256": "37e3a8bf3734996079d654f28281c13abfb3f3c8f12dc424db572ab60086d35f",
+  "protocol_sources_checkpoints_and_selection_hashes_match": true,
+  "timestamps_ordered": [
+    "2026-10-22T16:57:41.292286+00:00",
+    "2026-10-22T16:59:12.570729+00:00",
+    "2026-10-22T17:01:18.236073+00:00",
+    "2026-10-22T17:01:57.544196+00:00"
+  ],
+  "selection_before_flow_evaluation": true,
+  "new_scan_ids_disjoint_from_prior_external": true,
+  "graphs": 10,
+  "scan_groups": 5,
+  "fresh_intervention_solves": 966,
+  "prediction_rows": 6279,
+  "identical_intervention_pool_for_every_predictor": true,
+  "predictions_match_sealed_geometry_only_outputs": true,
+  "fresh_vs_exact_update_max_fractional_error": 4.4847988586727006e-08,
+  "independently_recomputed_discovery_pp": {
+    "guided_edge_gat": 3.5702569141007676,
+    "guided_edge_sage": 1.8545396381612105,
+    "guided_edge_mlp": 2.6093836716538736,
+    "edge_gat": 1.58819431146671,
+    "affine_pressure": 4.075688766537463,
+    "conductance": 1.6929593472891338,
+    "random": 0.36809057310160004,
+    "pnm_sensitivity_oracle": 11.145774795794956
+  },
+  "headline_tables_recomputed_with_plain_csv_and_scan_macro_loops": true,
+  "package_versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "torch": "2.10.0",
+    "torch-geometric": "2.3.1",
+    "porespy": "3.0.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8"
+  },
+  "limitations": [
+    "five source-scan groups, not independently certified geological specimens",
+    "no new physically validated reference",
+    "no GAT accuracy or runtime superiority"
+  ]
+}

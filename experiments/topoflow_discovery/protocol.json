@@ -1,0 +1,120 @@
+{
+  "status": "frozen_before_new_scan_extraction",
+  "locked_utc": "2026-10-22T16:57:41.292286+00:00",
+  "validation_scan_ids": [
+    "S2",
+    "S4",
+    "S6",
+    "S7",
+    "S8"
+  ],
+  "prior_external_scan_ids": [
+    "S1",
+    "S3",
+    "S5",
+    "S9"
+  ],
+  "sampling": "Two fixed nonoverlapping 128-cube opposite corners (000 and maximum origin); no fallback crops",
+  "independence": "Five named source scans, not independently certified geological specimens; crops and interventions cluster within scan",
+  "primary_model": "guided_edge_gat",
+  "models": [
+    "guided_edge_gat",
+    "guided_edge_sage",
+    "guided_edge_mlp",
+    "edge_gat"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "deployment": "Arithmetic mean of five fixed seed predictions; no best-seed selection",
+  "training": "Reuse frozen pilot checkpoints trained on eight crops from four development scans; no new fitting",
+  "matched_training": {
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "epochs_max": 80,
+    "patience": 15,
+    "guidance_weight": 0.05,
+    "epoch_selection": "leave-one-development-parent-out, selection seed 2026; median selected epoch for final full-development fit"
+  },
+  "locked_epochs": {
+    "edge_gat": 7,
+    "guided_edge_gat": 15,
+    "edge_sage": 6,
+    "edge_mlp": 6,
+    "guided_edge_sage": 12,
+    "guided_edge_mlp": 22
+  },
+  "historical_test_reuse": "Guided mean/MLP were post-hoc on the old four scans, but all four models are fixed before this new five-scan validation",
+  "eligible_throats": "Both endpoints physical and in a topology-spanning inlet-outlet component; no pressure or flow criteria",
+  "selection": "Each model ranks its own global importance head; three highest and three lowest, stable edge-index ties; three shared uniform random edges per graph",
+  "random_seed": 20261023,
+  "restrictions": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "controls": [
+    "conductance d^4/L",
+    "affine-pressure energy g*(delta x)^2",
+    "shared random",
+    "solver-based sensitivity oracle"
+  ],
+  "primary_endpoint": "Scan-macro mean actual fractional loss at 50% narrowing of three individually restricted model-selected top throats",
+  "primary_comparisons": [
+    "guided_edge_gat vs affine_pressure",
+    "guided_edge_gat vs guided_edge_mlp"
+  ],
+  "response_accuracy": "Each method evaluated on the same union of all geometry-selected top/low/random throats at all three doses; oracle selections excluded from this shared pool",
+  "secondary": [
+    "top versus low and random",
+    "all-eligible sensitivity Spearman",
+    "top-three sensitivity overlap",
+    "seed variation",
+    "warm CPU latency"
+  ],
+  "statistics": "Average crops inside each scan, then average five scans equally; exact paired scan sign-flip tests (minimum two-sided p=0.0625); cluster bootstrap descriptive intervals",
+  "timing": {
+    "threads": 1,
+    "warmups": 5,
+    "repeats": 30,
+    "exact_precompute_repeats": 5,
+    "include": "All-throat neural forward + response readout + ensemble aggregation; separate SNOW/features, PNM base, three fresh solves, cached exact readout and exact precompute",
+    "exclude": "Disk/model load, PyG batching and extraction from forward-only timing; reported separately"
+  },
+  "physics_scope": "Cylindrical inscribed-diameter, direct-length Hagen-Poiseuille PNM only; unresolved S1/S5 physical-reference discrepancy is not repaired here",
+  "source_url": "https://imperialcollegelondon.box.com/v/ImagesICPSC2007",
+  "archive_sha256": "2c4bde49b3b21177fbb1183d2ee25734cc44a9cf7e4bc74adb6b14e5d3c84308",
+  "checkpoints": {
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_gat_seed11.pth": "2c05d355d0544581e73bb5f674ef231090c390f8c601db7dd023429545b16ebc",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_gat_seed22.pth": "155f173468950e47c0cedf0126ceeac3e1bb26e34ce17c93c8b0ed5d5831557f",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_gat_seed33.pth": "859852b70fe3283ac522f3d46ccba9154247724d3b664cbfc3e555d3b154d641",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_gat_seed44.pth": "d4890b04397449b303576de14907891af3c12b468803b84714db6f88bc7bbadd",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_gat_seed55.pth": "8ac8c91d040bcf61070a1a9d1625b131b9c2919fc2b3b196109554d19db6f596",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_sage_seed11.pth": "2f84ac426e6e5c5caa51c435a0b99717030471ebb80c4a233a75134ae672e655",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_sage_seed22.pth": "363476238e1b6524ee5b2b8da50e074cb7264bfe4737bcc583ef32484fe9d2d8",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_sage_seed33.pth": "4b30fdf9c454f71798bebc91cc85f07048efd9a0835d751e5fdb8d15a55e512a",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_sage_seed44.pth": "1695b6f471535505861bacd684b42ed665e87b8a3afeee29739851d3e8770b25",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_sage_seed55.pth": "6da0566bcea0a2109d4a90c7e3590b56d8530036efde3fe96c2d1c3da6c350d9",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_mlp_seed11.pth": "21f716b3e2d2f067731447e7894c4d91892343255e3c79a24501b98c39b6931d",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_mlp_seed22.pth": "861def34fe1626f676bfe1b9b3fea5d47c5fdea40d6b7b182c63071ce2b6156c",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_mlp_seed33.pth": "f060542166e0f4d1070833340f0eed23fff8b8034314e39c00afe40f0ae08a61",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_mlp_seed44.pth": "c3b67a90b27f0d82a34969ffd7ee7d86a4bfe10aeb6dc930496479f24ed2f4c0",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\guided_edge_mlp_seed55.pth": "8acc7d92e448fb0bd038e19c455dd080ceb1cfb526f95cfe34436cfabc738d9a",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\edge_gat_seed11.pth": "329c6ebf06b034f8a1c52f217f33ee11e87b25d8f4faddf8f161d8ec25b3924d",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\edge_gat_seed22.pth": "1c81f10fa42ff779e393ebaaeb1d92da6719d25d667e8bba9a53ec405d21465e",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\edge_gat_seed33.pth": "0e2795b3559506766b323195d7c33683b8cd79b95f8f3c739f8cc7cca0304e05",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\edge_gat_seed44.pth": "5303d07f25d1abb2c82be79102ca7ff17dfbde0086f8ae2de32e2f8e22261def",
+    "experiments\\topoflow_followup\\throat_aware_pilot\\training\\checkpoints\\edge_gat_seed55.pth": "48144439ff2be55f569fe69a726fc82fd5a5aed9d6e8a1fc59d1b84310583879"
+  },
+  "source_hashes": {
+    "scripts/run_throat_discovery.py": "0dded6ac98495dbd0a22108cd5df07d667b55668e046c1d5bd5c6945e94e40b8",
+    "src/throat_discovery.py": "a4b166c80411268dacb03d2e624a00a6c29104648fa2ef6ea3732f84c789676a",
+    "src/critical_throat_model.py": "38f7fe3eeb06691426a85e0f0b7a124ea740137f54d2f1ce3cb7b80cf17d3267",
+    "src/research_pnm.py": "7cfa62f004b47fef0e56aefec1d147a4c08bc96afc3fdb1206b14738ed393d2c",
+    "scripts/prepare_locked_external.py": "9822c0423178eae9c351fa876c8701201d4cd43fbe51ac45b425e405e6675404"
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "sample_id": "discovery_S2_crop_00",
+    "scan_id": "S2",
+    "process_rss_after_benchmarks_bytes": 371150848,
+    "graph_tensor_bytes": 92380,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S2_crop_01",
+    "scan_id": "S2",
+    "process_rss_after_benchmarks_bytes": 375042048,
+    "graph_tensor_bytes": 99924,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S4_crop_00",
+    "scan_id": "S4",
+    "process_rss_after_benchmarks_bytes": 385699840,
+    "graph_tensor_bytes": 203080,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S4_crop_01",
+    "scan_id": "S4",
+    "process_rss_after_benchmarks_bytes": 387411968,
+    "graph_tensor_bytes": 196496,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S6_crop_00",
+    "scan_id": "S6",
+    "process_rss_after_benchmarks_bytes": 382849024,
+    "graph_tensor_bytes": 59928,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S6_crop_01",
+    "scan_id": "S6",
+    "process_rss_after_benchmarks_bytes": 379686912,
+    "graph_tensor_bytes": 27372,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S7_crop_00",
+    "scan_id": "S7",
+    "process_rss_after_benchmarks_bytes": 380416000,
+    "graph_tensor_bytes": 57772,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S7_crop_01",
+    "scan_id": "S7",
+    "process_rss_after_benchmarks_bytes": 381550592,
+    "graph_tensor_bytes": 67696,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S8_crop_00",
+    "scan_id": "S8",
+    "process_rss_after_benchmarks_bytes": 383459328,
+    "graph_tensor_bytes": 94556,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  },
+  {
+    "sample_id": "discovery_S8_crop_01",
+    "scan_id": "S8",
+    "process_rss_after_benchmarks_bytes": 385724416,
+    "graph_tensor_bytes": 109984,
+    "parameters_bytes_per_seed": {
+      "guided_edge_gat": 22280,
+      "guided_edge_sage": 30600,
+      "guided_edge_mlp": 18824,
+      "edge_gat": 22280
+    },
+    "rss_scope": "Observed resident set after calls, includes libraries/models/data; not peak or incremental model memory"
+  }
+]

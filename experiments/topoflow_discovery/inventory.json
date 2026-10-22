@@ -1,0 +1,172 @@
+[
+  {
+    "sample_id": "discovery_S2_crop_00",
+    "scan_id": "S2",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.9560000000000005e-06,
+    "eligible_throats": 608,
+    "nodes": 415,
+    "throats": 673,
+    "snow2_ms": 8442.1149,
+    "feature_ms": 3.1053,
+    "network_sha256": "50909b20c9e169aeb7482f2bc0c791cad48fdda518bb423b03073c94bc7aab8a",
+    "graph_sha256": "47bb779b0c16704fd310c053d6cdced0886041386d27948ea5db935798381e63"
+  },
+  {
+    "sample_id": "discovery_S2_crop_01",
+    "scan_id": "S2",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.9560000000000005e-06,
+    "eligible_throats": 662,
+    "nodes": 423,
+    "throats": 734,
+    "snow2_ms": 6283.0084,
+    "feature_ms": 1.8986,
+    "network_sha256": "c51ca905521678a5da7cc2e4bdb649bba3b95bf09570335178e1baa5ae72ba64",
+    "graph_sha256": "abc4d91451e0c03a27c0ed9545c5ae404f8196dec71fffd69740010203ac9087"
+  },
+  {
+    "sample_id": "discovery_S4_crop_00",
+    "scan_id": "S4",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 8.96e-06,
+    "eligible_throats": 1305,
+    "nodes": 1120,
+    "throats": 1431,
+    "snow2_ms": 10988.7929,
+    "feature_ms": 1.8142,
+    "network_sha256": "108ba83f85f89f1e137bd099ac26577b7d51d8e4f3bc1a355ddc455123839558",
+    "graph_sha256": "555d807e44793036bb599a7f68d816b688e5eddaf957a62f576ba50d0a2aaf9b"
+  },
+  {
+    "sample_id": "discovery_S4_crop_01",
+    "scan_id": "S4",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 8.96e-06,
+    "eligible_throats": 1225,
+    "nodes": 1112,
+    "throats": 1378,
+    "snow2_ms": 11063.5411,
+    "feature_ms": 1.7463,
+    "network_sha256": "7458ec9eaa325323e45a67312778da30b73501396f07fd190df5c2fd27bf4aff",
+    "graph_sha256": "78ddd07340ccebd46b4d9f954bd3e5c541fe80b16fe28addb374d483c251b9fc"
+  },
+  {
+    "sample_id": "discovery_S6_crop_00",
+    "scan_id": "S6",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 5.0999999999999995e-06,
+    "eligible_throats": 401,
+    "nodes": 246,
+    "throats": 442,
+    "snow2_ms": 4960.1827,
+    "feature_ms": 3.2183,
+    "network_sha256": "836c05fd5569ba753952ccaffda04efc67d6394b96d7d82f7c25c9112327abf7",
+    "graph_sha256": "b558cc1f6a7622752eb97c10aa9bc1043281e93da653a62192c473dd7add9455"
+  },
+  {
+    "sample_id": "discovery_S6_crop_01",
+    "scan_id": "S6",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 5.0999999999999995e-06,
+    "eligible_throats": 173,
+    "nodes": 129,
+    "throats": 198,
+    "snow2_ms": 4021.2081,
+    "feature_ms": 1.3587,
+    "network_sha256": "d58a74b99d632053706591fb654fbca12eba1f442ed083e472df3562a2c9f8bb",
+    "graph_sha256": "e9d95aecbeb7fa1851fb6f9d8196d51b98039c9bc240af85084479e45f185a16"
+  },
+  {
+    "sample_id": "discovery_S7_crop_00",
+    "scan_id": "S7",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.803e-06,
+    "eligible_throats": 396,
+    "nodes": 229,
+    "throats": 428,
+    "snow2_ms": 4717.451,
+    "feature_ms": 1.589,
+    "network_sha256": "06824524f37e05fe72f8706edcd2979acfef5d00a065d4e3fb2c473eee58c9ae",
+    "graph_sha256": "b9546ea67faf9e697d1633654581d2b0f6449ee9a2f0e00d8897f19faa9790cd"
+  },
+  {
+    "sample_id": "discovery_S7_crop_01",
+    "scan_id": "S7",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.803e-06,
+    "eligible_throats": 459,
+    "nodes": 262,
+    "throats": 503,
+    "snow2_ms": 5461.8432,
+    "feature_ms": 1.5724,
+    "network_sha256": "219a91f92b3b3b98e8d472453c53404327c8608b7d597ccc91b8950b902e73c1",
+    "graph_sha256": "dc92fe49d80aa3714a7a2da8b06137a4ed342c389762281711e4865095a8975f"
+  },
+  {
+    "sample_id": "discovery_S8_crop_00",
+    "scan_id": "S8",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.892e-06,
+    "eligible_throats": 634,
+    "nodes": 347,
+    "throats": 707,
+    "snow2_ms": 5678.3436,
+    "feature_ms": 2.0651,
+    "network_sha256": "60116d19d1228b656234bdb12cacac8101b997046c1cddbd27fb375c3bc7e69f",
+    "graph_sha256": "e7f7878c2796d9bfcf5bd80126f7e52de0c641256d854cc30a5929f57eadb7ab"
+  },
+  {
+    "sample_id": "discovery_S8_crop_01",
+    "scan_id": "S8",
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "voxel_size_m": 4.892e-06,
+    "eligible_throats": 740,
+    "nodes": 388,
+    "throats": 826,
+    "snow2_ms": 5936.7536,
+    "feature_ms": 1.5758,
+    "network_sha256": "1aa5f65d78897d5c3d7d8cfce86c347321a9f9f60be27c4ec5ebe30a85695327",
+    "graph_sha256": "799784b9b60558d3c55c75ad4e7802e3200b78a8fbfa5791094224777d8da78b"
+  }
+]

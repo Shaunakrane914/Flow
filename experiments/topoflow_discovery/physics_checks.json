@@ -1,0 +1,82 @@
+[
+  {
+    "sample_id": "discovery_S2_crop_00",
+    "base_k_m2": 4.1023168781758755e-13,
+    "fresh_intervention_solves": 99,
+    "common_pool_edges": 31,
+    "finite_update_max_error": 1.02150047032179e-08,
+    "relative_mass_imbalance": 1.0553799423437538e-13
+  },
+  {
+    "sample_id": "discovery_S2_crop_01",
+    "base_k_m2": 7.090607265563419e-13,
+    "fresh_intervention_solves": 102,
+    "common_pool_edges": 33,
+    "finite_update_max_error": 2.000037651467279e-08,
+    "relative_mass_imbalance": 1.4479228410690263e-14
+  },
+  {
+    "sample_id": "discovery_S4_crop_00",
+    "base_k_m2": 1.2215002601444496e-13,
+    "fresh_intervention_solves": 99,
+    "common_pool_edges": 31,
+    "finite_update_max_error": 2.642507961449561e-08,
+    "relative_mass_imbalance": 3.766041963879185e-14
+  },
+  {
+    "sample_id": "discovery_S4_crop_01",
+    "base_k_m2": 1.1283131836719457e-13,
+    "fresh_intervention_solves": 105,
+    "common_pool_edges": 32,
+    "finite_update_max_error": 2.4788152339987556e-08,
+    "relative_mass_imbalance": 7.881050948235467e-14
+  },
+  {
+    "sample_id": "discovery_S6_crop_00",
+    "base_k_m2": 1.6179251778513853e-12,
+    "fresh_intervention_solves": 99,
+    "common_pool_edges": 30,
+    "finite_update_max_error": 2.7369475027062135e-08,
+    "relative_mass_imbalance": 3.613795925304744e-14
+  },
+  {
+    "sample_id": "discovery_S6_crop_01",
+    "base_k_m2": 1.5959905761059252e-12,
+    "fresh_intervention_solves": 78,
+    "common_pool_edges": 23,
+    "finite_update_max_error": 4.3930764683977096e-08,
+    "relative_mass_imbalance": 5.0590670795502655e-14
+  },
+  {
+    "sample_id": "discovery_S7_crop_00",
+    "base_k_m2": 1.4740664675263918e-12,
+    "fresh_intervention_solves": 99,
+    "common_pool_edges": 30,
+    "finite_update_max_error": 2.9691279157528783e-08,
+    "relative_mass_imbalance": 2.139301564696783e-14
+  },
+  {
+    "sample_id": "discovery_S7_crop_01",
+    "base_k_m2": 8.364843313157842e-13,
+    "fresh_intervention_solves": 99,
+    "common_pool_edges": 30,
+    "finite_update_max_error": 4.2796301447101115e-08,
+    "relative_mass_imbalance": 8.52157294895641e-14
+  },
+  {
+    "sample_id": "discovery_S8_crop_00",
+    "base_k_m2": 2.488470513970426e-12,
+    "fresh_intervention_solves": 93,
+    "common_pool_edges": 29,
+    "finite_update_max_error": 4.366973510420719e-08,
+    "relative_mass_imbalance": 4.406465749690974e-15
+  },
+  {
+    "sample_id": "discovery_S8_crop_01",
+    "base_k_m2": 4.524013135536423e-12,
+    "fresh_intervention_solves": 93,
+    "common_pool_edges": 30,
+    "finite_update_max_error": 4.4847988586727006e-08,
+    "relative_mass_imbalance": 4.4198935842341315e-15
+  }
+]

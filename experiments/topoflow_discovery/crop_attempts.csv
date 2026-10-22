@@ -1,0 +1,11 @@
+sample_id,scan_id,origin_zyx,source_shape_zyx,voxel_size_m,porosity,status,reason
+discovery_S2_crop_00,S2,"0,0,0","300,300,300",4.9560000000000005e-06,0.20676231384277344,accepted_geometry,
+discovery_S2_crop_01,S2,"172,172,172","300,300,300",4.9560000000000005e-06,0.23882436752319336,accepted_geometry,
+discovery_S4_crop_00,S4,"0,0,0","300,300,300",8.96e-06,0.17635393142700195,accepted_geometry,
+discovery_S4_crop_01,S4,"172,172,172","300,300,300",8.96e-06,0.1735210418701172,accepted_geometry,
+discovery_S6_crop_00,S6,"0,0,0","300,300,300",5.0999999999999995e-06,0.2043600082397461,accepted_geometry,
+discovery_S6_crop_01,S6,"172,172,172","300,300,300",5.0999999999999995e-06,0.21873998641967773,accepted_geometry,
+discovery_S7_crop_00,S7,"0,0,0","300,300,300",4.803e-06,0.25099802017211914,accepted_geometry,
+discovery_S7_crop_01,S7,"172,172,172","300,300,300",4.803e-06,0.25333118438720703,accepted_geometry,
+discovery_S8_crop_00,S8,"0,0,0","300,300,300",4.892e-06,0.30468130111694336,accepted_geometry,
+discovery_S8_crop_01,S8,"172,172,172","300,300,300",4.892e-06,0.38036155700683594,accepted_geometry,

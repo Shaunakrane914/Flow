@@ -1,3 +1,8 @@
 # Reproducibility snapshots must retain the bytes recorded in their SHA-256 hashes.
 experiments/topoflow_research_v2/run_sources/** -text
 experiments/topoflow_followup/source_snapshot/** -text
+experiments/topoflow_discovery/** -text whitespace=cr-at-eol
+experiments/topoflow_discovery/*_source_header.txt -whitespace
+experiments/topoflow_discovery/figures/*.svg -whitespace
+src/throat_discovery.py -text
+scripts/run_throat_discovery.py -text

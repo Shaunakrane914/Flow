@@ -1,5 +1,12 @@
 # TopoFlow GNN
 
+Latest research: [sealed solver-free throat discovery on five unused scans](experiments/topoflow_discovery/REPORT.md),
+with [verified manuscript text](experiments/topoflow_discovery/MANUSCRIPT_INSERT.md).
+GAT-selected throats produce 3.57% mean PNM loss versus 0.37% for random selection,
+but affine-pressure ranking reaches 4.08%. No-response prediction beats the GAT
+on the shared intervention pool; measured CPU costs establish no GAT speedup.
+These are conditional PNM results, not independently validated physical permeability.
+
 Latest follow-up: [critical-throat intervention pilot and locked external scans](experiments/topoflow_followup/FOLLOWUP_REPORT.md).
 
 Current evaluation: [natural-rock research results](experiments/topoflow_research_v2/README.md), [measured comparison tables](experiments/topoflow_research_v2/tables/paper_comparison.md), and [manuscript replacement text](experiments/topoflow_research_v2/manuscript_insert.md).

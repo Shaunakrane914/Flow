@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-10-22T17:01:57.544196+00:00",
+  "graphs": 10,
+  "scans": 5,
+  "fresh_intervention_solves": 966,
+  "selection_seal_sha256": "2214cd5d877a98cd1aaf889bf77c29afe6c701a8765a5f7e052be64daf9f7c37",
+  "environment": {
+    "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "torch": "2.10.0+cpu",
+    "cpu_threads": 1,
+    "cuda_used": false
+  }
+}

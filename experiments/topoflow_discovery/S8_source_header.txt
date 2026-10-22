@@ -1,0 +1,43 @@
+ObjectType =  Image
+NDims =	   3
+ElementType = MET_UCHAR
+ElementByteOrderMSB = False
+ElementNumberOfChannels = 1
+CompressedData = True
+
+
+DimSize =    	300 300 300
+ElementSize =	4.892 	4.892 	4.892
+Offset =    	0.0   0.0   0.0
+
+ElementDataFile = S8.raw.gz
+
+
+
+
+
+
+end
+
+//! summary_results_2009:
+  Sandstone S8
+  
+  x: 300
+  y: 300
+  z: 300
+  
+  Resolution (�m) : 4.892
+  
+  Porosity(%)	34
+  Kx (mD) 	13063
+  Ky (mD)		13507
+  Kz (mD)		12936
+  Avg. K (mD) 	13169
+  Network K (mD) 	13932
+  	
+  FFx		6.02
+  FFy		5.97
+  FFz		6.53
+  Avg. FF		6.16
+  Network FF	3.39
+
