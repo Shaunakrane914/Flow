@@ -1,0 +1,54 @@
+[
+  {
+    "sample": "S1",
+    "physical_pores": 1868,
+    "internal_throats": 2839,
+    "removed_reservoir_throats": 209,
+    "endpoint_lengths_reordered_with_connections": 1136,
+    "domain_size_m": [
+      0.0026049,
+      0.0026049,
+      0.0026049
+    ],
+    "boundary_group_mean_displacement_m": [
+      0.0024853769397533217,
+      0.00010629837343453514,
+      -0.0001391100629032269
+    ],
+    "dominant_native_coordinate_axis": 0,
+    "archive_member_sha256": "e96af8f926db7c2fb8eb5c7f7f6fd04ecbd686e651cbada8151e02fa96c77b3f",
+    "source_file_sha256": {
+      "node1": "77943ff2ccf51bc7fcee03599e36f0a2fc15d31a484feb09a06053b8d71f359b",
+      "node2": "3422bbc78c73e7fbf39c6caa71b0becbdb9aba8d09bafbe9f3fb327e9165ba67",
+      "link1": "a5dc840da022064b73146cc154ab15a4e82f776f93fff68eb55054a4ecb1f2ef",
+      "link2": "a3efda478e780163476e1bb5e0c4fcc27f058c1a40015db9bb2d01fd8ee7d678"
+    },
+    "boundary_convention": "Remove reservoir throats, apply fixed pressures to adjacent physical pores; legacy exact convention unverified"
+  },
+  {
+    "sample": "S5",
+    "physical_pores": 518,
+    "internal_throats": 821,
+    "removed_reservoir_throats": 79,
+    "endpoint_lengths_reordered_with_connections": 287,
+    "domain_size_m": [
+      0.0011991,
+      0.0011991,
+      0.0011991
+    ],
+    "boundary_group_mean_displacement_m": [
+      0.00111576255,
+      6.645012499999973e-05,
+      1.2254904487179336e-05
+    ],
+    "dominant_native_coordinate_axis": 0,
+    "archive_member_sha256": "fa599a29c84b72b6fe537158496eccb2c2e27ae04373f35b7b967f51f68f642e",
+    "source_file_sha256": {
+      "node1": "70e43ba75f03ed85cdffed8e7201cfe7ecdd863b843d7f4b31ff0f4334da91e6",
+      "node2": "0a24a8aea6178cb4aef7a31a0370743d016319e8975b584c597a2fe1860daed3",
+      "link1": "0c902036fd2b01143af588118df640d7e0556d2381a1ec88b72a0580ced288bc",
+      "link2": "43f79160347173a2f40473901e07c8f2fa02bece3ac807c9827c0d85c4342105"
+    },
+    "boundary_convention": "Remove reservoir throats, apply fixed pressures to adjacent physical pores; legacy exact convention unverified"
+  }
+]

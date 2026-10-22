@@ -1,0 +1,4 @@
+group,interventions,scans,mean_loss
+high_at_least_1pp,78,5,0.04442070510370534
+low_under_0.1pp,702,5,0.00010543293342498072
+moderate_0.1_to_1pp,117,5,0.0034485967315113163

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "tests_passed": 32,
+  "test_output_sha256": "136eaf379827183546eeb269e2fbce0ec1c7071e96bd92eaa37d1839904c6576",
+  "previous_protocol_and_selection_seal_unchanged": true,
+  "frozen_checkpoint_hashes_unchanged": true,
+  "posthoc_scope_disclosed": true,
+  "new_independent_test_scans": 0,
+  "trained_or_calibrated_models": 0,
+  "response_stratum_rows_independently_recomputed": 56,
+  "identical_conductance_assembly_checks": 16,
+  "maximum_independent_assembly_relative_difference": 2.1094237467877974e-14,
+  "original_network_comparisons_are_not_matched_voxel_flow_validation": true,
+  "unresolved": [
+    "SNOW/image full-reference mismatch",
+    "independent validation of topology association",
+    "GAT response calibration"
+  ],
+  "package_versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "openpnm": "3.6.0",
+    "networkx": "3.5",
+    "pandas": "2.3.3",
+    "torch": "2.10.0",
+    "matplotlib": "3.10.8"
+  }
+}

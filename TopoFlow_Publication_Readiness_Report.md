@@ -2,6 +2,20 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Comparative consolidation after review of 4c48050:** The new
+[diagnostic report](experiments/topoflow_diagnostics/REPORT.md) adds outcome-stratified
+response errors, four exploratory topology associations and sixteen matched-conductance
+assembly checks. On interventions causing at least one percentage point of loss,
+guided GAT MAE is 6.66 points versus 4.51 for no response. Overprediction therefore
+persists beyond the low-impact majority. Shortest-path tortuosity correlates with
+ranking advantage across these five already inspected scans (Spearman 0.60),
+but no validated regime or selector is established. Independent numerical assemblies
+agree to approximately 2e-14; original-network closure results still differ from
+published network values by 12.5% and 33.5%, so physical validation remains unresolved.
+The [consolidated manuscript](experiments/topoflow_diagnostics/MANUSCRIPT.md) includes
+all three authors and presents completed comparative findings. Unperformed validation
+is kept in a separate protocol, with no new architecture, calibration or switching rule fitted.
+
 **Latest completed review response:** [The sealed discovery study](experiments/topoflow_discovery/REPORT.md)
 tests five previously unused Imperial scan IDs (S2/S4/S6/S7/S8), ten fixed crops
 and twenty frozen checkpoints. All geometry-driven selections precede outcome

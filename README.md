@@ -1,5 +1,11 @@
 # TopoFlow GNN
 
+Latest consolidation: [comparative manuscript](experiments/topoflow_diagnostics/MANUSCRIPT.md)
+and [post-hoc diagnostic report](experiments/topoflow_diagnostics/REPORT.md).
+Impact-stratified errors confirm GAT amplitude overestimation; numerical
+assembly checks agree, while the physical-reference discrepancy remains.
+No new architecture or test-fitted switching rule is introduced.
+
 Latest research: [sealed solver-free throat discovery on five unused scans](experiments/topoflow_discovery/REPORT.md),
 with [verified manuscript text](experiments/topoflow_discovery/MANUSCRIPT_INSERT.md).
 GAT-selected throats produce 3.57% mean PNM loss versus 0.37% for random selection,

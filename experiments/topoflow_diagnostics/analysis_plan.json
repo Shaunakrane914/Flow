@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-22T17:31:58.740062+00:00",
+  "status": "posthoc_analysis_of_existing_test_set",
+  "prior_results": "4c48050; all five scan-level winner labels were known before this plan",
+  "debug_peek": "S2 crop 00 geometry/flow diagnostics and identical-g OpenPNM crosscheck exercised before this plan; no fitting",
+  "new_independent_validation": false,
+  "training_or_calibration_fitted": false,
+  "primary_association_features": [
+    "geodesic_tortuosity_lower_bound",
+    "axial_alignment_conductance_weighted",
+    "degree_cv",
+    "min_cut_per_eligible_throat"
+  ],
+  "candidate_hypothesis": "GAT minus affine top-throat loss increases with path tortuosity/degree heterogeneity and decreases with axial alignment/min-cut density",
+  "association_scope": "Four fixed candidate associations across five scan means; Spearman coefficients only, no fitted selector or causal claims",
+  "outcome_strata_fractional_loss": {
+    "low": "[0,0.001)",
+    "moderate": "[0.001,0.01)",
+    "high": "[0.01,1]",
+    "severe_subset": "[0.05,1]"
+  },
+  "selection_strata": "Top, low and random groups from frozen guided-GAT selections; all methods evaluated on the same groups",
+  "aggregation": "Mean inside graph, mean available graphs in scan, equal-weight available scans; missing groups explicitly counted",
+  "physics_audit": [
+    "identical-g independent OpenPNM assembly on ten existing SNOW crop networks",
+    "fixed one-factor diameter/length/boundary alternatives on those crop networks",
+    "original archive S1/S5 maximal-ball networks with fixed circular and shape-factor closures"
+  ],
+  "no_fit_to_published_reference": true,
+  "full_snow_reextraction": "Not scheduled: only 0.8 GiB available at setup, earlier full SNOW jobs peaked at 2.4 GB; use committed full-volume baselines and supplied original networks",
+  "source_hashes": {
+    "src/research_diagnostics.py": "6ae6f98a93ef431923a5125ea2ff4bcce1163eb7133502f34a1bb6510165ec8c",
+    "scripts/analyze_discovery_review.py": "c8550fee9eb847a08a04c201eabd2f709a4467e827cfeebd7785063e6164bd5d"
+  },
+  "previous_protocol_sha256": "c63dc9fd5b05abc8002c8a4222f1f348d01f6004a5e0a3b721b44ce7655d278b",
+  "previous_selection_seal_sha256": "2214cd5d877a98cd1aaf889bf77c29afe6c701a8765a5f7e052be64daf9f7c37",
+  "resume_source_hashes": {
+    "src/research_diagnostics.py": "f27547a8101d3e6130601dc0891faa552fe108ed2fda493fc6f85fe383d1121a",
+    "scripts/analyze_discovery_review.py": "5b5c031be0bb919cf81f290e0bdbeccea20fff7b6ea9d7509a133b1de27787b1"
+  },
+  "resume_reason": "OpenPNM 3.6.0 Valvatne-Blunt expects an Nx3 conduit-length array; replaced dictionary-valued namespace with that array. No scientific settings or fitted models changed."
+}

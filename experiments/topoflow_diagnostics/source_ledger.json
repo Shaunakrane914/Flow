@@ -1,0 +1,27 @@
+[
+  {
+    "path": "src/research_diagnostics.py",
+    "snapshot": "source_snapshot/src/research_diagnostics.py",
+    "sha256": "f27547a8101d3e6130601dc0891faa552fe108ed2fda493fc6f85fe383d1121a"
+  },
+  {
+    "path": "scripts/analyze_discovery_review.py",
+    "snapshot": "source_snapshot/scripts/analyze_discovery_review.py",
+    "sha256": "5b5c031be0bb919cf81f290e0bdbeccea20fff7b6ea9d7509a133b1de27787b1"
+  },
+  {
+    "path": "scripts/build_diagnostic_paper.py",
+    "snapshot": "source_snapshot/scripts/build_diagnostic_paper.py",
+    "sha256": "7e383326e6d34c7aa6e4375974c387bdec216e4572d6ed41b1a097d7912a5e26"
+  },
+  {
+    "path": "scripts/verify_research_diagnostics.py",
+    "snapshot": "source_snapshot/scripts/verify_research_diagnostics.py",
+    "sha256": "1c5efcc35ca80c3e778e42432ad4b8e0de2379a6e8bfc2e91810c6e89d50a188"
+  },
+  {
+    "path": "tests/test_research_diagnostics.py",
+    "snapshot": "source_snapshot/tests/test_research_diagnostics.py",
+    "sha256": "844d6f06a481a7ebe9daf9fe4cc7c546904701f6a1214ec63a2a219386653ff2"
+  }
+]

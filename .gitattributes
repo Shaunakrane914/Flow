@@ -6,3 +6,10 @@ experiments/topoflow_discovery/*_source_header.txt -whitespace
 experiments/topoflow_discovery/figures/*.svg -whitespace
 src/throat_discovery.py -text
 scripts/run_throat_discovery.py -text
+experiments/topoflow_diagnostics/** -text whitespace=cr-at-eol
+experiments/topoflow_diagnostics/figures/*.svg -whitespace
+src/research_diagnostics.py -text
+scripts/analyze_discovery_review.py -text
+scripts/build_diagnostic_paper.py -text
+scripts/verify_research_diagnostics.py -text
+tests/test_research_diagnostics.py -text

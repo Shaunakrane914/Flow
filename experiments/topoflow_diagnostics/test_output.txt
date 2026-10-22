@@ -1,0 +1,47 @@
+test_cv_comes_from_node_sizes_and_formation_holdout_is_enforced (test_experiments.DatasetTests.test_cv_comes_from_node_sizes_and_formation_holdout_is_enforced) ... ok
+test_identical_tensors_with_different_file_names_are_rejected (test_experiments.DatasetTests.test_identical_tensors_with_different_file_names_are_rejected) ... ok
+test_parent_leakage_is_rejected (test_experiments.DatasetTests.test_parent_leakage_is_rejected) ... ok
+test_full_run_and_test_labels_do_not_select_checkpoints (test_experiments.IntegrationTests.test_full_run_and_test_labels_do_not_select_checkpoints) ... gat seed=7 epoch=1 validation MSE=122.952
+sage seed=7 epoch=1 validation MSE=104.277
+uniform_gat seed=7 epoch=1 validation MSE=131.407
+pore_set seed=7 epoch=1 validation MSE=130.748
+Completed pilot run: C:\Users\SHAUNA~1\AppData\Local\Temp\tmpg393fb2c\first. No universal CV threshold has been estimated.
+gat seed=7 epoch=1 validation MSE=122.952
+sage seed=7 epoch=1 validation MSE=104.277
+uniform_gat seed=7 epoch=1 validation MSE=131.407
+pore_set seed=7 epoch=1 validation MSE=130.748
+ok
+test_bootstrap_counts_parents_not_seeds_or_crops (test_experiments.MetricsTests.test_bootstrap_counts_parents_not_seeds_or_crops) ... ok
+test_inverse_transform_removes_epsilon (test_experiments.MetricsTests.test_inverse_transform_removes_epsilon) ... ok
+test_loss_compares_pairs_and_rejects_mismatched_counts (test_experiments.MetricsTests.test_loss_compares_pairs_and_rejects_mismatched_counts) ... ok
+test_metric_spaces_and_constant_target_r2 (test_experiments.MetricsTests.test_metric_spaces_and_constant_target_r2) ... ok
+test_pore_set_control_ignores_edges (test_experiments.ModelTests.test_pore_set_control_ignores_edges) ... ok
+test_uniform_attention_does_not_depend_on_attention_parameters (test_experiments.ModelTests.test_uniform_attention_does_not_depend_on_attention_parameters) ... ok
+test_nonpercolating_network_does_not_get_a_fallback_label (test_experiments.PhysicsTests.test_nonpercolating_network_does_not_get_a_fallback_label) ... ok
+test_permeability_scales_with_length_squared (test_experiments.PhysicsTests.test_permeability_scales_with_length_squared) ... ok
+test_tube_matches_poiseuille_and_is_independent_of_pressure_viscosity (test_experiments.PhysicsTests.test_tube_matches_poiseuille_and_is_independent_of_pressure_viscosity) ... ok
+test_boundary_contraction_is_zero_boundary_resistance_limit (test_research_diagnostics.DiagnosticTests.test_boundary_contraction_is_zero_boundary_resistance_limit) ... ok
+test_openpnm_assembly_matches_independent_series_answer (test_research_diagnostics.DiagnosticTests.test_openpnm_assembly_matches_independent_series_answer) ... ok
+test_original_endpoint_lengths_follow_endpoint_reordering (test_research_diagnostics.DiagnosticTests.test_original_endpoint_lengths_follow_endpoint_reordering) ... ok
+test_shape_factor_closure_reduces_to_circular_uniform_tube (test_research_diagnostics.DiagnosticTests.test_shape_factor_closure_reduces_to_circular_uniform_tube) ... ok
+test_straight_uniform_path_has_unit_tortuosity_and_exact_affine_pressure (test_research_diagnostics.DiagnosticTests.test_straight_uniform_path_has_unit_tortuosity_and_exact_affine_pressure) ... ok
+test_strata_have_fixed_exclusive_thresholds (test_research_diagnostics.DiagnosticTests.test_strata_have_fixed_exclusive_thresholds) ... ok
+test_supplied_conductance_adapter_matches_series_formula (test_research_diagnostics.DiagnosticTests.test_supplied_conductance_adapter_matches_series_formula) ... ok
+test_outer_labels_and_features_cannot_affect_training_or_normalization (test_research_v2.ResearchEvaluationTests.test_outer_labels_and_features_cannot_affect_training_or_normalization) ... ok
+test_parent_balance_is_independent_of_crop_count (test_research_v2.ResearchEvaluationTests.test_parent_balance_is_independent_of_crop_count) ... ok
+test_physical_scaling_preserves_dimensionless_inputs_and_target (test_research_v2.ResearchEvaluationTests.test_physical_scaling_preserves_dimensionless_inputs_and_target) ... ok
+test_constant_rankings_have_reproducible_disjoint_controls (test_throat_discovery.DiscoveryTests.test_constant_rankings_have_reproducible_disjoint_controls) ... ok
+test_exact_update_matches_fresh_solves_for_all_edges_and_doses (test_throat_discovery.DiscoveryTests.test_exact_update_matches_fresh_solves_for_all_edges_and_doses) ... ok
+test_inputs_ignore_hydraulic_fields_and_exclude_disconnected_edges (test_throat_discovery.DiscoveryTests.test_inputs_ignore_hydraulic_fields_and_exclude_disconnected_edges) ... ok
+test_tampered_selection_is_rejected_before_outcome_solver (test_throat_discovery.DiscoveryTests.test_tampered_selection_is_rejected_before_outcome_solver) ... ok
+test_constriction_matches_series_resistance (test_throat_physics.ThroatPhysicsTests.test_constriction_matches_series_resistance) ... ok
+test_critical_models_use_geometry_only_and_batch_throat_indices_correctly (test_throat_physics.ThroatPhysicsTests.test_critical_models_use_geometry_only_and_batch_throat_indices_correctly) ... ok
+test_critical_readout_bounds_and_monotonicity (test_throat_physics.ThroatPhysicsTests.test_critical_readout_bounds_and_monotonicity) ... ok
+test_dissipation_is_exact_conductance_sensitivity (test_throat_physics.ThroatPhysicsTests.test_dissipation_is_exact_conductance_sensitivity) ... ok
+test_geometry_head_is_independent_of_physical_scaling_choice (test_throat_physics.ThroatPhysicsTests.test_geometry_head_is_independent_of_physical_scaling_choice) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 12.233s
+
+OK
+Completed pilot run: C:\Users\SHAUNA~1\AppData\Local\Temp\tmpg393fb2c\second. No universal CV threshold has been estimated.
