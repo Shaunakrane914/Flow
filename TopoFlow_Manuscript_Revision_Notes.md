@@ -2,6 +2,39 @@
 
 Revised 23 October 2026.
 
+The reviewer corrections are applied to the existing manuscript. The title now
+reads **Evaluating Physics Guided Graph Attention for Permeability Prediction
+and Critical Pore Throat Discovery**. Shaunak's confirmed email is
+`shaunak.rane@universalai.in`; all three author cells retain their alignment.
+Affiliations are omitted at the user's explicit request.
+
+The feature paragraph now distinguishes the raw ten-element vector from the
+transformed vector used by the GAT descriptor branch and physics ridge. The last
+feature is pore-radius CV, and the edge count includes both directions of each
+represented throat. ExtraTrees uses the raw descriptors. The two porosity
+transforms in the neural branch are deliberate, so replacing the entire paragraph
+with the raw vector alone would also misdescribe the experiment. See the
+[ordered descriptor definitions](docs/graph_descriptor_definitions.md).
+The relevant source files match their frozen follow-up hashes. The checkpoint
+sentence now says "20 checkpoints (four models × five seeds)."
+
+Microsoft Word rendered the revised file to six pages and every page image was
+inspected. All eleven native equations, four figure images, feature and result
+tables, and page-section properties match the preceding revision. Results prose
+is identical except for the checkpoint clarification. The latest comparison of
+69 text blocks (3,469 normalized tokens) against the six cached source papers
+found no exact eight-token match; this remains a bounded source comparison, not
+an AI detector or plagiarism clearance.
+
+The [official ICISEA 2026 homepage](https://conference.aiktc.ac.in/) and the
+[public Meteor About page](https://meteor.springer.com/project/dashboard.jsf?id=3188&tab=About)
+confirm MULTINOVA 2.0 and its AI-focused scope. Neither inspected page establishes
+the required manuscript template. The retained IEEE layout is therefore not
+claimed to satisfy the publisher's submission instructions; template compliance
+remains unresolved. No unrelated ICISEA event's template was substituted.
+
+The earlier editorial work is recorded below.
+
 The editorial follow-up applies the five accepted changes: a lattice-BGK source,
 rank-one-update provenance with a [derivation](docs/critical_throat_response_derivation.md),
 a precise Pore-GNN description, a concrete abstract ending and shorter closing
@@ -14,8 +47,8 @@ It edits the retained `TopoFlow_IEEE_V4_Cited_Equations.docx` manuscript; the so
 file remains unchanged. The permeability objective, SNOW2 extraction, GAT encoder,
 section sequence, aligned three-author table and two-column page geometry remain.
 
-The title now reads **Permeability Prediction in Micro CT Scans using Graph
-Attention Networks**. Removing “Millisecond” avoids presenting forward-only
+The preceding title was **Permeability Prediction in Micro CT Scans using Graph
+Attention Networks**. Removing “Millisecond” avoided presenting forward-only
 latency as the time for image extraction and prediction together.
 
 The abstract and methods identify ImagesICPSC2007 and the separate Estaillades
@@ -64,4 +97,4 @@ Source DOCX SHA-256:
 `0297f6ad073d2c5003d713b63f36a27d2bbb36e912f5fa2ba950f08485b4da9c`.
 
 Revised DOCX SHA-256:
-`27541b2bef816a024b0383e511167bf939eeb3598ab135a9700aad7d31b0c940`.
+`ffc14f19b96c50321a246a7de35f97f9962118b7489d74566b8b04dad14f4c04`.

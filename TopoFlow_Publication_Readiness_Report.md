@@ -2,6 +2,17 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Reviewer corrections completed, 23 October 2026:** The existing Word paper now
+uses the comparative title recommended in the review, distinguishes raw and
+transformed graph descriptors, correctly identifies pore-radius CV, clarifies the
+20 frozen checkpoints and uses Shaunak's confirmed `universalai.in` email.
+Affiliations are omitted as requested. Six pages were rendered and inspected;
+measured results, tables, figures and eleven native equations are preserved.
+The [descriptor definitions](docs/graph_descriptor_definitions.md) record the
+exact feature order. Required publisher-template compliance remains unresolved:
+the inspected [official conference site](https://conference.aiktc.ac.in/) and
+public Meteor About page identify the event but do not supply a template.
+
 **Editorial follow-up completed, 23 October 2026:** The
 [existing Word paper](TopoFlow_IEEE_V4_Cited_Revised.docx) now includes the two
 missing equation sources, an explanation of the rank-one response readout,

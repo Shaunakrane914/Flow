@@ -38,6 +38,11 @@ body = list(doc._element.body)
 assert len(body) == 165 and len(doc.inline_shapes) == 4, 'Source document changed'
 assert 'Millisecond' in Paragraph(body[0], doc._body).text
 original_author = E.tostring(body[1])
+assert original_author.count(b'universlai.in') == 1
+for node in body[1].iter(qn('w:t')):
+    if node.text:
+        node.text = node.text.replace('universlai.in', 'universalai.in')
+expected_author = original_author.replace(b'universlai.in', b'universalai.in')
 sections_before = [E.tostring(e) for e in doc._element.xpath('//w:sectPr')]
 changes = []
 
@@ -91,7 +96,7 @@ def heading(index, text):
     return p
 
 # Original section order and subject are retained. Numbers now follow that order.
-title = replace(0, 'Permeability Prediction in Micro CT Scans using Graph Attention Networks')
+title = replace(0, 'Evaluating Physics Guided Graph Attention for Permeability Prediction and Critical Pore Throat Discovery')
 if 'Title' not in doc.styles:
     doc.styles.add_style('Title', WD_STYLE_TYPE.PARAGRAPH)
 title.style = doc.styles['Title']
@@ -158,7 +163,7 @@ edits = {
 84: 'E. Working Steps',
 85: '1) Input and separation: The development set contains 24 natural crops from Berea (8), C1 (7), C2 (6) and Estaillades (3). Outer validation holds out one complete parent scan, with inner selection on the other three. No crop from an outer test parent is used for feature scaling, target scaling or model selection.',
 86: '2) Locked external test: After development selection, models are trained on all 24 development crops and tested on 32 crops, eight each from S1, S3, S5 and S9. Their voxel sizes are 8.683, 9.100, 3.997 and 3.398 μm. The primary GAT variant and its settings are fixed before inspecting these outcomes.',
-88: '3) Feature assignment: The ten bulk graph descriptors comprise two porosity transforms, pore log-diameter spread, normalized log-volume mean and spread, log pore and throat counts, and mean, standard deviation and coefficient of variation of degree. Ablations independently enable normalization and this descriptor branch.',
+88: '3) Feature assignment: The ten raw descriptors are porosity; the mean and population standard deviation of log₁₀ diameter and log₁₀ volume; log₁₀ pore and directed-edge counts; mean and population standard deviation of degree; and pore-radius CV. Each physical throat contributes two directed edges. GAT and physics ridge replace porosity by log₁₀Φ and log₁₀(1−Φ), omit mean log diameter, and subtract 3 log₁₀d₀ from mean log volume, retaining ten inputs. ExtraTrees uses the raw vector. Ablations separately enable node/target scale normalization and this descriptor branch.',
 90: '4) Training: The neural benchmark uses seeds 11, 22, 33, 44 and 55. The locked primary GAT uses learning rate 0.003, dropout 0.1, weight decay 0.001 and 14 epochs selected on development scans. GAT and GraphSAGE receive matching data and selection procedures. The graph-wise loss pairs one scalar target with one prediction per graph.',
 92: '5) Restriction extension: A separate edge-aware model trains on eight development crops, two per parent. Seven node features add normalized coordinates and inlet/outlet flags; six edge features encode normalized diameter, length, a d⁴/L proxy and absolute direction components. Three 32-channel GAT layers feed a symmetric 70→32→2 edge head. A global softmax predicts importance s, and a sigmoid gives leverage ℓ bounded by 1−s. For diameter reduction q, the conductance multiplier is r=(1−q)⁴. Changing one conductance gives a rank-one update of the linear network equations. The Sherman–Morrison identity [17] yields the loss expression below when s and ℓ are the exact dissipation fraction and edge leverage. The GAT substitutes learned estimates; their accuracy determines response calibration. A derivation accompanies the source implementation:',
 94: 'A. Permeability Prediction',
@@ -171,7 +176,7 @@ edits = {
 103: 'Fig. 3. Measured component costs in the development benchmark. Extraction is measured on four crops and neural forwarding on 24; file loading and model loading are excluded.',
 104: 'TABLE III. Locked external permeability results on 32 crops',
 105: 'C. Critical Throat Evaluation',
-106: 'Partial throat narrowing leaves the original node-only GAT inputs unchanged, so that model returns exactly the same permeability. The edge-aware extension addresses this representation limitation. Guided GAT, guided mean GNN and guided edge MLP share importance supervision with weight 0.05; an unguided GAT is retained as a control. AdamW uses learning rate 0.003, weight decay 0.0001 and batch size two. Development-parent validation selects 15, 12, 22 and seven epochs, respectively; twenty five-seed checkpoints are frozen before the new scans are extracted.',
+106: 'Partial throat narrowing leaves the original node-only GAT inputs unchanged, so that model returns exactly the same permeability. The edge-aware extension addresses this representation limitation. Guided GAT, guided mean GNN and guided edge MLP share importance supervision with weight 0.05; an unguided GAT is retained as a control. AdamW uses learning rate 0.003, weight decay 0.0001 and batch size two. Development-parent validation selects 15, 12, 22 and seven epochs, respectively; 20 checkpoints (four models × five seeds) are frozen before the new scans are extracted.',
 107: 'The test uses S2, S4, S6, S7 and S8, with two opposite-corner 128³ crops per scan and voxel sizes 4.956, 8.960, 5.100, 4.803 and 4.892 μm. Eligible throats join physical pores in a topology-spanning component. Each method selects its own three highest and lowest scores plus three shared random throats. Selections are saved and hashed before hydraulic outcomes are calculated. Each throat is restricted individually at 10%, 25% and 50%; the experiment is not simultaneous multi-throat clogging.',
 109: 'Fig. 4. Actual loss from individual 50% restrictions of top-selected throats. Bars show scan-balanced means; dots show the five scan means. PNM sensitivity requires a solved flow.',
 110: 'Averaging first within crop and then equally across scans, guided-GAT top selections cause 3.57% mean permeability loss, versus 0.37% for random, 4.08% for affine pressure, 2.61% for guided MLP and 1.85% for guided mean GNN. GAT versus affine pressure gives exact paired sign-flip p=0.625. With five scan groups the minimum two-sided p-value is 0.0625; seed counts and intervention counts do not increase the number of independent groups.',
@@ -539,7 +544,7 @@ doc.core_properties.title=title.text
 doc.core_properties.author='Shaunak Rane; Tanisha Somai; Hemant Maddu'
 doc.core_properties.subject='Source-separated evaluation of TopoFlow permeability prediction'
 doc.core_properties.comments='Existing manuscript revised using completed, committed experiments.'
-assert E.tostring(body[1])==original_author, 'Author block was modified'
+assert E.tostring(body[1])==expected_author, 'Unexpected author-block change'
 assert [E.tostring(e) for e in doc._element.xpath('//w:sectPr')]==sections_before, 'Page sections changed'
 assert len(doc._element.xpath('//m:oMathPara'))==11
 assert len(doc.inline_shapes)==4
@@ -560,7 +565,8 @@ with ZipFile(OUTPUT) as z: assert z.testzip() is None
 proof={
     'source':SOURCE.name,'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
     'output':OUTPUT.name,'output_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),
-    'changed_paragraphs':len(changes),'preserved_author_block':True,
+    'changed_paragraphs':len(changes),'preserved_author_layout':True,
+    'author_email_correction':'shaunak.rane@universalai.in',
     'preserved_section_properties':True,'native_display_equations':11,'figures':4,
     'closing_balancing_section':True,'reference_citation_map':citation_map,
     'evidence_directories':['experiments/topoflow_research_v2','experiments/topoflow_followup','experiments/topoflow_discovery','experiments/topoflow_diagnostics']
