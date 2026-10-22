@@ -31,7 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / '.paper_revision/current'
 WORK.mkdir(parents=True, exist_ok=True)
 SOURCE = ROOT / 'TopoFlow_IEEE_V4_Cited_Equations.docx'
-OUTPUT = ROOT / 'TopoFlow_IEEE_V4_Cited_Revised.docx'
+OUTPUT = ROOT / 'TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx'
 doc = Document(SOURCE)
 assert hashlib.sha256(SOURCE.read_bytes()).hexdigest() == '0297f6ad073d2c5003d713b63f36a27d2bbb36e912f5fa2ba950f08485b4da9c'
 body = list(doc._element.body)
@@ -42,7 +42,29 @@ assert original_author.count(b'universlai.in') == 1
 for node in body[1].iter(qn('w:t')):
     if node.text:
         node.text = node.text.replace('universlai.in', 'universalai.in')
-expected_author = original_author.replace(b'universlai.in', b'universalai.in')
+# Retain the full-width author table, extending it to four equal columns.
+author_table = doc.tables[0]
+author_row = author_table._tbl.find(qn('w:tr'))
+fourth_cell = deepcopy(author_row.findall(qn('w:tc'))[-1])
+fourth_text = list(fourth_cell.iter(qn('w:t')))
+assert len(fourth_text) == 2
+fourth_text[0].text = 'Shivaji D. Pawar'
+fourth_text[1].text = 'shivaji.pawar@universalai.in'
+author_row.append(fourth_cell)
+grid = author_table._tbl.find(qn('w:tblGrid'))
+grid_template = deepcopy(grid[0])
+for column in list(grid):
+    grid.remove(column)
+for _ in range(4):
+    column = deepcopy(grid_template)
+    column.set(qn('w:w'), '2530')
+    grid.append(column)
+for cell in author_row.findall(qn('w:tc')):
+    cell.find(qn('w:tcPr')).find(qn('w:tcW')).set(qn('w:w'), '2530')
+    for run in cell.iter(qn('w:r')):
+        if '@' in ''.join(t.text or '' for t in run.iter(qn('w:t'))):
+            run.find(qn('w:rPr')).find(qn('w:sz')).set(qn('w:val'), '18')
+expected_author = E.tostring(body[1])
 sections_before = [E.tostring(e) for e in doc._element.xpath('//w:sectPr')]
 changes = []
 
@@ -132,7 +154,7 @@ edits = {
 25: 'B. Lattice Boltzmann Simulation: LBM advances discrete particle distributions on a lattice and can resolve voxel-scale flow. No LBM labels are generated in the present experiments. For background, we use the lattice-BGK formulation of Qian et al. [16].',
 26: 'Its single-relaxation-time update is',
 28: 'Here fᵢ is the particle distribution for lattice direction i, cᵢ is its discrete velocity, Δt is the time step, fᵢᵉᵠ is the equilibrium distribution and τ is the relaxation time. This background equation is distinct from the hydraulic PNM used for our targets.',
-29: 'C. Image Based Machine Learning: Wu, Yin and Xiao predict permeability with CNNs [6]. Image models establish that geometry can support regression, but comparisons across architectures require matching data, labels and timing boundaries. We do not report a CNN runtime or memory comparison because no matched CNN experiment was performed.',
+29: 'C. Image Based Machine Learning: Wu, Yin and Xiao predict permeability with CNNs [6]. In mammographic image analysis, Savalkar et al. combine local CNN features with transformer context and density-focused attention [18]. That attention operates on image features, whereas TopoFlow weights neighboring pores in an extracted network. Comparisons across architectures require matching data, labels and timing boundaries. We do not report a CNN runtime or memory comparison because no matched CNN experiment was performed.',
 30: 'D. Graph Neural Networks: Pore-GNN combines CNN-derived image features with graph models for permeability prediction [7]. These feature graphs differ from physical pore–throat networks. RTG-GNN incorporates pore and throat information with gating and attention [8]. I’Anson et al. evaluate graph permeability prediction against LBM labels and include extraction cost in their assessment [9]. Graph-based permeability prediction therefore has several established representations and training approaches.',
 31: 'Zhao and Xiao embed learned conductances in a differentiable PNM [10]. Building on established graph-based permeability prediction, our comparison focuses on source-scan transfer, the separate effects of scale and descriptors, and geometry-only selection of influential throats under a fixed hydraulic closure.',
 43: 'TABLE I. Scope of permeability estimation approaches',
@@ -443,7 +465,8 @@ references = [
 '[14] OpenPNM, “Valvatne–Blunt hydraulic conductance,” official implementation documentation, installed version 3.6.0. Available: https://openpnm.org/_modules/openpnm/models/physics/hydraulic_conductance/_funcs.html#valvatne_blunt. Accessed Oct. 22, 2026.',
 '[15] W. L. Hamilton, R. Ying and J. Leskovec, “Inductive representation learning on large graphs,” Advances in Neural Information Processing Systems, vol. 30, 2017, arXiv:1706.02216.',
 '[16] Y. H. Qian, D. d’Humières and P. Lallemand, “Lattice BGK models for Navier–Stokes equation,” Europhysics Letters, vol. 17, no. 6, pp. 479–484, 1992, doi: 10.1209/0295-5075/17/6/001.',
-'[17] J. Sherman and W. J. Morrison, “Adjustment of an inverse matrix corresponding to a change in one element of a given matrix,” The Annals of Mathematical Statistics, vol. 21, no. 1, pp. 124–127, 1950, doi: 10.1214/aoms/1177729893.'
+'[17] J. Sherman and W. J. Morrison, “Adjustment of an inverse matrix corresponding to a change in one element of a given matrix,” The Annals of Mathematical Statistics, vol. 21, no. 1, pp. 124–127, 1950, doi: 10.1214/aoms/1177729893.',
+'[18] V. A. Savalkar, G. S. Saini and S. D. Pawar, “Density-Aware Explainable Hybrid CNN–Transformer Framework for Automated BI-RADS Breast Density Classification in Mammographic Images,” Journal of Intelligent Decision Making and Information Science, vol. 3, no. 1s, pp. 1003–1027, 2026, doi: 10.59543/jidmis.v3.480.'
 ]
 for idx,text in enumerate(references,125):
     p=replace(idx,text)
@@ -541,7 +564,7 @@ for old in citation_order:
     element=body[124+old]
     element.getparent().remove(element);last.addnext(element);last=element
 doc.core_properties.title=title.text
-doc.core_properties.author='Shaunak Rane; Tanisha Somai; Hemant Maddu'
+doc.core_properties.author='Shaunak Rane; Tanisha Somai; Hemant Maddu; Shivaji D. Pawar'
 doc.core_properties.subject='Source-separated evaluation of TopoFlow permeability prediction'
 doc.core_properties.comments='Existing manuscript revised using completed, committed experiments.'
 assert E.tostring(body[1])==expected_author, 'Unexpected author-block change'
@@ -565,8 +588,9 @@ with ZipFile(OUTPUT) as z: assert z.testzip() is None
 proof={
     'source':SOURCE.name,'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
     'output':OUTPUT.name,'output_sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),
-    'changed_paragraphs':len(changes),'preserved_author_layout':True,
+    'changed_paragraphs':len(changes),'author_layout':'four equal-width centered columns',
     'author_email_correction':'shaunak.rane@universalai.in',
+    'fourth_author':{'name':'Shivaji D. Pawar','email':'shivaji.pawar@universalai.in'},
     'preserved_section_properties':True,'native_display_equations':11,'figures':4,
     'closing_balancing_section':True,'reference_citation_map':citation_map,
     'evidence_directories':['experiments/topoflow_research_v2','experiments/topoflow_followup','experiments/topoflow_discovery','experiments/topoflow_diagnostics']

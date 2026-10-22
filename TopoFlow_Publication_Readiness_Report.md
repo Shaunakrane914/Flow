@@ -2,6 +2,16 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Author and citation update, 23 October 2026:** The
+[renamed manuscript](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx)
+now lists Shivaji D. Pawar fourth, with `shivaji.pawar@universalai.in` supplied by
+the user. Four centered author columns fit on the existing title page. One
+verified CNN–Transformer reference is added with its correct pages, 1003–1027;
+all eighteen references are numbered by first appearance. The
+[citation selection review](docs/pawar_citation_review.md) explains the scope.
+All six pages were inspected. Results, tables, equations and figure images are
+preserved; template compliance remains unresolved as described below.
+
 **Reviewer corrections completed, 23 October 2026:** The existing Word paper now
 uses the comparative title recommended in the review, distinguishes raw and
 transformed graph descriptors, correctly identifies pore-radius CV, clarifies the
@@ -14,7 +24,7 @@ the inspected [official conference site](https://conference.aiktc.ac.in/) and
 public Meteor About page identify the event but do not supply a template.
 
 **Editorial follow-up completed, 23 October 2026:** The
-[existing Word paper](TopoFlow_IEEE_V4_Cited_Revised.docx) now includes the two
+[existing Word paper](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx) now includes the two
 missing equation sources, an explanation of the rank-one response readout,
 a corrected Pore-GNN description and a more concrete abstract conclusion.
 Future Scope and Conclusion are shorter. The results, figures, native equations,
@@ -35,9 +45,9 @@ and restriction readout, plus a distinction needed between Pore-GNN's CNN featur
 graphs and physical pore networks. The manuscript was not edited in this audit.
 Those three findings were addressed in the later editorial follow-up above.
 
-**Current Word paper:** [TopoFlow IEEE revised manuscript](TopoFlow_IEEE_V4_Cited_Revised.docx)
+**Current Word paper:** [TopoFlow IEEE revised manuscript](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx)
 updates the existing paper while preserving its SNOW2–GAT permeability objective,
-section sequence, three-author block and two-column layout. The six-page revision
+section sequence, author order and two-column layout. The six-page revision
 incorporates the completed source-separated benchmark, controlled ablations,
 locked external test and frozen critical-throat experiment. Native Word equations,
 measured figures and corrected references replace the unsupported claims.

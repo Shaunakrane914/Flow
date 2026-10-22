@@ -2,10 +2,30 @@
 
 Revised 23 October 2026.
 
-The reviewer corrections are applied to the existing manuscript. The title now
+The latest update adds Shivaji D. Pawar as fourth author with the user-supplied
+email `shivaji.pawar@universalai.in`. Four equal-width author columns preserve the
+original order and centered alignment. Affiliations remain omitted as requested.
+The user's renamed file is retained as
+[TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx).
+
+One verified paper is added to the image-learning paragraph, comparing attention
+over image features with attention over graph neighbors. Its pages are corrected
+to 1003–1027 from the publisher PDF and Crossref record. It becomes reference [7]
+in first-citation order; the bibliography now has eighteen references.
+The [citation selection review](docs/pawar_citation_review.md) records why the
+other supplied publications were not added. No author-contribution statement or
+new experimental claim was introduced.
+
+All six rendered pages were inspected. Result tables, eleven native equations,
+four figure images and section properties match the preceding draft. Results
+prose differs only in citation numbering. The same six cached source papers were
+compared with 69 current text blocks (3,494 normalized tokens), with no exact
+eight-token match. This is not a Turnitin or AI-detector result.
+
+The preceding reviewer corrections were applied to the existing manuscript. The title
 reads **Evaluating Physics Guided Graph Attention for Permeability Prediction
 and Critical Pore Throat Discovery**. Shaunak's confirmed email is
-`shaunak.rane@universalai.in`; all three author cells retain their alignment.
+`shaunak.rane@universalai.in`; the preceding three-author layout retained its alignment.
 Affiliations are omitted at the user's explicit request.
 
 The feature paragraph now distinguishes the raw ten-element vector from the
@@ -42,7 +62,7 @@ sections. The Results text and quantitative tables are unchanged except for
 reference renumbering. The author table, eleven equations, four figures and page
 sections match the preceding Word version. All six final pages were inspected.
 
-The current paper is [TopoFlow_IEEE_V4_Cited_Revised.docx](TopoFlow_IEEE_V4_Cited_Revised.docx).
+The current paper is [TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx).
 It edits the retained `TopoFlow_IEEE_V4_Cited_Equations.docx` manuscript; the source
 file remains unchanged. The permeability objective, SNOW2 extraction, GAT encoder,
 section sequence, aligned three-author table and two-column page geometry remain.
@@ -97,4 +117,4 @@ Source DOCX SHA-256:
 `0297f6ad073d2c5003d713b63f36a27d2bbb36e912f5fa2ba950f08485b4da9c`.
 
 Revised DOCX SHA-256:
-`ffc14f19b96c50321a246a7de35f97f9962118b7489d74566b8b04dad14f4c04`.
+`d9b7f24f5f74370cf1491e4172ec5a9e750cba27643fb9a6c4b1002c4ce281cf`.

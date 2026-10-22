@@ -1,35 +1,41 @@
 # TopoFlow originality and attribution review
 
-**Reviewer corrections, 23 October 2026:** The title, graph-descriptor paragraph,
+**Author and citation update, 23 October 2026:** Shivaji D. Pawar is the fourth
+author, using the email supplied by the user. The renamed manuscript has eighteen
+references. One verified CNN–Transformer paper is discussed as an image-attention
+comparison; its correct pages are 1003–1027. The
+[selection review](docs/pawar_citation_review.md) documents verification and the
+reasons the other four supplied references were omitted.
+
+**Earlier reviewer corrections, 23 October 2026:** The title, graph-descriptor paragraph,
 checkpoint wording and confirmed author email are updated. Affiliations were
-omitted as requested. The paper remains six pages with seventeen references.
+omitted as requested. That draft had six pages with seventeen references.
 The transformed neural vector retains both porosity transforms and ends with
 pore-radius CV; the raw vector is now separately identified.
 
 **Editorial follow-up, 23 October 2026:** The five accepted edits are applied to
-the current Word file. Lattice-BGK and Sherman–Morrison references are added,
+the preceding Word file. Lattice-BGK and Sherman–Morrison references were added,
 the restriction readout's origin is explained, Pore-GNN's CNN feature graphs are
 distinguished from physical pore networks, the abstract gives a concrete finding,
 and repeated future-scope and conclusion wording is shortened. The
 [response derivation](docs/critical_throat_response_derivation.md) accompanies
-the implementation. The paper remains six pages with seventeen references.
+the implementation. That draft had six pages with seventeen references.
 
-The revised 69 text blocks (3,469 normalized tokens) were rechecked against the
+The current 69 text blocks (3,494 normalized tokens) were rechecked against the
 same six cached source papers; no exact eight-token match was found. This is
 still a limited source comparison, not an AI detector or Turnitin result.
 Result tables, figures, eleven native equations and page sections are unchanged
-from the preceding revision. The Results prose changes only the checkpoint
-clarification; the author table changes only Shaunak's email. All six rendered
-pages were inspected.
+from the preceding revision. Results prose changes only citation numbering; the
+author table now has four centered columns. All six rendered pages were inspected.
 
 Current manuscript SHA-256:
-`ffc14f19b96c50321a246a7de35f97f9962118b7489d74566b8b04dad14f4c04`.
+`d9b7f24f5f74370cf1491e4172ec5a9e750cba27643fb9a6c4b1002c4ce281cf`.
 
 The original audit below records the **pre-edit** version and its paragraph IDs.
 Its two equation-attribution gaps and Pore-GNN description issue are now addressed.
 
 Reviewed 23 October 2026 against
-[TopoFlow_IEEE_V4_Cited_Revised.docx](TopoFlow_IEEE_V4_Cited_Revised.docx).
+[TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx).
 
 No exact eight-word match was found between the manuscript's checked text and
 the six downloaded source papers. This is a limited textual-overlap finding,

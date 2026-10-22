@@ -157,7 +157,7 @@ Browser (SPA)
 
 See [`results/`](results/) for benchmark charts and per-dataset summaries.
 
-The retained [Word manuscript](TopoFlow_IEEE_V4_Cited_Revised.docx) reports the
+The retained [Word manuscript](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx) reports the
 completed comparisons. The [single-throat response derivation](docs/critical_throat_response_derivation.md)
 explains the existing rank-one readout and its assumptions.
 
