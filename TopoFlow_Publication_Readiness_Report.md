@@ -2,6 +2,15 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Current Word paper:** [TopoFlow IEEE revised manuscript](TopoFlow_IEEE_V4_Cited_Revised.docx)
+updates the existing paper while preserving its SNOW2–GAT permeability objective,
+section sequence, three-author block and two-column layout. The six-page revision
+incorporates the completed source-separated benchmark, controlled ablations,
+locked external test and frozen critical-throat experiment. Native Word equations,
+measured figures and corrected references replace the unsupported claims.
+[Revision notes and evidence](TopoFlow_Manuscript_Revision_Notes.md) identify the
+changes and verification. The original Word files are retained.
+
 **Comparative consolidation after review of 4c48050:** The new
 [diagnostic report](experiments/topoflow_diagnostics/REPORT.md) adds outcome-stratified
 response errors, four exploratory topology associations and sixteen matched-conductance
