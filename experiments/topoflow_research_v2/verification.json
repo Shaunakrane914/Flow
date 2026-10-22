@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "natural_crops": 24,
+  "natural_parents": 4,
+  "inner_evaluations": 240,
+  "prediction_rows": 1440,
+  "final_neural_checkpoints": 100,
+  "source_snapshots_match": true,
+  "outer_parent_exclusion_verified": true,
+  "sklearn_rmse_and_r2_recalculation_matches": true,
+  "unit_and_integration_tests_passed": 16,
+  "resource_raw_repeats_verified": 3600,
+  "fresh_extraction_labels_matching": 4
+}

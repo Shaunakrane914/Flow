@@ -1,0 +1,571 @@
+{
+  "verified_natural_crops": 24,
+  "natural_parents": 4,
+  "sources": [
+    {
+      "parent_id": "parent_berea",
+      "archive": "data\\public\\Berea.7z",
+      "archive_sha256": "3b9cb38acb4dce3c5a693a5adc9b0c08c680aa5935058e37a87da96d55f5eb16",
+      "source_shape_zyx": [
+        400,
+        400,
+        400
+      ],
+      "voxel_size_m": 5.345e-06,
+      "phase_rule": "original 0 is pore; saved binary 1 is pore",
+      "physical_validation": "Phase convention inherited from source preparation; no DNS validation"
+    },
+    {
+      "parent_id": "parent_c1",
+      "archive": "data\\public\\C1.7z",
+      "archive_sha256": "3cf07c485acf464dcf876f80b4c60c38c3a67284c9cf942fa0aedc1ed54104b8",
+      "source_shape_zyx": [
+        400,
+        400,
+        400
+      ],
+      "voxel_size_m": 2.85e-06,
+      "phase_rule": "original 0 is pore; saved binary 1 is pore",
+      "physical_validation": "Phase convention inherited from source preparation; no DNS validation"
+    },
+    {
+      "parent_id": "parent_c2",
+      "archive": "data\\public\\C2.7z",
+      "archive_sha256": "cb156d6ea9028d2074bbdfdc0b5c17f69747a9e6a0b60f359c2db40a5eb4e485",
+      "source_shape_zyx": [
+        400,
+        400,
+        400
+      ],
+      "voxel_size_m": 5.345e-06,
+      "phase_rule": "original 0 is pore; saved binary 1 is pore",
+      "physical_validation": "Phase convention inherited from source preparation; no DNS validation"
+    },
+    {
+      "parent_id": "parent_estaillades",
+      "archive": "data\\public\\estaillades\\Estaillades_1000c_3p31136um.zip",
+      "archive_sha256": "944f5fe015d573fb2f7b02ef94dd10717dcc9dc1c5b2e0381e12ff9028ba82a7",
+      "source_shape_zyx": [
+        1000,
+        1000,
+        1000
+      ],
+      "voxel_size_m": 3.31136e-06,
+      "phase_rule": "original 0 is pore; saved binary 1 is pore",
+      "physical_validation": "Phase convention inherited from source preparation; no DNS validation"
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "parent_berea_crop_00",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        0,
+        0,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.20691537857055664,
+      "porosity_in_manifest": 0.2069,
+      "chunk_sha256": "7d5a1feef6aecf574ec6a7bcc578429963186a7b6174ede8e9f90504c7dcd644",
+      "graph_sha256": "1d6722cbe9409ece8bb9fe48bcbd1cb5da393f3babd42dd33ae024559ba15077",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_01",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        0,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.22607946395874023,
+      "porosity_in_manifest": 0.2261,
+      "chunk_sha256": "f7a185c12c85989a8346b390778077eedd2d87c4eaefb06b1b6a9f6fc52b43f0",
+      "graph_sha256": "cfebd9a402708512cba0559cf3f08f45a8994a96893401f92b9141a22c5cfb1b",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_02",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        0,
+        272,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.19258594512939453,
+      "porosity_in_manifest": 0.1926,
+      "chunk_sha256": "169d1f54bd0ae9c217bb9efdc546318879f7c3f740691f82634e99412f7f487d",
+      "graph_sha256": "8ba42fea9045625d8c18e87a5655f0ebd7f36a7f6ba4390bf9eb06260e145434",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_03",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        0,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.18808269500732422,
+      "porosity_in_manifest": 0.1881,
+      "chunk_sha256": "f5fef3df5e36939544d32f00a23ac5367ccf812029643653a18ca5374eb18027",
+      "graph_sha256": "831fe2996c55a3ecfea936b14f090af378fb02a847e27c28f7504ce1a3d5fbae",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_04",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        272,
+        0,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.1871633529663086,
+      "porosity_in_manifest": 0.1872,
+      "chunk_sha256": "4081e9028e51a8fd61f9cf03d540a1a1c6839bcf64f5e6c78899971c26e3572b",
+      "graph_sha256": "4d1ce48296f0803645d8fbedd79f62a6055c7069826704332163f01331c9f259",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_05",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        272,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.15549755096435547,
+      "porosity_in_manifest": 0.1555,
+      "chunk_sha256": "eab9c448b65377fcccd33935993073cec6447e3efaca68be5637ddd8fe662b9b",
+      "graph_sha256": "1a18aca084d837a574d1af4e60e56242cd0274d089ee3167519c179cc7838f09",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_06",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        272,
+        272,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.20687532424926758,
+      "porosity_in_manifest": 0.2069,
+      "chunk_sha256": "6c99c2305408dc2056d3762e7657256560854d96ee4e7182dee776bb62b744a3",
+      "graph_sha256": "6edb959a5569062e05da3d9e0ee490adbdc8a167a12d951151b4ed134c977a70",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_berea_crop_07",
+      "parent_id": "parent_berea",
+      "origin_zyx": [
+        272,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.19804620742797852,
+      "porosity_in_manifest": 0.198,
+      "chunk_sha256": "500cbc3a77b19328e3850074a320c43afa1050e3431b215d008cbd44372ce392",
+      "graph_sha256": "8f928d6d127d02a6bf892db3de7981825ca711e857e69aedc31b14aae50ab826",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_00",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        0,
+        0,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.15308570861816406,
+      "porosity_in_manifest": 0.1531,
+      "chunk_sha256": "9a1695d17f80b48129b4b62f17bacedae819823b4e6bde9f503e06248c7fb1d2",
+      "graph_sha256": "f85b99703dc566f67e91899d52147d94e892ac82d9cfed8977ef140fa69639dd",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_01",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        0,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.3091459274291992,
+      "porosity_in_manifest": 0.3091,
+      "chunk_sha256": "010c66d60b28408ead7c1c72f1ef9566c16a94c6130ab81ed582f5b3ebe6c3a9",
+      "graph_sha256": "a8a3c6f2ab13d282ab9a6f1627588f27c1c574d731348bead717049f3866460b",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_02",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        0,
+        272,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.12037134170532227,
+      "porosity_in_manifest": 0.1204,
+      "chunk_sha256": "38bed71b8b11c9931ffd10fe341ae91f1f682fcd51182907d3632ee6135978d6",
+      "graph_sha256": "6b00e7275b0573ee7170b72417d119071ec6bad1ce94de0a71533dca541d95e4",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_03",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        0,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.18515682220458984,
+      "porosity_in_manifest": 0.1852,
+      "chunk_sha256": "894d8c173fd30f4b4c7fec8d0d85a3df563bee6db8544350705dba880c3439b2",
+      "graph_sha256": "75244eaf95c91743138ba4c754195600a4ceb06ec02dca3eaf267f74f00a49cc",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_04",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        272,
+        0,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.2618093490600586,
+      "porosity_in_manifest": 0.2618,
+      "chunk_sha256": "e22bc50f8ba57ac939a3cb61bcc4eeea99146ff875bb443e5dfab530e547960f",
+      "graph_sha256": "f5496a72c8e0ded08f789c6c912246fdc9f36c187379026a85ac8bb25ecdf6f4",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_05",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        272,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.19199180603027344,
+      "porosity_in_manifest": 0.192,
+      "chunk_sha256": "b5dd4f57fc97414f71a6089592fec8b8a8c951ea062f615f04d8453665c3bc40",
+      "graph_sha256": "bc020b810b18935a3711172f0896d171c946f0acc7b3f8acd0c7cb520b4d8935",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c1_crop_07",
+      "parent_id": "parent_c1",
+      "origin_zyx": [
+        272,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 2.85e-06,
+      "porosity_from_binary": 0.2522602081298828,
+      "porosity_in_manifest": 0.2523,
+      "chunk_sha256": "7cd21ae6d556bb3f77c921e770725718d5943ded3d4f334029535e8f34cd5fa5",
+      "graph_sha256": "447344d66cf5193b75469eb5db6401cfb66c1d031dc67d7d2e4acd6943c7b11e",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_01",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        0,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.1441655158996582,
+      "porosity_in_manifest": 0.1442,
+      "chunk_sha256": "b7ed93267b353ae5be27d4478b0a82708737e881c606f72d4a39b8d0b2734cff",
+      "graph_sha256": "308b3da26fd56e8f089cdafaaddac4c3bc3a41c1a96a46615652e5dafececd3a",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_03",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        0,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.08916616439819336,
+      "porosity_in_manifest": 0.0892,
+      "chunk_sha256": "cfd2baff6f51e6a9e1f07ba2a410835057e3ca39191907bc99ac775da1979bbb",
+      "graph_sha256": "045faa593b468e15adb31184756cded84766d389644a6382360d6b37a554d4cb",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_04",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        272,
+        0,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.24210453033447266,
+      "porosity_in_manifest": 0.2421,
+      "chunk_sha256": "d1cb09ba1b02fe291a8928c894c8bc699508cf01c4a89377df0213d44986ab25",
+      "graph_sha256": "a52f6b79e332f6aaabba39e77bbf1258214d1a0a311aa5641470464e6dc7993e",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_05",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        272,
+        0,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.09481477737426758,
+      "porosity_in_manifest": 0.0948,
+      "chunk_sha256": "b3c199b16e4e06876a4bdf6dffbfcf687be89f800e62746f333e83269984ebbb",
+      "graph_sha256": "fcf6d9a6f44dd1a7132eb09746f597ffd36968983508fea596de9d6545d3c5eb",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_06",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        272,
+        272,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.26853513717651367,
+      "porosity_in_manifest": 0.2685,
+      "chunk_sha256": "264112450ab2ec0bc780c7bb65330be95b7357f2121e968d2affa72b35c2d816",
+      "graph_sha256": "1a1c5dc96a21d1068ca4bf8e425335b246b597b1dbd0feacec2ce4376244a620",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_c2_crop_07",
+      "parent_id": "parent_c2",
+      "origin_zyx": [
+        272,
+        272,
+        272
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 5.345e-06,
+      "porosity_from_binary": 0.4415402412414551,
+      "porosity_in_manifest": 0.4415,
+      "chunk_sha256": "e85b9edb5ac835a35bb37dcd3e9855140defba4313f8d59d3d8535aff6187a97",
+      "graph_sha256": "1094d13afb87cf0411e17e3d3e43f4d4f87dd0513e3a35f094d2d46ef2f1ff3e",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_estaillades_crop_01",
+      "parent_id": "parent_estaillades",
+      "origin_zyx": [
+        0,
+        256,
+        0
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 3.31136e-06,
+      "porosity_from_binary": 0.14142560958862305,
+      "porosity_in_manifest": 0.1414,
+      "chunk_sha256": "fc1136b3daf11e7d8e48e7d5b7b2ec5c59690bff0162425e452f0f2667e697ca",
+      "graph_sha256": "45eae90cf3ee958cc6b5cb0ee6979f060c98fc21dac835a1c84f418b184bf124",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_estaillades_crop_02",
+      "parent_id": "parent_estaillades",
+      "origin_zyx": [
+        0,
+        0,
+        256
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 3.31136e-06,
+      "porosity_from_binary": 0.21802711486816406,
+      "porosity_in_manifest": 0.218,
+      "chunk_sha256": "47d0b654d4423062723828926968af7499b98567c763ae39242fc6798ebf82ef",
+      "graph_sha256": "c758449f28ead2cd7f7e8ed6b5444b3e54060bca5bb8991bdcd72cab9b8fcbf3",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    },
+    {
+      "sample_id": "parent_estaillades_crop_06",
+      "parent_id": "parent_estaillades",
+      "origin_zyx": [
+        256,
+        0,
+        256
+      ],
+      "shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "voxel_size_m": 3.31136e-06,
+      "porosity_from_binary": 0.06137990951538086,
+      "porosity_in_manifest": 0.0614,
+      "chunk_sha256": "fa4c59d9ad4fd03b348c4872f50198584a5aa111a10e81bc5e278cc241ffc3f5",
+      "graph_sha256": "ecc792969b22c6797988c755f19c56fcbe61666ab3bbb7507284c8afa36c3788",
+      "source_crop_exact_match": true,
+      "source_resolution_matches": true
+    }
+  ],
+  "limitations": [
+    "Only saved accepted crops audited; attempted/rejected counts not certified.",
+    "Historical rejection logs contain manually entered values and cannot establish extraction outcomes.",
+    "Original graph labels require fresh solver verification; see resources/extraction_summary.json.",
+    "Non-overlapping crops from one scan remain correlated and are one parent, not independent rocks.",
+    "This audit establishes byte provenance and resolution, not physical model accuracy."
+  ]
+}

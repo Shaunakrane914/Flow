@@ -1,0 +1,137 @@
+{
+  "comparisons": [
+    {
+      "comparator": "constant",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.4437798207149788,
+        0.0387302738639827,
+        0.46064389400723216,
+        0.5832462874484599
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.159710158651174,
+      "exact_two_sided_sign_flip_p": 0.375
+    },
+    {
+      "comparator": "descriptors",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.10881072886767384,
+        0.12661048176788708,
+        -0.3094539158063222,
+        0.08377784417167045
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.002436284750227294,
+      "exact_two_sided_sign_flip_p": 1.0
+    },
+    {
+      "comparator": "gat_standard",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.044627442767234404,
+        5.742877449527183,
+        0.5392011480104484,
+        0.5591160112070942
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 1.72145551287799,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "physics_ridge",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.23861313613228197,
+        0.13026812341481814,
+        -0.05055101230190373,
+        -0.12109630928186807
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.0699980835753089,
+      "exact_two_sided_sign_flip_p": 0.5
+    },
+    {
+      "comparator": "pore_set_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.4754106611234655,
+        0.5200557460076085,
+        -0.005203317274956376,
+        0.08407984148777653
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.030880402274240784,
+      "exact_two_sided_sign_flip_p": 0.75
+    },
+    {
+      "comparator": "porosity_kc",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.5917957638170208,
+        -0.31006328968379715,
+        0.04271660601425031,
+        0.3596268542099397
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.124878898319157,
+      "exact_two_sided_sign_flip_p": 0.75
+    },
+    {
+      "comparator": "sage_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.27684261282018063,
+        0.5202347379893173,
+        -0.08172691881446337,
+        0.12992609209320777
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.07289782461197027,
+      "exact_two_sided_sign_flip_p": 0.75
+    },
+    {
+      "comparator": "scaled_kc",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.6288626973970991,
+        -0.05459106764300947,
+        0.4182680555027616,
+        0.14680283457017274
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.029595718741793564,
+      "exact_two_sided_sign_flip_p": 0.875
+    },
+    {
+      "comparator": "selected_all",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.0,
+        0.5200557460076085,
+        -0.005203317274956376,
+        0.7120876626846631
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.3067350228543288,
+      "exact_two_sided_sign_flip_p": 0.5
+    },
+    {
+      "comparator": "selected_gat",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.0,
+        5.742877449527183,
+        0.0,
+        0.0
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 1.4357193623817956,
+      "exact_two_sided_sign_flip_p": 1.0
+    },
+    {
+      "comparator": "uniform_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.4819619527414656,
+        0.09242102058193441,
+        -0.03218478346321918,
+        0.7120876626846631
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.07259048676547818,
+      "exact_two_sided_sign_flip_p": 0.75
+    }
+  ],
+  "limitation": "Four scans; minimum possible two-sided exact p is 0.125. Cross-validation training folds overlap; effects are exploratory, not population-level evidence."
+}

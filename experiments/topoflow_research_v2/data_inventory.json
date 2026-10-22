@@ -1,0 +1,938 @@
+[
+  {
+    "id": "parent_berea_crop_00",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_00.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.2069,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "1d6722cbe9409ece8bb9fe48bcbd1cb5da393f3babd42dd33ae024559ba15077",
+    "canonical_graph_sha256": "76105d531fc13142e0f3f807014699d2c069f0578a884939dd2e9c13ceb9ca21",
+    "true_k_m2": 3.032561493147015e-13,
+    "true_log10_k_m2": -12.518190383911133,
+    "pore_radius_cv": 0.49119627837701024,
+    "num_nodes": 452,
+    "num_directed_edges": 1472,
+    "descriptors": [
+      0.2069,
+      -4.325016101904675,
+      0.21186650863934026,
+      -13.256049654125112,
+      0.635599473552931,
+      2.655138434811382,
+      3.16790781000148,
+      3.256637168141593,
+      2.3975605635653214,
+      0.49119627837701024
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_01",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_01.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.2261,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "cfebd9a402708512cba0559cf3f08f45a8994a96893401f92b9141a22c5cfb1b",
+    "canonical_graph_sha256": "bc3ca6aad2701a348c035d055778e9377af9b5622e8f10806eafa67324c3f3f7",
+    "true_k_m2": 4.437950609434683e-13,
+    "true_log10_k_m2": -12.35281753540039,
+    "pore_radius_cv": 0.5277044831601528,
+    "num_nodes": 475,
+    "num_directed_edges": 1600,
+    "descriptors": [
+      0.2261,
+      -4.337739961021825,
+      0.22148157657489986,
+      -13.294221215499075,
+      0.6644446872235649,
+      2.6766936096248664,
+      3.2041199826559246,
+      3.3684210526315788,
+      2.6127325142723152,
+      0.5277044831601528
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_02",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_02.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.1926,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "8ba42fea9045625d8c18e87a5655f0ebd7f36a7f6ba4390bf9eb06260e145434",
+    "canonical_graph_sha256": "020c5a6e7909d251646d653dd1985c8a0664cff04d8b0b2e919a7e7447f491f5",
+    "true_k_m2": 1.3681874162614365e-13,
+    "true_log10_k_m2": -12.86385440826416,
+    "pore_radius_cv": 0.5398378927783447,
+    "num_nodes": 462,
+    "num_directed_edges": 1372,
+    "descriptors": [
+      0.1926,
+      -4.362713075303412,
+      0.21788975899980248,
+      -13.369140602293468,
+      0.6536692438848876,
+      2.6646419755561257,
+      3.137354111370733,
+      2.9696969696969697,
+      2.170031897533113,
+      0.5398378927783447
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_03",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_03.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.1881,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "831fe2996c55a3ecfea936b14f090af378fb02a847e27c28f7504ce1a3d5fbae",
+    "canonical_graph_sha256": "c6c43fcaafd62f39c21cec00b31e32320d2092c98fc8cf7609b15a5a2aaa9aec",
+    "true_k_m2": 3.264766454776231e-13,
+    "true_log10_k_m2": -12.4861478805542,
+    "pore_radius_cv": 0.5392569291762237,
+    "num_nodes": 455,
+    "num_directed_edges": 1346,
+    "descriptors": [
+      0.1881,
+      -4.36426711658855,
+      0.22945371583473498,
+      -13.373802704863495,
+      0.6883611340078681,
+      2.6580113966571126,
+      3.1290450598879582,
+      2.9582417582417584,
+      2.258175181500355,
+      0.5392569291762237
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_04",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_04.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.1872,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "4d1ce48296f0803645d8fbedd79f62a6055c7069826704332163f01331c9f259",
+    "canonical_graph_sha256": "298270f7a0296919ba7ff06d00a185fef703fe4b718050f94c03969472a27748",
+    "true_k_m2": 3.096543258761919e-13,
+    "true_log10_k_m2": -12.509122848510742,
+    "pore_radius_cv": 0.48997521191370963,
+    "num_nodes": 435,
+    "num_directed_edges": 1384,
+    "descriptors": [
+      0.1872,
+      -4.332285305549359,
+      0.20885486876245268,
+      -13.277857300330853,
+      0.6265645559304845,
+      2.6384892569546374,
+      3.141136090120739,
+      3.1816091954022987,
+      2.1273548810202074,
+      0.48997521191370963
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_05",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_05.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.1555,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "1a18aca084d837a574d1af4e60e56242cd0274d089ee3167519c179cc7838f09",
+    "canonical_graph_sha256": "e825dde70bab17b9161782661fd7a0348583ebd61d4757458a62606d843dcf3d",
+    "true_k_m2": 1.20196065351391e-13,
+    "true_log10_k_m2": -12.920109748840332,
+    "pore_radius_cv": 0.4693710646897956,
+    "num_nodes": 485,
+    "num_directed_edges": 1356,
+    "descriptors": [
+      0.1555,
+      -4.364411313754996,
+      0.19891191950609027,
+      -13.374235312471685,
+      0.5967357337534546,
+      2.6857417386022635,
+      3.1322596895310446,
+      2.7958762886597937,
+      1.8890851724629083,
+      0.4693710646897956
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_06",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_06.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.2069,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "6edb959a5569062e05da3d9e0ee490adbdc8a167a12d951151b4ed134c977a70",
+    "canonical_graph_sha256": "ef263e07745ba1f632638973263c923301e4ac0358d31e5aeff70c941dd07f84",
+    "true_k_m2": 2.8412617064441867e-13,
+    "true_log10_k_m2": -12.546488761901855,
+    "pore_radius_cv": 0.5064304267267472,
+    "num_nodes": 387,
+    "num_directed_edges": 1180,
+    "descriptors": [
+      0.2069,
+      -4.311220691493624,
+      0.22061644975041048,
+      -13.214663441483056,
+      0.6618493449647337,
+      2.5877109650189114,
+      3.0718820073061255,
+      3.049095607235142,
+      2.155497258805894,
+      0.5064304267267472
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_berea_crop_07",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_berea_crop_07.pt",
+    "parent_id": "parent_berea",
+    "formation": "Sandstone",
+    "split": "validation",
+    "porosity": 0.198,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "8f928d6d127d02a6bf892db3de7981825ca711e857e69aedc31b14aae50ab826",
+    "canonical_graph_sha256": "e7193ddf27ca7eda1116ac8c08a16cd392a00369c60c3a0ae0b5ca62b5ab0b30",
+    "true_k_m2": 3.9673127415747903e-13,
+    "true_log10_k_m2": -12.401503562927246,
+    "pore_radius_cv": 0.5143194435138546,
+    "num_nodes": 430,
+    "num_directed_edges": 1294,
+    "descriptors": [
+      0.198,
+      -4.335035919034204,
+      0.2130512588582221,
+      -13.286109117020008,
+      0.6391537285738728,
+      2.6334684555795866,
+      3.1119342763326814,
+      3.0093023255813955,
+      2.0436872688318264,
+      0.5143194435138546
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_00",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_00.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.1531,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "f85b99703dc566f67e91899d52147d94e892ac82d9cfed8977ef140fa69639dd",
+    "canonical_graph_sha256": "f9d00b1243ed4a1de5e2565169be3565cd30ee39dbbe8df84ba7b619091311f2",
+    "true_k_m2": 1.2706692391447254e-13,
+    "true_log10_k_m2": -12.895967483520508,
+    "pore_radius_cv": 0.5765673582939623,
+    "num_nodes": 238,
+    "num_directed_edges": 596,
+    "descriptors": [
+      0.1531,
+      -4.590941786766052,
+      0.22519974756299985,
+      -14.053826784887233,
+      0.6755992619700492,
+      2.376576957056512,
+      2.7752462597402365,
+      2.504201680672269,
+      2.252445728013049,
+      0.5765673582939623
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_01",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_01.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.3091,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "a8a3c6f2ab13d282ab9a6f1627588f27c1c574d731348bead717049f3866460b",
+    "canonical_graph_sha256": "5fa59fcf9ff907fe143326c2b8f5eba415cbfcd36d0ca9c09b01353fe5356dcb",
+    "true_k_m2": 3.3086253909160317e-12,
+    "true_log10_k_m2": -11.480352401733398,
+    "pore_radius_cv": 0.6746427210299039,
+    "num_nodes": 255,
+    "num_directed_edges": 1048,
+    "descriptors": [
+      0.3091,
+      -4.55461937492969,
+      0.2448260506497003,
+      -13.944859530879002,
+      0.7344782068948513,
+      2.406540180433955,
+      3.0203612826477078,
+      4.109803921568627,
+      3.753652072731552,
+      0.6746427210299039
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_02",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_02.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.1204,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "6b00e7275b0573ee7170b72417d119071ec6bad1ce94de0a71533dca541d95e4",
+    "canonical_graph_sha256": "a15a88ad4e1bb67f1919013d238973512ea8abb51900ed6aab7526223c29a2c1",
+    "true_k_m2": 1.7343155290931556e-14,
+    "true_log10_k_m2": -13.760871887207031,
+    "pore_radius_cv": 0.5728861215445352,
+    "num_nodes": 211,
+    "num_directed_edges": 602,
+    "descriptors": [
+      0.1204,
+      -4.606157309636121,
+      0.22939480834947062,
+      -14.099473320477381,
+      0.6881845008487811,
+      2.3242824552976926,
+      2.7795964912578244,
+      2.853080568720379,
+      2.2460555183728084,
+      0.5728861215445352
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_03",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_03.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.1852,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "75244eaf95c91743138ba4c754195600a4ceb06ec02dca3eaf267f74f00a49cc",
+    "canonical_graph_sha256": "7eb51a6c4b2507faf9de9db4c3dc781bf22b6703799c48066bbfb96e20ef2511",
+    "true_k_m2": 3.596922589312523e-13,
+    "true_log10_k_m2": -12.444068908691406,
+    "pore_radius_cv": 0.805836644618171,
+    "num_nodes": 206,
+    "num_directed_edges": 448,
+    "descriptors": [
+      0.1852,
+      -4.664270054946825,
+      0.24772778506622198,
+      -14.273811590324328,
+      0.7431833623128414,
+      2.3138672203691533,
+      2.651278013998144,
+      2.174757281553398,
+      1.8872447912904156,
+      0.805836644618171
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_04",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_04.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.2618,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "f5496a72c8e0ded08f789c6c912246fdc9f36c187379026a85ac8bb25ecdf6f4",
+    "canonical_graph_sha256": "43440014bbd4118cba5bb85bb336c97b00c66c31d978d50ac2144949d620972f",
+    "true_k_m2": 2.962008001753275e-13,
+    "true_log10_k_m2": -12.528413772583008,
+    "pore_radius_cv": 0.6302383067424392,
+    "num_nodes": 289,
+    "num_directed_edges": 1050,
+    "descriptors": [
+      0.2618,
+      -4.570147902907797,
+      0.23277097945088665,
+      -13.9914451156933,
+      0.6983129479959822,
+      2.4608978427565478,
+      3.0211892990699383,
+      3.633217993079585,
+      2.987355768704357,
+      0.6302383067424392
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_05",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_05.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.192,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "bc020b810b18935a3711172f0896d171c946f0acc7b3f8acd0c7cb520b4d8935",
+    "canonical_graph_sha256": "f1cf344ee234602b989f0dfcdc0611fdcfad98d8a156ada0d97199f760740446",
+    "true_k_m2": 4.610831576900226e-13,
+    "true_log10_k_m2": -12.336220741271973,
+    "pore_radius_cv": 0.6735626833956837,
+    "num_nodes": 249,
+    "num_directed_edges": 746,
+    "descriptors": [
+      0.192,
+      -4.613807741417943,
+      0.23059216081160702,
+      -14.12242466570383,
+      0.6917765047024348,
+      2.3961993470957363,
+      2.8727388274726686,
+      2.995983935742972,
+      2.3430628908728237,
+      0.6735626833956837
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c1_crop_07",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c1_crop_07.pt",
+    "parent_id": "parent_c1",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.2523,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 2.85e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "447344d66cf5193b75469eb5db6401cfb66c1d031dc67d7d2e4acd6943c7b11e",
+    "canonical_graph_sha256": "a9bb3363353b4bff5e6958ef07c01311e44d050be54d2cb45576ba4cfdab774f",
+    "true_k_m2": 9.756414375287514e-14,
+    "true_log10_k_m2": -13.010709762573242,
+    "pore_radius_cv": 0.6176578859519044,
+    "num_nodes": 330,
+    "num_directed_edges": 1186,
+    "descriptors": [
+      0.2523,
+      -4.601388472499269,
+      0.21163724526069258,
+      -14.0851668473446,
+      0.6349117971488074,
+      2.5185139398778875,
+      3.074084689028244,
+      3.5939393939393938,
+      2.8314188962468756,
+      0.6176578859519044
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_01",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_01.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.1442,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "308b3da26fd56e8f089cdafaaddac4c3bc3a41c1a96a46615652e5dafececd3a",
+    "canonical_graph_sha256": "9284dd425c42b8af2bb0aeea2322558f2303fd13a3febbed15f143421d02c131",
+    "true_k_m2": 2.0310524462982123e-15,
+    "true_log10_k_m2": -14.692278861999512,
+    "pore_radius_cv": 0.47951452974825953,
+    "num_nodes": 410,
+    "num_directed_edges": 1076,
+    "descriptors": [
+      0.1442,
+      -4.357126807003486,
+      0.20331176898498235,
+      -13.352381787649016,
+      0.60993523920041,
+      2.6127838567197355,
+      3.0318122713303706,
+      2.624390243902439,
+      2.175336305685088,
+      0.47951452974825953
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_03",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_03.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.0892,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "045faa593b468e15adb31184756cded84766d389644a6382360d6b37a554d4cb",
+    "canonical_graph_sha256": "0dc43456813e7a4c2539fef13b520f67fe333dc43c8361c74244ba3ab8d55695",
+    "true_k_m2": 2.1032516357615824e-14,
+    "true_log10_k_m2": -13.677108764648438,
+    "pore_radius_cv": 0.47733773648729294,
+    "num_nodes": 468,
+    "num_directed_edges": 1190,
+    "descriptors": [
+      0.0892,
+      -4.441802982591156,
+      0.18410231828883628,
+      -13.606410301648653,
+      0.5523069350262164,
+      2.670245853074124,
+      3.0755469613925306,
+      2.5427350427350426,
+      2.370647293023006,
+      0.47733773648729294
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_04",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_04.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.2421,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "a52f6b79e332f6aaabba39e77bbf1258214d1a0a311aa5641470464e6dc7993e",
+    "canonical_graph_sha256": "9366fdcbd504efb814e46670d334095465c783e7ad54204ffc50ca27ace0cfa4",
+    "true_k_m2": 5.0610853345328843e-14,
+    "true_log10_k_m2": -13.295756340026855,
+    "pore_radius_cv": 0.5572240996926744,
+    "num_nodes": 492,
+    "num_directed_edges": 1520,
+    "descriptors": [
+      0.2421,
+      -4.3477358464303055,
+      0.2209803821228663,
+      -13.324208922502471,
+      0.6629411134133404,
+      2.69196510276736,
+      3.1818435879447726,
+      3.089430894308943,
+      2.7482681319149336,
+      0.5572240996926744
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_05",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_05.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.0948,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "fcf6d9a6f44dd1a7132eb09746f597ffd36968983508fea596de9d6545d3c5eb",
+    "canonical_graph_sha256": "61b4faddebe471c923e3775376f22c743f30e50f54afece67b4e3f47616e59d9",
+    "true_k_m2": 1.5171627835370416e-15,
+    "true_log10_k_m2": -14.818967819213867,
+    "pore_radius_cv": 0.4699017371863217,
+    "num_nodes": 450,
+    "num_directed_edges": 966,
+    "descriptors": [
+      0.0948,
+      -4.424063873820835,
+      0.1798099389578738,
+      -13.55319300757514,
+      0.53942984476786,
+      2.6532125137753435,
+      2.9849771264154934,
+      2.1466666666666665,
+      1.7602525071389301,
+      0.4699017371863217
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_06",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_06.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.2685,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "1a1c5dc96a21d1068ca4bf8e425335b246b597b1dbd0feacec2ce4376244a620",
+    "canonical_graph_sha256": "2d8effce47a8f63fd2989bc7ad2ee8a03c429bc39bf45fb264eb90d7054ba70c",
+    "true_k_m2": 5.647804980818631e-13,
+    "true_log10_k_m2": -12.248120307922363,
+    "pore_radius_cv": 0.4767637278496141,
+    "num_nodes": 668,
+    "num_directed_edges": 2708,
+    "descriptors": [
+      0.2685,
+      -4.3351327005974545,
+      0.20257414023225026,
+      -13.286399502954083,
+      0.6077224222904221,
+      2.824776462475546,
+      3.4326486600131068,
+      4.053892215568863,
+      3.245462027633917,
+      0.4767637278496141
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_c2_crop_07",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_c2_crop_07.pt",
+    "parent_id": "parent_c2",
+    "formation": "Carbonate",
+    "split": "train",
+    "porosity": 0.4415,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 5.345e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "1094d13afb87cf0411e17e3d3e43f4d4f87dd0513e3a35f094d2d46ef2f1ff3e",
+    "canonical_graph_sha256": "6850167059c32b3000f609bd85e98c2ed4aee9f35f6400772f2e88a52b37d078",
+    "true_k_m2": 4.372817731886316e-13,
+    "true_log10_k_m2": -12.359238624572754,
+    "pore_radius_cv": 0.6373982256206746,
+    "num_nodes": 423,
+    "num_directed_edges": 1818,
+    "descriptors": [
+      0.4415,
+      -4.28595821231815,
+      0.2381404125167361,
+      -13.138876024431088,
+      0.7144212091541459,
+      2.6263403673750423,
+      3.2595938788859486,
+      4.297872340425532,
+      3.837869066537146,
+      0.6373982256206746
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_estaillades_crop_01",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_estaillades_crop_01.pt",
+    "parent_id": "parent_estaillades",
+    "formation": "Carbonate",
+    "split": "test",
+    "porosity": 0.1414,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 3.31136e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "45eae90cf3ee958cc6b5cb0ee6979f060c98fc21dac835a1c84f418b184bf124",
+    "canonical_graph_sha256": "a67b57c549852249008bbf4475ef857ae12cc7860b5b2fcc8f739e092d56fda2",
+    "true_k_m2": 8.700566660252945e-14,
+    "true_log10_k_m2": -13.060452461242676,
+    "pore_radius_cv": 0.4590415274240988,
+    "num_nodes": 162,
+    "num_directed_edges": 342,
+    "descriptors": [
+      0.1414,
+      -4.423081618768197,
+      0.20799627736774992,
+      -13.550246238708496,
+      0.6239887841839904,
+      2.2095150145426308,
+      2.534026106056135,
+      2.111111111111111,
+      1.9116278371205837,
+      0.4590415274240988
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_estaillades_crop_02",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_estaillades_crop_02.pt",
+    "parent_id": "parent_estaillades",
+    "formation": "Carbonate",
+    "split": "test",
+    "porosity": 0.218,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 3.31136e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "c758449f28ead2cd7f7e8ed6b5444b3e54060bca5bb8991bdcd72cab9b8fcbf3",
+    "canonical_graph_sha256": "fc17c1c2bd19d02163a6b613508ea68ec05f0f1e866b56594e0f84e69a360126",
+    "true_k_m2": 3.1326617586934654e-12,
+    "true_log10_k_m2": -11.5040864944458,
+    "pore_radius_cv": 0.6178151567067722,
+    "num_nodes": 56,
+    "num_directed_edges": 198,
+    "descriptors": [
+      0.218,
+      -4.287795931100845,
+      0.2525593067271521,
+      -13.144389084407262,
+      0.7576779518663256,
+      1.7481880270062005,
+      2.296665190261531,
+      3.5357142857142856,
+      3.195780061906895,
+      0.6178151567067722
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  },
+  {
+    "id": "parent_estaillades_crop_06",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\benchmark_dataset\\graphs\\parent_estaillades_crop_06.pt",
+    "parent_id": "parent_estaillades",
+    "formation": "Carbonate",
+    "split": "test",
+    "porosity": 0.0614,
+    "label_source": "PNM cylindrical throats; inscribed throat diameters; direct center distances; SciPy mass balance",
+    "voxel_size_m": 3.31136e-06,
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "graph_sha256": "ecc792969b22c6797988c755f19c56fcbe61666ab3bbb7507284c8afa36c3788",
+    "canonical_graph_sha256": "b35f5bf2e771cd93a5ed7d76c9b88e172637c2ea9dbfe0edd9d9a3211632908d",
+    "true_k_m2": 1.5283411765497534e-14,
+    "true_log10_k_m2": -13.815779685974121,
+    "pore_radius_cv": 0.49332119901289195,
+    "num_nodes": 68,
+    "num_directed_edges": 150,
+    "descriptors": [
+      0.0614,
+      -4.441712821231169,
+      0.2163008973469077,
+      -13.606139800127815,
+      0.6489026823991539,
+      1.8325089127062364,
+      2.1760912590556813,
+      2.2058823529411766,
+      1.4708823235352928,
+      0.49332119901289195
+    ],
+    "encoding": {
+      "diameter_epsilon_m": 0,
+      "volume_epsilon_m3": 0,
+      "target_epsilon_m2": 0
+    }
+  }
+]

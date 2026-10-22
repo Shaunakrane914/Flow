@@ -1,0 +1,29 @@
+# ── Core ML / Science ─────────────────────────────────────────────
+# NOTE:
+# - Default install targets CPU-only torch for easier setup on new machines.
+# - For GPU/CUDA, you can install a CUDA-specific torch build separately.
+torch==2.7.1
+torch-geometric==2.3.1
+porespy==3.0.3
+openpnm==3.6.0
+numpy==2.1.3
+scipy==1.16.3
+matplotlib==3.10.8
+scikit-learn==1.7.1
+networkx==3.5
+psutil==7.0.0
+h5py==3.14.0
+
+# ── Web Backend ────────────────────────────────────────────────────
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+jinja2==3.1.6
+httpx==0.28.1
+
+# ── Data & Visualization ───────────────────────────────────────────
+plotly==6.5.2
+
+# ── Cloud / Infra ──────────────────────────────────────────────────
+supabase==2.22.0
+python-dotenv==1.1.1

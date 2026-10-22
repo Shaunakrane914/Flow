@@ -1,0 +1,10 @@
+{
+  "scripts/run_experiments.py": "00dff01a1fb1bdfc54455aebadd904f883a42fdfe00d066f6b611b81bf152d31",
+  "src/research_pnm.py": "697d2f4c8e40106f6418d444f15d40c7e3f788a0b93b68f2c0e515dffd1bfafe",
+  "scripts/measure_research_resources.py": "a5f48d5376f56f91893aa5e4918b94a9280359a967c98587c9dd3b474417327a",
+  "scripts/audit_research_data.py": "422b9083fa38552c5ecf7ee5dc1f000d7c4d6b15337f0751388f2bc932ff81fb",
+  "scripts/build_research_artifacts.py": "ecf5386bb578c9cae0cc50ce886c2a471b7f6f1fdf8620d3307b8faad49c17d7",
+  "tests/test_research_v2.py": "e392b5a76218b86609fe1b83fc3ce7629a1fcf6e78d00527a1776bbfe0df0e49",
+  "tests/test_experiments.py": "4acae718b5109480f6a2f1adf2e23e950fc2711fe8c824c9a54bd63d89aaf679",
+  "requirements.txt": "a91a90611571b1b3bb29be34304c424491c30e22e2c67a64cc97e6bc26e707fc"
+}

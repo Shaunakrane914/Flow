@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-22T15:36:53.601175+00:00",
+  "args": {
+    "manifest": "data/benchmark_dataset/manifest.json",
+    "output": "experiments/topoflow_research_v2",
+    "epochs": 120,
+    "patience": 20,
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ]
+  },
+  "natural_parents": [
+    "parent_berea",
+    "parent_c1",
+    "parent_c2",
+    "parent_estaillades"
+  ],
+  "natural_crops": 24,
+  "synthetic_samples_excluded": 12,
+  "outer": "leave-one-natural-parent-out",
+  "inner": "leave-one-remaining-parent-out",
+  "primary_score": "parent-balanced mean squared log10 permeability error",
+  "neural_configs": [
+    {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    }
+  ],
+  "baseline_configs": {
+    "constant": [
+      null
+    ],
+    "porosity_kc": [
+      null
+    ],
+    "scaled_kc": [
+      null
+    ],
+    "physics_ridge": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "descriptors": [
+      1,
+      2,
+      4
+    ]
+  },
+  "selection_seed": 2026,
+  "final_epoch_rule": "rounded median of best inner epochs of selected configuration",
+  "target": "log10(k / 1 m^2); cylindrical-throat PNM approximation",
+  "test_reuse": "Existing data previously inspected; exploratory model-development study",
+  "manifest_sha256": "5f4fdd55eadcefb309a7d0b80066c1668b34f2e7253834746507139e3df00472",
+  "python": "3.13.5",
+  "torch": "2.10.0+cpu",
+  "device": "cpu",
+  "threads": 1,
+  "source_sha256": {
+    "scripts\\run_research_v2.py": "ceaeb9466a9f26dd8a163884bb9a91a56ccccad518fefa998bdcc5f84349178a",
+    "src\\research_evaluation.py": "c1169240136c4249f5f50538d6cf377847b94501cadbd21f78df7583f431acfe",
+    "src\\experiment_models.py": "0860a7a9140064a4a0c7a684c2ccc78af36bdb70f9586cc92f326086db6953fc",
+    "src\\model.py": "50057dfac3b4dcc571793ac25011294a2e97912a5d1c001119400dd82fd9c7d3",
+    "src\\experiment_data.py": "5bab16aff9fa6974f9dc846eb4a65562ec680a3142b097e25c3410cd896ccbb8",
+    "src\\experiment_metrics.py": "ed5e134abc84377de1a2fd4e4b42f5eea6a7f58ba3b617cd4cde7652458bd9c8"
+  },
+  "elapsed_seconds": 335.66123850000076,
+  "run_source_snapshots": "run_sources/ contains exact files matching source_sha256",
+  "postrun_changes": "Only artifact text and an explanatory source comment changed after training; no predictions or selection changed."
+}

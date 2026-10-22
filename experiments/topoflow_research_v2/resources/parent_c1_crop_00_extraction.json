@@ -1,0 +1,42 @@
+{
+  "sample_id": "parent_c1_crop_00",
+  "shape": [
+    128,
+    128,
+    128
+  ],
+  "porosity": 0.15308570861816406,
+  "num_nodes": 238,
+  "num_directed_edges": 596,
+  "fresh_log10_k_m2": -12.895967483520508,
+  "rss_before_bytes": 223150080,
+  "rss_after_bytes": 513257472,
+  "process_lifetime_peak_rss_bytes": 622772224,
+  "diagnostics": {
+    "relative_mass_imbalance": 1.2579844056863533e-13,
+    "relative_internal_residual": 3.485324760343143e-14,
+    "active_pores": 148,
+    "excluded_pores": 123,
+    "flow_rate_m3_s": 4.6353991234193384e-14,
+    "pressure_drop_pa": 1.0,
+    "viscosity_pa_s": 0.001,
+    "flow_axis": 0,
+    "node_diameter": "equivalent diameter",
+    "throat_diameter": "inscribed diameter",
+    "throat_length": "direct center distance including boundary conduits",
+    "boundary_nodes_in_gnn": false,
+    "sigma": 0.4,
+    "r_max": 4,
+    "reference_limitation": "Cylindrical-throat PNM approximation; boundary-conduit geometry is not DNS validated",
+    "timing_seconds": {
+      "snow2": 3.7319399999996676,
+      "pnm_solve": 0.0019893999997293577,
+      "graph_conversion": 0.00033770000118238386,
+      "total_extraction_and_reference": 3.7342671000005794
+    }
+  },
+  "status": "measured",
+  "original_log10_k_m2": -12.895967483520508,
+  "absolute_label_difference": 0.0,
+  "agrees_with_saved_label": true
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-22T15:44:03.785004+00:00",
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "cpu_threads_used": 1,
+  "torch": "2.10.0+cpu",
+  "ram_bytes": 16873545728,
+  "psutil": "7.0.0",
+  "measurement_source_sha256": "c085668ff7aa66fc6951d75cadcf3cd2c1aeb55c1cf3351f8a9e372b8caa7866",
+  "extractor_source_sha256": "697d2f4c8e40106f6418d444f15d40c7e3f788a0b93b68f2c0e515dffd1bfafe",
+  "limitation": "Process lifetime RSS includes imports. No CNN benchmark or GPU peak measurement. SNOW2 already includes pore-network construction. Graph conversion only means tensor packaging. Reference solve is a label-generation cost, not required for deployed GNN prediction."
+}

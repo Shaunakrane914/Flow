@@ -1,0 +1,48 @@
+{
+  "purpose": "pilot",
+  "models": [
+    {
+      "model": "constant",
+      "test_macro_rmse_log10_m2_mean": 0.7457040150960292,
+      "test_macro_rmse_log10_m2_seed_std": 0.0,
+      "seeds": 5
+    },
+    {
+      "model": "descriptors",
+      "test_macro_rmse_log10_m2_mean": 0.5462680271466575,
+      "test_macro_rmse_log10_m2_seed_std": 0.08132364560225966,
+      "seeds": 5
+    },
+    {
+      "model": "gat",
+      "test_macro_rmse_log10_m2_mean": 1.014927864074707,
+      "test_macro_rmse_log10_m2_seed_std": 0.11423148736805289,
+      "seeds": 5
+    },
+    {
+      "model": "kc",
+      "test_macro_rmse_log10_m2_mean": 0.5388809796538467,
+      "test_macro_rmse_log10_m2_seed_std": 0.0,
+      "seeds": 5
+    },
+    {
+      "model": "pore_set",
+      "test_macro_rmse_log10_m2_mean": 1.0061983108520507,
+      "test_macro_rmse_log10_m2_seed_std": 0.02574197634630224,
+      "seeds": 5
+    },
+    {
+      "model": "sage",
+      "test_macro_rmse_log10_m2_mean": 1.2538476943969727,
+      "test_macro_rmse_log10_m2_seed_std": 0.1388994442255199,
+      "seeds": 5
+    },
+    {
+      "model": "uniform_gat",
+      "test_macro_rmse_log10_m2_mean": 1.033795166015625,
+      "test_macro_rmse_log10_m2_seed_std": 0.06052289792825317,
+      "seeds": 5
+    }
+  ],
+  "note": "Seed standard deviation is not a parent-scan confidence interval."
+}

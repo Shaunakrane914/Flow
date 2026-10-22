@@ -1,0 +1,72 @@
+{
+  "constant": {
+    "inner_macro_mse": 0.9067911291454367,
+    "config": null,
+    "epochs": null
+  },
+  "porosity_kc": {
+    "inner_macro_mse": 0.523166590020346,
+    "config": null,
+    "epochs": null
+  },
+  "scaled_kc": {
+    "inner_macro_mse": 0.7888196387061422,
+    "config": null,
+    "epochs": null
+  },
+  "physics_ridge": {
+    "inner_macro_mse": 1.0137270805554317,
+    "config": 100.0,
+    "epochs": null
+  },
+  "descriptors": {
+    "inner_macro_mse": 1.0016796156106529,
+    "config": 4,
+    "epochs": null
+  },
+  "gat_standard": {
+    "inner_macro_mse": 0.9005164277593062,
+    "config": {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "epochs": 1
+  },
+  "gat_physics": {
+    "inner_macro_mse": 0.6240277075504522,
+    "config": {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "epochs": 9
+  },
+  "sage_physics": {
+    "inner_macro_mse": 0.6713536567719065,
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 3
+  },
+  "uniform_physics": {
+    "inner_macro_mse": 0.49305061289294816,
+    "config": {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "epochs": 5
+  },
+  "pore_set_physics": {
+    "inner_macro_mse": 0.5692300491258182,
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 4
+  }
+}

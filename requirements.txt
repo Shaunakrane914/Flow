@@ -1,5 +1,8 @@
 # ── Core ML / Science ─────────────────────────────────────────────
-torch==2.7.1+cu118
+# NOTE:
+# - Default install targets CPU-only torch for easier setup on new machines.
+# - For GPU/CUDA, you can install a CUDA-specific torch build separately.
+torch==2.7.1
 torch-geometric==2.3.1
 porespy==3.0.3
 openpnm==3.6.0
@@ -8,6 +11,7 @@ scipy==1.16.3
 matplotlib==3.10.8
 scikit-learn==1.7.1
 networkx==3.5
+psutil==7.0.0
 h5py==3.14.0
 
 # ── Web Backend ────────────────────────────────────────────────────

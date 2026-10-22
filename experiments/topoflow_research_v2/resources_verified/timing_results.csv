@@ -1,0 +1,10 @@
+stage,measured_crops,measured_forward_calls,median_ms,p95_ms,minimum_ms,maximum_ms,scope
+snow2,4,,4057.2110000002795,4716.774145000363,3342.648100000588,4768.470400000297,one fresh predeclared crop per natural parent; includes reference where named
+pnm_solve,4,,1.8536999996285886,7.063180000477585,1.649800000450341,7.954000000609085,one fresh predeclared crop per natural parent; includes reference where named
+graph_conversion,4,,0.5176000004212256,0.8262150004156864,0.33319999965897296,0.8586000003560912,one fresh predeclared crop per natural parent; includes reference where named
+total_extraction_and_reference,4,,4059.531450000577,4724.6635400012565,3344.7328000002017,4777.283000001262,one fresh predeclared crop per natural parent; includes reference where named
+gat_standard_forward,24,720,1.87785,2.9283849999999996,0.6786,8.7705,trained model forward only; precomputed normalized graph; 10 warmups/crop
+gat_physics_forward,24,720,1.7185000000000001,2.673279999999998,0.7044,3.749,trained model forward only; precomputed normalized graph; 10 warmups/crop
+sage_physics_forward,24,720,1.0977000000000001,1.6110349999999998,0.3422,2.4425,trained model forward only; precomputed normalized graph; 10 warmups/crop
+uniform_physics_forward,24,720,1.87635,2.662204999999998,0.6914,3.8977,trained model forward only; precomputed normalized graph; 10 warmups/crop
+pore_set_physics_forward,24,720,0.43645,0.65042,0.1338,0.9663,trained model forward only; precomputed normalized graph; 10 warmups/crop

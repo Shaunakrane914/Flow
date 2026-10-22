@@ -1,0 +1,210 @@
+{
+  "purpose": "pilot",
+  "cv_definition": "population std(pore radius) / mean(pore radius)",
+  "bin_boundaries_from_train_only": [
+    0.4771464002747333,
+    0.6088991333278694
+  ],
+  "threshold_estimated": false,
+  "inference_limits": "Exploratory association; bins do not remove formation confounding. Intervals resample parents after averaging paired seed errors per sample. Few parents cannot support a population-level discovery.",
+  "paired_comparisons": [
+    {
+      "comparator": "sage",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.5470508497892297,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "sage",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.5470508497892297,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "sage",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.5470508497892297,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "uniform_gat",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.031145226775879564,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "uniform_gat",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.031145226775879564,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "uniform_gat",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": 0.031145226775879564,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "pore_set",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.027552475201810013,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "pore_set",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.027552475201810013,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "pore_set",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.027552475201810013,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "descriptors",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7368180496903664,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "descriptors",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7368180496903664,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "descriptors",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7368180496903664,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "kc",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7501249252076116,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "kc",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7501249252076116,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "kc",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.7501249252076116,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "constant",
+      "scope": "all",
+      "value": "all",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.484443157309962,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "constant",
+      "scope": "cv_bin",
+      "value": "medium",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.484443157309962,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    },
+    {
+      "comparator": "constant",
+      "scope": "formation",
+      "value": "Carbonate",
+      "samples": 1,
+      "parents": 1,
+      "parent_balanced_effect": -0.484443157309962,
+      "ci95": null,
+      "interpretation": "positive means GAT has lower squared log error",
+      "limitation": "Fewer than two independent parents; no uncertainty interval estimated"
+    }
+  ]
+}

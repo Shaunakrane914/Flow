@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "purpose": "research",
+  "encoding": {
+    "diameter_epsilon_m": 0,
+    "volume_epsilon_m3": 0,
+    "target_epsilon_m2": 0
+  },
+  "samples": []
+}

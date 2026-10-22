@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "purpose": "pilot",
+  "config": {
+    "manifest": "data/pilot_public/manifest.json",
+    "output": "results/experiments/public_pilot",
+    "purpose": "pilot",
+    "protocol": "grouped",
+    "models": [
+      "gat",
+      "sage",
+      "uniform_gat",
+      "pore_set"
+    ],
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "epochs": 100,
+    "patience": 20,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "dropout": 0.1,
+    "bootstrap_repeats": 2000,
+    "threads": 1,
+    "device": "cpu"
+  },
+  "created_utc": "2026-10-22T10:19:55.501146+00:00",
+  "git_commit": "4c77b229089f4ec4abd6cfc601beb5a30a69a3dd",
+  "python": "3.13.5",
+  "torch": "2.10.0+cpu",
+  "torch_geometric": "2.3.1",
+  "sklearn": "1.7.1",
+  "numpy": "2.1.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "manifest_sha256": "7142be2c3dbdb9e7e080653840535198a28188105c4f3d4844571ff6a074f856",
+  "source_sha256": {
+    "run_experiments.py": "3b97cad12c8a93d9502ee4364e16e4171b63b9097bb42727f06a64bf143d9fc2",
+    "model.py": "50057dfac3b4dcc571793ac25011294a2e97912a5d1c001119400dd82fd9c7d3",
+    "experiment_models.py": "0860a7a9140064a4a0c7a684c2ccc78af36bdb70f9586cc92f326086db6953fc",
+    "experiment_metrics.py": "ed5e134abc84377de1a2fd4e4b42f5eea6a7f58ba3b617cd4cde7652458bd9c8",
+    "experiment_data.py": "5bab16aff9fa6974f9dc846eb4a65562ec680a3142b097e25c3410cd896ccbb8"
+  },
+  "split_counts": {
+    "train": {
+      "samples": 6,
+      "parents": 2
+    },
+    "validation": {
+      "samples": 4,
+      "parents": 1
+    },
+    "test": {
+      "samples": 1,
+      "parents": 1
+    }
+  },
+  "kc_log10_coefficient_m2": -10.773759705770011,
+  "constant_train_log10_k_m2": -13.070075670878092,
+  "target": "log10(k / 1 m^2), with original additive epsilon removed",
+  "descriptors": [
+    "porosity",
+    "mean_log_diameter",
+    "std_log_diameter",
+    "mean_log_volume",
+    "std_log_volume",
+    "log_nodes",
+    "log_directed_edges",
+    "mean_degree",
+    "std_degree",
+    "radius_cv"
+  ],
+  "seed_protocol": "Same seeds, widths, optimizer, batch order and selection rule. Architectures have different parameter counts; no claim of identical capacity.",
+  "limitations": [
+    "Manifest provenance is an author declaration, not independently certified.",
+    "Geometry and label validation remain prerequisites for physical claims."
+  ]
+}

@@ -1,0 +1,7 @@
+sample_id,parent_id,formation,pore_radius_cv,cv_bin,comparator,seeds,gat_mean_squared_log_error,comparator_mean_squared_log_error,squared_log_error_difference
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,sage,5,1.0405176354403012,1.5875684852295309,0.5470508497892297
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,uniform_gat,5,1.0405176354403012,1.0716628622161806,0.031145226775879564
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,pore_set,5,1.0405176354403012,1.012965160238491,-0.027552475201810013
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,descriptors,5,1.0405176354403012,0.3036995857499348,-0.7368180496903664
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,kc,5,1.0405176354403012,0.2903927102326896,-0.7501249252076116
+Estaillades_2,public_Estaillades_original_scan,Carbonate,0.49332119901289195,medium,constant,5,1.0405176354403012,0.5560744781303391,-0.484443157309962
