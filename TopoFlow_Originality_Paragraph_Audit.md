@@ -1,5 +1,12 @@
 # TopoFlow paragraph audit
 
+**Version note:** This ledger describes the pre-edit manuscript with SHA-256
+`0bf4d965714d28d44f8ec9fe7415812d17184467c01dabe49d51f6a521fd6b8f`.
+The later editorial follow-up addressed the equation-attribution and Pore-GNN
+description findings and tightened the prose. See the current-version status in
+the [main review](TopoFlow_Originality_Review.md). Do not apply this ledger's
+paragraph IDs or reference count to the updated Word file.
+
 Reviewed 23 October 2026. This is a close-reading and exact-source-overlap ledger, not an AI detector report. See the [main review](TopoFlow_Originality_Review.md) for sources, findings and limitations. The reviewed Word manuscript remains unchanged.
 
 IDs are body-element positions in the reviewed DOCX, including tables. “No 8-token match” means only that no consecutive sequence of eight normalized tokens occurred in the six downloaded PDFs. It does not certify originality against other sources or identify authorship.

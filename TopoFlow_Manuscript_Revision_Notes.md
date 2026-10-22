@@ -1,6 +1,13 @@
 # TopoFlow manuscript revision notes
 
-Revised 22 October 2026.
+Revised 23 October 2026.
+
+The editorial follow-up applies the five accepted changes: a lattice-BGK source,
+rank-one-update provenance with a [derivation](docs/critical_throat_response_derivation.md),
+a precise Pore-GNN description, a concrete abstract ending and shorter closing
+sections. The Results text and quantitative tables are unchanged except for
+reference renumbering. The author table, eleven equations, four figures and page
+sections match the preceding Word version. All six final pages were inspected.
 
 The current paper is [TopoFlow_IEEE_V4_Cited_Revised.docx](TopoFlow_IEEE_V4_Cited_Revised.docx).
 It edits the retained `TopoFlow_IEEE_V4_Cited_Equations.docx` manuscript; the source
@@ -32,7 +39,7 @@ Results now use the completed experiments:
 The old R² 0.963, MSE 0.0024, 512 GB comparison, 9,000-fold speedup and asserted
 topological threshold are removed from this revision. Four figures now show the
 correct workflow and measured comparisons. The original duplicate lists of figures
-and tables are omitted. The bibliography contains fifteen checked references,
+and tables are omitted. The bibliography contains seventeen checked references,
 numbered by first appearance; prior GNN permeability work is acknowledged.
 
 The discussion separates ranking from response calibration, and numerical
@@ -57,4 +64,4 @@ Source DOCX SHA-256:
 `0297f6ad073d2c5003d713b63f36a27d2bbb36e912f5fa2ba950f08485b4da9c`.
 
 Revised DOCX SHA-256:
-`0bf4d965714d28d44f8ec9fe7415812d17184467c01dabe49d51f6a521fd6b8f`.
+`27541b2bef816a024b0383e511167bf939eeb3598ab135a9700aad7d31b0c940`.

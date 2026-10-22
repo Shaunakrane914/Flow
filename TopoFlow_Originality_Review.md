@@ -1,5 +1,26 @@
 # TopoFlow originality and attribution review
 
+**Editorial follow-up, 23 October 2026:** The five accepted edits are applied to
+the current Word file. Lattice-BGK and Sherman–Morrison references are added,
+the restriction readout's origin is explained, Pore-GNN's CNN feature graphs are
+distinguished from physical pore networks, the abstract gives a concrete finding,
+and repeated future-scope and conclusion wording is shortened. The
+[response derivation](docs/critical_throat_response_derivation.md) accompanies
+the implementation. The paper remains six pages with seventeen references.
+
+The revised 68 text blocks (3,412 normalized tokens) were rechecked against the
+same six cached source papers; no exact eight-token match was found. This is
+still a limited source comparison, not an AI detector or Turnitin result.
+Results text, result tables, figures, eleven native equations, authors and page
+sections were checked against the preceding revision and are unchanged apart
+from citation renumbering. All six rendered pages were inspected.
+
+Current manuscript SHA-256:
+`27541b2bef816a024b0383e511167bf939eeb3598ab135a9700aad7d31b0c940`.
+
+The original audit below records the **pre-edit** version and its paragraph IDs.
+Its two equation-attribution gaps and Pore-GNN description issue are now addressed.
+
 Reviewed 23 October 2026 against
 [TopoFlow_IEEE_V4_Cited_Revised.docx](TopoFlow_IEEE_V4_Cited_Revised.docx).
 

@@ -2,14 +2,27 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Editorial follow-up completed, 23 October 2026:** The
+[existing Word paper](TopoFlow_IEEE_V4_Cited_Revised.docx) now includes the two
+missing equation sources, an explanation of the rank-one response readout,
+a corrected Pore-GNN description and a more concrete abstract conclusion.
+Future Scope and Conclusion are shorter. The results, figures, native equations,
+authors and section geometry are preserved. All six pages were inspected; the
+bibliography has seventeen references. A
+[technical derivation](docs/critical_throat_response_derivation.md) documents
+the existing response formula. The [originality review](TopoFlow_Originality_Review.md)
+records the new file hash and a repeat comparison against the six cached papers.
+No AI detector score is claimed.
+
 **Originality review, 23 October 2026:** The
 [source-overlap and attribution review](TopoFlow_Originality_Review.md) and
-[paragraph audit](TopoFlow_Originality_Paragraph_Audit.md) inspect the current
-Word manuscript. No exact eight-token prose match was found against six
+[paragraph audit](TopoFlow_Originality_Paragraph_Audit.md) inspect the pre-edit
+Word version. No exact eight-token prose match was found against six
 downloaded source papers. This is not a Turnitin result or an AI-authorship
 score. The review identifies missing equation provenance for the LBM background
 and restriction readout, plus a distinction needed between Pore-GNN's CNN feature
 graphs and physical pore networks. The manuscript was not edited in this audit.
+Those three findings were addressed in the later editorial follow-up above.
 
 **Current Word paper:** [TopoFlow IEEE revised manuscript](TopoFlow_IEEE_V4_Cited_Revised.docx)
 updates the existing paper while preserving its SNOW2–GAT permeability objective,
