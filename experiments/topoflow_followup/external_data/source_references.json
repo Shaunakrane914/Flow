@@ -1,0 +1,70 @@
+[
+  {
+    "parent": "S1",
+    "source_shape_zyx": [
+      300,
+      300,
+      300
+    ],
+    "voxel_size_m": 8.683e-06,
+    "published_full_volume_directional_k_mD": {
+      "x": 1969.0,
+      "y": 1752.0,
+      "z": 1312.0
+    },
+    "published_network_k_mD": 1486.0,
+    "not_assigned_to_crops": true,
+    "boundary_condition_match_independently_verified": false
+  },
+  {
+    "parent": "S3",
+    "source_shape_zyx": [
+      300,
+      300,
+      300
+    ],
+    "voxel_size_m": 9.1e-06,
+    "published_full_volume_directional_k_mD": {
+      "x": 143.0,
+      "y": 420.0,
+      "z": 109.0
+    },
+    "published_network_k_mD": 281.0,
+    "not_assigned_to_crops": true,
+    "boundary_condition_match_independently_verified": false
+  },
+  {
+    "parent": "S5",
+    "source_shape_zyx": [
+      300,
+      300,
+      300
+    ],
+    "voxel_size_m": 3.997e-06,
+    "published_full_volume_directional_k_mD": {
+      "x": 4638.0,
+      "y": 4874.0,
+      "z": 4440.0
+    },
+    "published_network_k_mD": 5369.0,
+    "not_assigned_to_crops": true,
+    "boundary_condition_match_independently_verified": false
+  },
+  {
+    "parent": "S9",
+    "source_shape_zyx": [
+      300,
+      300,
+      300
+    ],
+    "voxel_size_m": 3.398e-06,
+    "published_full_volume_directional_k_mD": {
+      "x": 2735.0,
+      "y": 2093.0,
+      "z": 1844.0
+    },
+    "published_network_k_mD": 3640.0,
+    "not_assigned_to_crops": true,
+    "boundary_condition_match_independently_verified": false
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "locked_utc": "2026-10-22T16:13:34.904609+00:00",
+  "source": "Official Imperial College ImagesICPSC2007 archive",
+  "source_page": "https://www.imperial.ac.uk/earth-science/research/research-groups/pore-scale-modelling/micro-ct-images-and-networks/",
+  "archive_url": "https://imperialcollegelondon.box.com/shared/static/2x0zkaqw9swr47nqjm9xww6z9iu39sn0.zip",
+  "external_parents": [
+    "S1",
+    "S3",
+    "S5",
+    "S9"
+  ],
+  "crop_rule": "all eight non-overlapping 128-cube corners; image zero is pore",
+  "exclusion_rule": "log every crop; exclude only extraction/PNM failures or invalid binary encoding; no score-based exclusions",
+  "training_parents": [
+    "Berea",
+    "C1",
+    "C2",
+    "Estaillades"
+  ],
+  "external_labels_for_tuning": false,
+  "note": "Four sandstone parent specimens, not four geological formations. External results remain PNM-referenced."
+}

@@ -1,0 +1,38 @@
+{
+  "name": "S1",
+  "shape_zyx": [
+    300,
+    300,
+    300
+  ],
+  "voxel_size_m": 8.683e-06,
+  "porosity": 0.14130277777777778,
+  "num_nodes": 2839,
+  "num_directed_edges": 8878,
+  "pnm_k_m2": 3.380108678220699e-13,
+  "graph_path": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\full_volume_reference\\S1.pt",
+  "process_peak_rss_bytes": 2417217536,
+  "diagnostics": {
+    "relative_mass_imbalance": 4.644550443795518e-14,
+    "relative_internal_residual": 2.3486516812082027e-13,
+    "active_pores": 2855,
+    "excluded_pores": 181,
+    "flow_rate_m3_s": 8.804845554274227e-13,
+    "pressure_drop_pa": 1.0,
+    "viscosity_pa_s": 0.001,
+    "flow_axis": 0,
+    "node_diameter": "equivalent diameter",
+    "throat_diameter": "inscribed diameter",
+    "throat_length": "direct center distance including boundary conduits",
+    "boundary_nodes_in_gnn": false,
+    "sigma": 0.4,
+    "r_max": 4,
+    "reference_limitation": "Cylindrical-throat PNM approximation; boundary-conduit geometry is not DNS validated",
+    "timing_seconds": {
+      "snow2": 43.75476290000006,
+      "pnm_solve": 0.013010700000450015,
+      "graph_conversion": 0.0009630999993532896,
+      "total_extraction_and_reference": 43.76873669999986
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "external_protocol_sha256": "da52acd419722f393b9de4ea83001c7eae42c67732b6218a4e08ab6347fa7ff5",
+  "archive_sha1": "d07c1d3403a19d4b39492d9671805cfd3b65c2f5",
+  "archive_sha256": "2c4bde49b3b21177fbb1183d2ee25734cc44a9cf7e4bc74adb6b14e5d3c84308",
+  "external_attempts": 32,
+  "accepted": 32,
+  "rejected": 0,
+  "source_sha256": "9822c0423178eae9c351fa876c8701201d4cd43fbe51ac45b425e405e6675404",
+  "extractor_sha256": "7cfa62f004b47fef0e56aefec1d147a4c08bc96afc3fdb1206b14738ed393d2c",
+  "phase_rule": "0 is pore; corroborate whole-volume fraction against header porosity",
+  "external_scans_are_not_used_for_tuning": true
+}

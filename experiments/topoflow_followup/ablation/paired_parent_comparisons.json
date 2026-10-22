@@ -1,0 +1,65 @@
+{
+  "comparisons": [
+    {
+      "comparator": "gat_descriptors_only",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.35123995520745405,
+        0.3560557241569176,
+        -0.06861969684484781,
+        0.5412865839485441
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.11937066401328997,
+      "exact_two_sided_sign_flip_p": 0.625
+    },
+    {
+      "comparator": "gat_normalized_only",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.15877541258672745,
+        0.5415731180701826,
+        0.08923599717175756,
+        0.08683508971717868
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.21910490438646157,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "gat_standard",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.044627442767234404,
+        5.742877449527183,
+        0.5392011480104484,
+        0.5591160112070942
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 1.72145551287799,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "pore_set_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.4754106611234655,
+        0.5200557460076085,
+        -0.005203317274956376,
+        0.08407984148777653
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.030880402274240784,
+      "exact_two_sided_sign_flip_p": 0.75
+    },
+    {
+      "comparator": "uniform_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.4819619527414656,
+        0.09242102058193441,
+        -0.03218478346321918,
+        0.7120876626846631
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.07259048676547818,
+      "exact_two_sided_sign_flip_p": 0.75
+    }
+  ],
+  "limitation": "Four scans; minimum possible two-sided exact p is 0.125. Cross-validation training folds overlap; effects are exploratory, not population-level evidence."
+}

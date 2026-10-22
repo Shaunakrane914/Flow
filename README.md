@@ -1,5 +1,7 @@
 # TopoFlow GNN
 
+Latest follow-up: [critical-throat intervention pilot and locked external scans](experiments/topoflow_followup/FOLLOWUP_REPORT.md).
+
 Current evaluation: [natural-rock research results](experiments/topoflow_research_v2/README.md), [measured comparison tables](experiments/topoflow_research_v2/tables/paper_comparison.md), and [manuscript replacement text](experiments/topoflow_research_v2/manuscript_insert.md).
 
 > **Research status:** Historical accuracy, threshold, speed and memory figures below have not been validated by the corrected experiment workflow. Do not cite them as reproduced results. See [Experiments 1 and 2](experiments/README.md) for the current manifest-based training, evaluation, public-data pilot, and evidence exports.

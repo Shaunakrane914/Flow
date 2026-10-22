@@ -65,17 +65,19 @@ class TrainTransform:
 
 class ScaleAwareRegressor(nn.Module):
     """Existing GAT/SAGE/pore-set encoder with a matched graph-geometry residual head."""
-    def __init__(self, architecture, geometry_features=10, physics=True, dropout=0.1):
+    def __init__(self, architecture, geometry_features=10, physics=True, dropout=0.1,
+                 geometry=None):
         super().__init__()
         self.physics = physics
+        self.use_geometry = physics if geometry is None else geometry
         self.encoder = make_model(architecture, dropout)
-        if physics:
+        if self.use_geometry:
             self.geometry_head = nn.Sequential(nn.Linear(geometry_features, 16), nn.ELU(),
                                                nn.Dropout(dropout), nn.Linear(16, 1))
 
     def forward(self, batch):
         value = self.encoder(batch.x, batch.edge_index, batch.batch).reshape(-1)
-        if self.physics:
+        if self.use_geometry:
             value = value + self.geometry_head(batch.geometry).reshape(-1)
         return value
 

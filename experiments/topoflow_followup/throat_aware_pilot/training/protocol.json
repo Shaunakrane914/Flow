@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "locked_utc": "2026-10-22T16:27:54.978518+00:00",
+  "models": [
+    "edge_gat",
+    "guided_edge_gat",
+    "edge_sage",
+    "edge_mlp",
+    "guided_edge_sage",
+    "guided_edge_mlp"
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "learning_rate": 0.003,
+  "weight_decay": 0.0001,
+  "epochs_max": 80,
+  "patience": 15,
+  "guidance_weight": 0.05,
+  "primary_model": "guided_edge_gat",
+  "primary_metric": "per-graph mean absolute fractional permeability-loss error over three high and three random internal throats at 10/25/50 percent diameter restriction",
+  "epoch_selection": "leave-one-development-parent-out, selection seed 2026; median selected epoch for final full-development fit",
+  "development_graphs": 8,
+  "development_parents": [
+    "parent_berea",
+    "parent_c1",
+    "parent_c2",
+    "parent_estaillades"
+  ],
+  "external_graphs": 4,
+  "external_parents": [
+    "external_S1",
+    "external_S3",
+    "external_S5",
+    "external_S9"
+  ],
+  "target": "PNM counterfactual response; no voxel-flow or real-clogging validation",
+  "model_output": "global hydraulic importance head and bounded edge leverage; not native GAT attention coefficients",
+  "readout": "loss=-(r_g-1)*s/(1+(r_g-1)*l); r_g=(1-diameter_restriction)^4",
+  "input": "geometry/boundary/connectivity only; pressures/flows/sensitivities never read during forward",
+  "manifest_sha256": "31193ab4414e716d0c2eb84364dfcbcb9cca8e73b5e0ae98deca86cfa48a12f3",
+  "source_hashes": {
+    "scripts\\train_throat_pilot.py": "1cd50e5c830674616e6c9d69714c95c0736c06d23480f5cb4712ac979526613c",
+    "src\\critical_throat_model.py": "38f7fe3eeb06691426a85e0f0b7a124ea740137f54d2f1ce3cb7b80cf17d3267"
+  },
+  "resume_source_hashes": {
+    "scripts\\train_throat_pilot.py": "bf4f14bd25815fcbeb737b8c0fa926146bfb7f6a7d64b540cf9f28fc4f3da8be",
+    "src\\critical_throat_model.py": "38f7fe3eeb06691426a85e0f0b7a124ea740137f54d2f1ce3cb7b80cf17d3267"
+  },
+  "resume_reason": "Corrected unavailable torch.flatnonzero export API to torch.nonzero; model and selected epochs unchanged.",
+  "posthoc_controls": [
+    "guided_edge_sage",
+    "guided_edge_mlp"
+  ],
+  "posthoc_control_scope": "Added after the first external pilot results to separate guidance from architecture; exploratory test-set reuse, no hyperparameter changes."
+}

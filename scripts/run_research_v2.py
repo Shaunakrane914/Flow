@@ -50,14 +50,15 @@ def predict(model, transformed, indices, transform):
 
 
 def fit_neural(name, records, graphs, train, validation, seed, config, epochs, patience,
-               fixed_epochs=None):
+               fixed_epochs=None, geometry=None):
     set_seed(seed)
     architecture, physics = NEURAL[name]
     transform = TrainTransform.fit(records, graphs, train, physics)
     # Transform only needed samples: no test labels enter the optimization or selection.
     needed = sorted(set(train) | set(validation))
     transformed = {i: transform.apply(records[i], graphs[i]) for i in needed}
-    model = ScaleAwareRegressor(architecture, physics=physics, dropout=config['dropout'])
+    model = ScaleAwareRegressor(architecture, physics=physics, dropout=config['dropout'],
+                                geometry=geometry)
     optimizer = torch.optim.AdamW(model.parameters(), lr=config['learning_rate'],
                                   weight_decay=config['weight_decay'])
     generator = torch.Generator().manual_seed(seed)

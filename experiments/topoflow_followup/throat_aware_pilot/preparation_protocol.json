@@ -1,0 +1,24 @@
+{
+  "locked_utc": "2026-10-22T16:25:57.015253+00:00",
+  "sample_ids": [
+    "external_S1_crop_00",
+    "external_S3_crop_00",
+    "external_S5_crop_00",
+    "external_S9_crop_00",
+    "parent_berea_crop_00",
+    "parent_berea_crop_01",
+    "parent_c1_crop_00",
+    "parent_c1_crop_01",
+    "parent_c2_crop_01",
+    "parent_c2_crop_03",
+    "parent_estaillades_crop_01",
+    "parent_estaillades_crop_02"
+  ],
+  "development_graphs": 8,
+  "external_graphs": 4,
+  "selection": "two lexicographically first accepted crops per development scan; one per external scan",
+  "target": "PNM sensitivity and exact single-throat fractional response under that closure",
+  "physical_reference": "No voxel-resolved target is used in this intervention pilot",
+  "input_features": "node geometry, coordinates, boundary flags, throat geometry and conductance proxy only; no pressures, flows or labels",
+  "source_sha256": "d9c45cd73d094176fedb5fe8239f84bf12dddf9612e4eff802b88df48ff6a16a"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "unit_tests_last_run": 21,
+  "development_natural_crops": 24,
+  "external_crops": 32,
+  "named_development_scans": 4,
+  "named_external_scans": 4,
+  "ablation_new_checkpoints": 40,
+  "external_permeability_checkpoints": 30,
+  "throat_pilot_checkpoints": 30,
+  "physical_probe_interventions": 96,
+  "probe_prediction_rows": 192,
+  "external_permeability_prediction_rows": 2080,
+  "external_throat_prediction_rows": 2880,
+  "critical_pilot_development_graphs": 8,
+  "critical_pilot_external_graphs": 4,
+  "metric_recalculation_matches": true,
+  "source_snapshot_hashes_match": true,
+  "external_selection_excludes_external_parents": true,
+  "geometry_only_forward_unit_test_passed": true,
+  "unresolved_scientific_limits": [
+    "External specimen independence beyond public IDs is unverified.",
+    "Only four external intervention graphs; no population-level architectural superiority.",
+    "Two equally guided controls are explicitly post hoc.",
+    "All intervention targets use a PNM approximation; published full-volume boundary conditions are not fully matched."
+  ]
+}

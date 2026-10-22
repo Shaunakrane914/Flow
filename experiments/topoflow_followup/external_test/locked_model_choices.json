@@ -1,0 +1,81 @@
+{
+  "constant": {
+    "config": null,
+    "epochs": null,
+    "development_macro_mse": 0.8507794015334961
+  },
+  "porosity_kc": {
+    "config": null,
+    "epochs": null,
+    "development_macro_mse": 0.566190344563165
+  },
+  "scaled_kc": {
+    "config": null,
+    "epochs": null,
+    "development_macro_mse": 0.6614735241405285
+  },
+  "physics_ridge": {
+    "config": 100.0,
+    "epochs": null,
+    "development_macro_mse": 0.5782463191558993
+  },
+  "descriptors": {
+    "config": 2,
+    "epochs": null,
+    "development_macro_mse": 0.6315609324797951
+  },
+  "gat_standard": {
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 15,
+    "development_macro_mse": 0.41192214285590534
+  },
+  "gat_physics": {
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 14,
+    "development_macro_mse": 0.3572424941746309
+  },
+  "gat_normalized_only": {
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 15,
+    "development_macro_mse": 0.3896336452590684
+  },
+  "gat_descriptors_only": {
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 6,
+    "development_macro_mse": 0.5406690409616195
+  },
+  "uniform_physics": {
+    "config": {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    },
+    "epochs": 3,
+    "development_macro_mse": 0.33695460988115256
+  },
+  "pore_set_physics": {
+    "config": {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    "epochs": 18,
+    "development_macro_mse": 0.3638267317215918
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "sample_id": "parent_berea_crop_00",
+    "parent_id": "parent_berea",
+    "base_log_label_agrees": true,
+    "sum_dissipation_fraction": 1.0000000000000027,
+    "finite_difference_sensitivity": 0.062191683781685866,
+    "analytic_sensitivity": 0.06219172240569156,
+    "relative_mass_imbalance": 5.012803204713629e-14
+  },
+  {
+    "sample_id": "parent_c1_crop_00",
+    "parent_id": "parent_c1",
+    "base_log_label_agrees": true,
+    "sum_dissipation_fraction": 1.0000000000000013,
+    "finite_difference_sensitivity": 0.2751993239525518,
+    "analytic_sensitivity": 0.27520003832517886,
+    "relative_mass_imbalance": 1.944157759815587e-13
+  },
+  {
+    "sample_id": "parent_c2_crop_01",
+    "parent_id": "parent_c2",
+    "base_log_label_agrees": true,
+    "sum_dissipation_fraction": 0.9999999999999765,
+    "finite_difference_sensitivity": 0.703024361948858,
+    "analytic_sensitivity": 0.703025407345378,
+    "relative_mass_imbalance": 3.840515454083414e-13
+  },
+  {
+    "sample_id": "parent_estaillades_crop_01",
+    "parent_id": "parent_estaillades",
+    "base_log_label_agrees": true,
+    "sum_dissipation_fraction": 1.0000000000000095,
+    "finite_difference_sensitivity": 0.5668754808178906,
+    "analytic_sensitivity": 0.56687567094685,
+    "relative_mass_imbalance": 7.3072496053137e-14
+  }
+]

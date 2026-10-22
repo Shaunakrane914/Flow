@@ -1,0 +1,149 @@
+{
+  "comparisons": [
+    {
+      "comparator": "constant",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.00876827059898233,
+        -0.6882382473975495,
+        0.5603831514133426,
+        0.41321069394803744
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.06914683184121206,
+      "exact_two_sided_sign_flip_p": 1.0
+    },
+    {
+      "comparator": "descriptors",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.8028871675900643,
+        -0.6304947134448153,
+        -0.1771750345977563,
+        -0.12772480433836103
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.033126846197717094,
+      "exact_two_sided_sign_flip_p": 0.875
+    },
+    {
+      "comparator": "gat_descriptors_only",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.146523090396723,
+        -0.3787582306978057,
+        -0.19206266813732265,
+        -0.16358895090097963
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.14697168983484624,
+      "exact_two_sided_sign_flip_p": 0.25
+    },
+    {
+      "comparator": "gat_normalized_only",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.08281184247227401,
+        -0.631130034529921,
+        -0.04196460784301012,
+        -0.005519295953642339
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.14895052396357486,
+      "exact_two_sided_sign_flip_p": 0.625
+    },
+    {
+      "comparator": "gat_standard",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        8.6513872518137,
+        4.240912058776556,
+        0.4604831452525863,
+        0.6866124389614233
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 3.509848723701067,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "physics_ridge",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.09550937342299504,
+        -0.6422016413578374,
+        -0.1825076898666558,
+        -0.13732369593026217
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.26438560014443757,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "pore_set_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.07471785931025748,
+        -0.5656137400760612,
+        -0.16191912747108478,
+        -0.14279712089929247
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.23626196193917398,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "porosity_kc",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.34767560063287656,
+        -0.7065672879077336,
+        0.1728537875112604,
+        -0.10430463889642225
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.07258563466500473,
+      "exact_two_sided_sign_flip_p": 0.875
+    },
+    {
+      "comparator": "scaled_kc",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        -0.09300047613736091,
+        -0.5474496575874874,
+        -0.04166018520380155,
+        -0.16232179195827373
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.21110802772173093,
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "comparator": "selected_all",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.026558721603701888,
+        -0.4297106237939677,
+        -0.0009113273165125002,
+        0.019874864130836695
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.0960470913439854,
+      "exact_two_sided_sign_flip_p": 0.875
+    },
+    {
+      "comparator": "selected_gat",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": 0.0,
+      "exact_two_sided_sign_flip_p": 1.0
+    },
+    {
+      "comparator": "uniform_physics",
+      "natural_parents": 4,
+      "parent_mse_differences": [
+        0.026558721603701888,
+        -0.4297106237939677,
+        -0.0009113273165125002,
+        0.019874864130836695
+      ],
+      "mean_mse_difference_positive_favors_gat_physics": -0.0960470913439854,
+      "exact_two_sided_sign_flip_p": 0.875
+    }
+  ],
+  "limitation": "Four scans; minimum possible two-sided exact p is 0.125. Cross-validation training folds overlap; effects are exploratory, not population-level evidence."
+}

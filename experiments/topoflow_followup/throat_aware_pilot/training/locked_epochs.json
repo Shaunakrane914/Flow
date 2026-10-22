@@ -1,0 +1,8 @@
+{
+  "edge_gat": 7,
+  "guided_edge_gat": 15,
+  "edge_sage": 6,
+  "edge_mlp": 6,
+  "guided_edge_sage": 12,
+  "guided_edge_mlp": 22
+}

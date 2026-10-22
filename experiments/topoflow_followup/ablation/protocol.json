@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-22T16:11:39.097530+00:00",
+  "source_protocol_sha256": "54a4f8085e55fb79fc8db2636d0b4c9ac3badd7ce424d56eeebaa921b1c75fbe",
+  "cells": {
+    "gat_standard": [
+      false,
+      false
+    ],
+    "gat_physics": [
+      true,
+      true
+    ],
+    "gat_normalized_only": [
+      true,
+      false
+    ],
+    "gat_descriptors_only": [
+      false,
+      true
+    ]
+  },
+  "configs": [
+    {
+      "learning_rate": 0.001,
+      "dropout": 0.0,
+      "weight_decay": 0.001
+    },
+    {
+      "learning_rate": 0.003,
+      "dropout": 0.1,
+      "weight_decay": 0.001
+    }
+  ],
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "epochs": 120,
+  "patience": 20,
+  "selection_seed": 2026,
+  "purpose": "Exploratory 2x2 physical input/target normalization and graph-descriptor study",
+  "reuse": [
+    "gat_standard",
+    "gat_physics"
+  ],
+  "new": [
+    "gat_normalized_only",
+    "gat_descriptors_only"
+  ],
+  "external_labels_used": false,
+  "manifest_sha256": "5f4fdd55eadcefb309a7d0b80066c1668b34f2e7253834746507139e3df00472",
+  "source_hashes": {
+    "scripts\\run_factorial_ablation.py": "b99808cef952ff4f6cf460144311160ef10e6011b592e5da4a28cb6a9766302c",
+    "src\\research_evaluation.py": "d7610becadcb586cd7b4c743ed5bc3180b2d5ad084ebd352438722b52f86a3f0",
+    "scripts\\run_research_v2.py": "a1bb8cf5d654a71c219b033d07084335bf03dbd96ff28806e96ac8303b32c4a0"
+  },
+  "elapsed_seconds": 198.2403804000005
+}

@@ -1,0 +1,43 @@
+ObjectType =  Image
+NDims =	   3
+ElementType = MET_UCHAR
+ElementByteOrderMSB = False
+ElementNumberOfChannels = 1
+CompressedData = True
+
+
+DimSize =    	300 300 300
+ElementSize =	3.398 	3.398 	3.398
+Offset =    	0.0   0.0   0.0
+
+ElementDataFile = S9.raw.gz
+
+
+
+
+
+
+end
+
+//! summary_results_2009:
+  Sandstone S9
+  
+  x: 300
+  y: 300
+  z: 300
+  
+  Resolution (�m) : 3.398
+  
+  Porosity(%)	22.2
+  Kx (mD) 	2735
+  Ky (mD)		2093
+  Kz (mD)		1844
+  Avg. K (mD) 	2224
+  Network K (mD) 	3640
+  	
+  FFx		16.42
+  FFy		19.85
+  FFz		18.1
+  Avg. FF		18.02
+  Network FF	8.69
+

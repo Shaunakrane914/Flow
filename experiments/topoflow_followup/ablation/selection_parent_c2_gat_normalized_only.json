@@ -1,0 +1,12 @@
+{
+  "candidate": 0,
+  "config": {
+    "learning_rate": 0.001,
+    "dropout": 0.0,
+    "weight_decay": 0.001
+  },
+  "inner_parent_mse": 0.2993399968592576,
+  "epochs": 38,
+  "physics": true,
+  "geometry": false
+}

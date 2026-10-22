@@ -1,0 +1,86 @@
+[
+  {
+    "comparator": "edge_gat",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.00017828895191390054,
+      0.002068493543204871,
+      -0.003475922038155152,
+      0.013819919537030503
+    ],
+    "parent_mean_effect": 0.0031476949984985307,
+    "exploratory_exact_sign_flip_p": 0.625,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "edge_sage",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.002584799591649138,
+      0.0024778403335909,
+      0.002163588740490413,
+      0.009990112965669415
+    ],
+    "parent_mean_effect": 0.0043040854078499665,
+    "exploratory_exact_sign_flip_p": 0.125,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "guided_edge_sage",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.014388950306561628,
+      0.0021366457440510425,
+      -0.008795368362163776,
+      0.01065787464606463
+    ],
+    "parent_mean_effect": 0.004597025583628381,
+    "exploratory_exact_sign_flip_p": 0.375,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "edge_mlp",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.001643005400627666,
+      0.003506577609186934,
+      0.005325491141517577,
+      0.01806661467143726
+    ],
+    "parent_mean_effect": 0.00713542220569236,
+    "exploratory_exact_sign_flip_p": 0.125,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "guided_edge_mlp",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.007521702130341305,
+      0.0020905307964413714,
+      -0.010770909783660604,
+      0.011835132063520049
+    ],
+    "parent_mean_effect": 0.0026691138016605304,
+    "exploratory_exact_sign_flip_p": 0.625,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "no_response",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.007759164305429694,
+      0.0038385101371507836,
+      0.01434530808463326,
+      0.034266487825935124
+    ],
+    "parent_mean_effect": 0.015052367588287215,
+    "exploratory_exact_sign_flip_p": 0.125,
+    "independent_test_groups": 4
+  },
+  {
+    "comparator": "conductance_proxy",
+    "parent_mae_differences_positive_favors_guided_gat": [
+      0.007627031721595914,
+      0.0037730259839160382,
+      0.01480184914314324,
+      0.0350636996991644
+    ],
+    "parent_mean_effect": 0.015316401636954897,
+    "exploratory_exact_sign_flip_p": 0.125,
+    "independent_test_groups": 4
+  }
+]

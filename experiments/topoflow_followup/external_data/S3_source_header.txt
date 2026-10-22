@@ -1,0 +1,44 @@
+ObjectType =  Image
+NDims =	   3
+ElementType = MET_UCHAR
+ElementByteOrderMSB = False
+ElementNumberOfChannels = 1
+CompressedData = True
+
+
+DimSize =    	300  300 300
+ElementSize =	9.1 	9.1 	9.1
+Offset =    	0.0   0.0   0.0
+
+ElementDataFile = S3.raw.gz
+
+
+
+
+
+
+end
+
+//! summary_results_2009:
+  Sandstone S3
+  
+  x: 300
+  y: 300
+  z: 300
+  
+  Resolution (�m) : 9.1
+  
+  Porosity(%)	16.9
+  
+  Kx (mD) 	143
+  Ky (mD)		420
+  Kz (mD)		109
+  Avg. K (mD) 	224
+  Network K (mD) 	281
+  	
+  FFx		52.16
+  FFy		41.89
+  FFz		70.32
+  Avg. FF		52.39
+  Network FF	37.4
+

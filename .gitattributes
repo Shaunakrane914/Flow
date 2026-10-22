@@ -1,2 +1,3 @@
 # Reproducibility snapshots must retain the bytes recorded in their SHA-256 hashes.
 experiments/topoflow_research_v2/run_sources/** -text
+experiments/topoflow_followup/source_snapshot/** -text

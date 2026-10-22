@@ -1,0 +1,8 @@
+{
+  "domain": "Exact full 300-cubed source binary, not crop targets",
+  "direction": "array axis 0 mapped to source z; nominal Kz comparison",
+  "source": "official archive summary_results_2009; primary source Dong and Blunt (2009), doi:10.1103/PhysRevE.80.036307",
+  "published_boundary_settings_fully_matched": false,
+  "interpretation": "Cross-method consistency check. Differences combine closure, extraction and possible boundary conventions. The 300-cube GAT inputs also exceed its 128-cube training size. Neither agreement nor disagreement alone certifies physical accuracy.",
+  "published_network_values_not_used_as_direct_reference": true
+}

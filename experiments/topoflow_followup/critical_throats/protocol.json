@@ -1,0 +1,38 @@
+{
+  "status": "aborted_validation",
+  "created_utc": "2026-10-22T16:16:06.355873+00:00",
+  "samples": [
+    "parent_berea_crop_00",
+    "parent_c1_crop_00",
+    "parent_c2_crop_01",
+    "parent_estaillades_crop_01"
+  ],
+  "parents": [
+    "parent_berea",
+    "parent_c1",
+    "parent_c2",
+    "parent_estaillades"
+  ],
+  "selection": "lexicographically first accepted crop per natural parent",
+  "high_selection": "top three internal physical throats by base PNM dissipation fraction",
+  "random_selection": "three random other internal physical throats; fixed seed 20261022",
+  "restrictions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "full_blockage": "delete throat; disconnected spanning path means k=0, not an invalid log label",
+  "reference": "same fixed-pressure cylindrical-throat PNM closure; length held constant",
+  "sensitivity": "d log(k) / d log(g_e) = g_e*(p_i-p_j)^2/(Q*DeltaP)",
+  "attention": "last GAT layer, mean of two directed coefficients, self loops excluded",
+  "attention_limitation": "Local attention normalization differs from global physical dissipation; ranking is diagnostic, not a causal explanation.",
+  "manifest_sha256": "5f4fdd55eadcefb309a7d0b80066c1668b34f2e7253834746507139e3df00472",
+  "independent_rocks": 4,
+  "source_hashes": {
+    "scripts\\probe_critical_throats.py": "b24bc030488c62b76ec64f46ec636122febab38fd71b4440590742312eab3fbd",
+    "src\\research_pnm.py": "7cfa62f004b47fef0e56aefec1d147a4c08bc96afc3fdb1206b14738ed393d2c"
+  },
+  "reason": "Finite-difference check was too sensitive to float32 diameter perturbations. Corrected to double precision before a fresh complete run.",
+  "replacement": "critical_throats_verified/"
+}

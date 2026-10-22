@@ -7,7 +7,7 @@ from scipy.sparse.linalg import spsolve
 
 
 def solve_permeability(coords, conns, diameter, length, inlet, outlet, shape,
-                       voxel_size, flow_axis=0, viscosity=.001, pressure_drop=1.):
+                       voxel_size, flow_axis=0, viscosity=.001, pressure_drop=1., return_fields=False):
     """Solve mass conservation with Hagen–Poiseuille conductances and fixed pressures.
 
     Geometry is supplied in SI units. Inlet/outlet masks are supplied explicitly;
@@ -66,13 +66,23 @@ def solve_permeability(coords, conns, diameter, length, inlet, outlet, shape,
     physical_shape = np.asarray(shape) * voxel_size
     area = float(np.prod(np.delete(physical_shape, flow_axis)))
     k = q_out * viscosity * physical_shape[flow_axis] / (area * pressure_drop)
-    return float(k), {'relative_mass_imbalance': balance, 'relative_internal_residual': residual,
+    diagnostics = {'relative_mass_imbalance': balance, 'relative_internal_residual': residual,
                       'active_pores': int(active.sum()), 'excluded_pores': int((~active).sum()),
                       'flow_rate_m3_s': q_out, 'pressure_drop_pa': pressure_drop,
                       'viscosity_pa_s': viscosity, 'flow_axis': flow_axis}
+    if return_fields:
+        conductance=np.zeros(len(conns));conductance[keep_throats]=g
+        throat_drop=pressure[conns[:,0]]-pressure[conns[:,1]]
+        dissipation=conductance*throat_drop**2
+        sensitivity=dissipation/(q_out*pressure_drop)
+        diagnostics['fields']={'pressure_pa':pressure,'throat_conductance':conductance,
+                               'throat_flow_m3_s':conductance*throat_drop,
+                               'dissipation_fraction':sensitivity,
+                               'active_pores_mask':active}
+    return float(k), diagnostics
 
 
-def extract_pilot_graph(image, voxel_size):
+def extract_pilot_graph(image, voxel_size, return_network=False):
     """SNOW2 with x boundaries; use physical pore features and document the closure."""
     import porespy as ps
     import torch
@@ -113,4 +123,6 @@ def extract_pilot_graph(image, voxel_size):
                                      'pnm_solve': solve_finished - snow_finished,
                                      'graph_conversion': finished - solve_finished,
                                      'total_extraction_and_reference': finished - started}
+    if return_network:
+        return graph, diagnostics, net
     return graph, diagnostics

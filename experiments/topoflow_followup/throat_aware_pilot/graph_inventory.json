@@ -1,0 +1,314 @@
+[
+  {
+    "sample_id": "external_S1_crop_00",
+    "parent_id": "external_S1",
+    "role": "external",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\external_S1_crop_00.pt",
+    "graph_sha256": "d477b1b2a42d4799f43a93305979b25cffbc938e231ff0e7b399aae5b8b349fd",
+    "diagnostics": {
+      "base_k_m2": 3.1264107268370166e-13,
+      "relative_mass_imbalance": 1.1623705331582255e-14,
+      "dissipation_sum": 0.9999999999999974,
+      "finite_response_identity_max_error": 8.1601392309949e-15,
+      "nodes": 279,
+      "undirected_throats": 399,
+      "internal_throats": 366,
+      "selected_high_throats": [
+        151,
+        205,
+        150
+      ],
+      "selected_random_throats": [
+        171,
+        66,
+        64
+      ]
+    }
+  },
+  {
+    "sample_id": "external_S3_crop_00",
+    "parent_id": "external_S3",
+    "role": "external",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\external_S3_crop_00.pt",
+    "graph_sha256": "95de736581ce897b9da6fc19e71884b37cad5a08df0c892ce9da3bd3334c6f6e",
+    "diagnostics": {
+      "base_k_m2": 1.5359961381382903e-13,
+      "relative_mass_imbalance": 8.324553290220021e-14,
+      "dissipation_sum": 0.9999999999999983,
+      "finite_response_identity_max_error": 1.8318679906315083e-15,
+      "nodes": 1032,
+      "undirected_throats": 1514,
+      "internal_throats": 1419,
+      "selected_high_throats": [
+        636,
+        388,
+        948
+      ],
+      "selected_random_throats": [
+        1195,
+        280,
+        417
+      ]
+    }
+  },
+  {
+    "sample_id": "external_S5_crop_00",
+    "parent_id": "external_S5",
+    "role": "external",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\external_S5_crop_00.pt",
+    "graph_sha256": "f56bff70d336bd8854eebea7224ad5bf051c421f182629565e742b6ee985d424",
+    "diagnostics": {
+      "base_k_m2": 5.441187404490926e-13,
+      "relative_mass_imbalance": 4.787916110446159e-14,
+      "dissipation_sum": 0.9999999999999896,
+      "finite_response_identity_max_error": 9.492406860545088e-15,
+      "nodes": 136,
+      "undirected_throats": 202,
+      "internal_throats": 175,
+      "selected_high_throats": [
+        144,
+        29,
+        135
+      ],
+      "selected_random_throats": [
+        64,
+        59,
+        1
+      ]
+    }
+  },
+  {
+    "sample_id": "external_S9_crop_00",
+    "parent_id": "external_S9",
+    "role": "external",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\external_S9_crop_00.pt",
+    "graph_sha256": "f095ab981d7a8e572138a793bec903917f414b4c9125828206f281bc66ef262d",
+    "diagnostics": {
+      "base_k_m2": 3.164476405629764e-13,
+      "relative_mass_imbalance": 2.886821518212388e-13,
+      "dissipation_sum": 0.9999999999999918,
+      "finite_response_identity_max_error": 2.275957200481571e-15,
+      "nodes": 152,
+      "undirected_throats": 202,
+      "internal_throats": 184,
+      "selected_high_throats": [
+        170,
+        50,
+        112
+      ],
+      "selected_random_throats": [
+        40,
+        95,
+        17
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_berea_crop_00",
+    "parent_id": "parent_berea",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_berea_crop_00.pt",
+    "graph_sha256": "f39d2a8e7d7f915598f037511bed36c3231ca278adf2bbf47fcbdcb4ed4bd647",
+    "diagnostics": {
+      "base_k_m2": 3.032559241138328e-13,
+      "relative_mass_imbalance": 5.012803204713629e-14,
+      "dissipation_sum": 1.0000000000000027,
+      "finite_response_identity_max_error": 3.2252913989734566e-15,
+      "nodes": 519,
+      "undirected_throats": 803,
+      "internal_throats": 736,
+      "selected_high_throats": [
+        303,
+        481,
+        432
+      ],
+      "selected_random_throats": [
+        612,
+        575,
+        477
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_berea_crop_01",
+    "parent_id": "parent_berea",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_berea_crop_01.pt",
+    "graph_sha256": "2038bfb94c0671b7aeb7de8b37d9dd38b2fb3a421186f400d2b399fa099af07c",
+    "diagnostics": {
+      "base_k_m2": 4.437951964749752e-13,
+      "relative_mass_imbalance": 3.4918809272875906e-15,
+      "dissipation_sum": 0.9999999999999957,
+      "finite_response_identity_max_error": 6.350660015225218e-15,
+      "nodes": 550,
+      "undirected_throats": 875,
+      "internal_throats": 800,
+      "selected_high_throats": [
+        130,
+        388,
+        668
+      ],
+      "selected_random_throats": [
+        265,
+        639,
+        838
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_c1_crop_00",
+    "parent_id": "parent_c1",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_c1_crop_00.pt",
+    "graph_sha256": "1b74e3428683049686871defaf4f14fb3231d9ecffaba8d40e9ee0c6132c793c",
+    "diagnostics": {
+      "base_k_m2": 1.2706685919490213e-13,
+      "relative_mass_imbalance": 1.944157759815587e-13,
+      "dissipation_sum": 1.0000000000000013,
+      "finite_response_identity_max_error": 1.5543122344752192e-15,
+      "nodes": 271,
+      "undirected_throats": 331,
+      "internal_throats": 298,
+      "selected_high_throats": [
+        196,
+        308,
+        276
+      ],
+      "selected_random_throats": [
+        292,
+        219,
+        199
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_c1_crop_01",
+    "parent_id": "parent_c1",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_c1_crop_01.pt",
+    "graph_sha256": "972ec31194a537e5ba3683bd103038d6e5a5eb2fc6f7a9ab083e9f4897696a59",
+    "diagnostics": {
+      "base_k_m2": 3.308627854001433e-12,
+      "relative_mass_imbalance": 9.704331894009881e-15,
+      "dissipation_sum": 0.9999999999999953,
+      "finite_response_identity_max_error": 3.969047313034935e-15,
+      "nodes": 289,
+      "undirected_throats": 558,
+      "internal_throats": 524,
+      "selected_high_throats": [
+        157,
+        317,
+        158
+      ],
+      "selected_random_throats": [
+        79,
+        503,
+        57
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_c2_crop_01",
+    "parent_id": "parent_c2",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_c2_crop_01.pt",
+    "graph_sha256": "64408c1170fa991d5099c11994604015caa8c34b29ca42ba5951d841192a8525",
+    "diagnostics": {
+      "base_k_m2": 2.0310519800705693e-15,
+      "relative_mass_imbalance": 3.840515454083414e-13,
+      "dissipation_sum": 0.9999999999999765,
+      "finite_response_identity_max_error": 1.942890293094024e-14,
+      "nodes": 454,
+      "undirected_throats": 582,
+      "internal_throats": 538,
+      "selected_high_throats": [
+        100,
+        78,
+        139
+      ],
+      "selected_random_throats": [
+        11,
+        557,
+        262
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_c2_crop_03",
+    "parent_id": "parent_c2",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_c2_crop_03.pt",
+    "graph_sha256": "faa6f2ea63149aef07707df2d104dfcb7dc14c1a56a98d86966a509e9759bd50",
+    "diagnostics": {
+      "base_k_m2": 2.1032527702100272e-14,
+      "relative_mass_imbalance": 1.7586752202658498e-13,
+      "dissipation_sum": 1.00000000000004,
+      "finite_response_identity_max_error": 1.5054460567151713e-14,
+      "nodes": 500,
+      "undirected_throats": 627,
+      "internal_throats": 595,
+      "selected_high_throats": [
+        467,
+        428,
+        476
+      ],
+      "selected_random_throats": [
+        466,
+        481,
+        379
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_estaillades_crop_01",
+    "parent_id": "parent_estaillades",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_estaillades_crop_01.pt",
+    "graph_sha256": "41aa4dfbaa22f6aaeaf847187dea0674c4158c07d509aa846119ed2db13619da",
+    "diagnostics": {
+      "base_k_m2": 8.70057560264777e-14,
+      "relative_mass_imbalance": 7.3072496053137e-14,
+      "dissipation_sum": 1.0000000000000095,
+      "finite_response_identity_max_error": 1.0880185641326534e-14,
+      "nodes": 185,
+      "undirected_throats": 194,
+      "internal_throats": 171,
+      "selected_high_throats": [
+        173,
+        142,
+        133
+      ],
+      "selected_random_throats": [
+        132,
+        58,
+        83
+      ]
+    }
+  },
+  {
+    "sample_id": "parent_estaillades_crop_02",
+    "parent_id": "parent_estaillades",
+    "role": "development",
+    "graph": "C:\\Users\\Shaunak Rane\\Desktop\\Projects\\Mini Project\\data\\throat_pilot\\parent_estaillades_crop_02.pt",
+    "graph_sha256": "1d9e092ffdd647a87306a03456721094194ef83e91c043bb2fb9bf4c55505973",
+    "diagnostics": {
+      "base_k_m2": 3.1326625495707288e-12,
+      "relative_mass_imbalance": 1.7338649483834364e-14,
+      "dissipation_sum": 0.9999999999999921,
+      "finite_response_identity_max_error": 4.218847493575595e-15,
+      "nodes": 67,
+      "undirected_throats": 110,
+      "internal_throats": 99,
+      "selected_high_throats": [
+        7,
+        30,
+        4
+      ],
+      "selected_random_throats": [
+        47,
+        74,
+        38
+      ]
+    }
+  }
+]

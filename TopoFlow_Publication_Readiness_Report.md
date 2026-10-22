@@ -2,6 +2,14 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Further completed experiments:** [The follow-up report](experiments/topoflow_followup/FOLLOWUP_REPORT.md)
+now adds four named external scans and 32 crops, the controlled four-cell GAT
+ablation, and a trained critical-throat response pilot. The guided GAT achieves
+4.57 percentage-point response MAE versus 6.08 for predicting no response, on one
+graph per external scan. Its learned hydraulic-importance head is distinct from
+native GAT attention. This is preliminary PNM-based evidence with close controls,
+not a demonstrated population-level advantage or real-clogging validation.
+
 **Experimental update, 22 October 2026:** A new [completed research evaluation](experiments/topoflow_research_v2/README.md)
 now provides four-scan nested validation, five seeds, 100 trained checkpoints,
 source-byte checks for 24 natural-rock crops, measured component timings, and

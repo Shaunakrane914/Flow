@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-22T16:23:31.014917+00:00",
+  "preselected_full_scans": [
+    "S1",
+    "S5"
+  ],
+  "source": "official ImageICPSC2007 exact binary volumes",
+  "nominal_direction": "numpy axis 0 is source z, compare published Kz",
+  "reference_conditions": "Full voxelized-image and network K values reported separately in archive headers; exact boundary convention not independently matched.",
+  "not_a_crop_reference": true,
+  "worker_memory_limit_bytes": 2500000000,
+  "worker_timeout_seconds": 300,
+  "source_sha256": "895a69891339192e6f1037f72bc6b7f6219ea741ffbb5579bf665407c38555c4"
+}
