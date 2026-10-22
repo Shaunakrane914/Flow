@@ -157,8 +157,11 @@ Browser (SPA)
 
 See [`results/`](results/) for benchmark charts and per-dataset summaries.
 
-The retained [Word manuscript](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx) reports the
-completed comparisons. The [single-throat response derivation](docs/critical_throat_response_derivation.md)
+The [Atlantis proceedings manuscript](TopoFlow_Atlantis_ICISEA2026.docx) reports the
+completed comparisons in the publisher-linked template. The
+[IEEE copy](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx) is retained;
+[conversion notes](docs/atlantis_format_conversion.md) record the formatting and verification.
+The [single-throat response derivation](docs/critical_throat_response_derivation.md)
 explains the existing rank-one readout and its assumptions.
 
 Full methodology and interactive dashboard: run the app and visit `#methodology` / `#dashboard`.

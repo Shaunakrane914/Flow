@@ -1,5 +1,16 @@
 # TopoFlow originality and attribution review
 
+**Formatting update, 23 October 2026:** A separate
+[Atlantis proceedings copy](TopoFlow_Atlantis_ICISEA2026.docx) has been created from
+the official publisher-linked Word template. All 14 pages were inspected. The
+scientific prose is preserved apart from section/table cross-references and
+heading presentation; references use the template's punctuation. The user-confirmed
+corresponding-author designation and interests statement are added. The
+[conversion record](docs/atlantis_format_conversion.md) gives the output hash and
+content-preservation checks. No AI detector or new database similarity screen was
+run for this formatting conversion. The source-comparison counts below describe
+the retained IEEE copy, whose hash is unchanged.
+
 **Author and citation update, 23 October 2026:** Shivaji D. Pawar is the fourth
 author, using the email supplied by the user. The renamed manuscript has eighteen
 references. One verified CNN–Transformer paper is discussed as an image-attention
@@ -28,7 +39,7 @@ Result tables, figures, eleven native equations and page sections are unchanged
 from the preceding revision. Results prose changes only citation numbering; the
 author table now has four centered columns. All six rendered pages were inspected.
 
-Current manuscript SHA-256:
+Retained IEEE manuscript SHA-256:
 `d9b7f24f5f74370cf1491e4172ec5a9e750cba27643fb9a6c4b1002c4ce281cf`.
 
 The original audit below records the **pre-edit** version and its paragraph IDs.

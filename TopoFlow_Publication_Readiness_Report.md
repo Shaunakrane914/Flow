@@ -2,6 +2,17 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**Proceedings formatting completed, 23 October 2026:** A separate
+[Atlantis-format DOCX](TopoFlow_Atlantis_ICISEA2026.docx) now uses the Word template
+linked on the official Atlantis Press policies page. It has 14 pages, all rendered
+and inspected, with one column, numbered sections and publisher-style references.
+All substantive prose, reported outcomes, eleven native equations, four figure
+images, three data tables and eighteen sources are preserved. Shaunak is the
+confirmed corresponding author, and the confirmed no-competing-interests statement
+is included. The six-page IEEE copy is unchanged. The
+[conversion notes](docs/atlantis_format_conversion.md) record provenance and checks.
+Conference-specific page limits and submission-stage requirements remain unverified.
+
 **Author and citation update, 23 October 2026:** The
 [renamed manuscript](TopoFlow_Physics_Guided_Graph_Attention_ICISEA2026.docx)
 now lists Shivaji D. Pawar fourth, with `shivaji.pawar@universalai.in` supplied by

@@ -2,6 +2,21 @@
 
 Revised 23 October 2026.
 
+The latest deliverable is the separate
+[Atlantis proceedings copy](TopoFlow_Atlantis_ICISEA2026.docx), built from the
+Word template linked on the official Atlantis Press author-resources page.
+All 14 rendered pages were inspected. The six-page IEEE input remains unchanged.
+The body uses one column and numbered sections, with template title/author styles,
+captions and reference formatting. Shaunak is the user-confirmed corresponding
+author; the confirmed no-competing-interests statement precedes References.
+All eleven native equations, four figure images, three data tables, eighteen
+sources and substantive prose were verified against the IEEE input. See the
+[conversion notes](docs/atlantis_format_conversion.md) for the current output hash,
+template provenance and remaining venue-specific requirements. No conference
+page limit has been verified.
+
+The revision history of the retained IEEE manuscript follows.
+
 The latest update adds Shivaji D. Pawar as fourth author with the user-supplied
 email `shivaji.pawar@universalai.in`. Four equal-width author columns preserve the
 original order and centered alignment. Affiliations remain omitted as requested.
