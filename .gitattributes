@@ -13,3 +13,8 @@ scripts/analyze_discovery_review.py -text
 scripts/build_diagnostic_paper.py -text
 scripts/verify_research_diagnostics.py -text
 tests/test_research_diagnostics.py -text
+# Preserve the exact LaTeX/template bytes recorded by the paper audit.
+paper/latex/** -text whitespace=cr-at-eol
+paper/latex/svproc.cls -whitespace
+paper/latex/aliascnt.sty -whitespace
+paper/latex/remreset.sty -whitespace

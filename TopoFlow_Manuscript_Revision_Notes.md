@@ -2,7 +2,19 @@
 
 Revised 23 October 2026.
 
-The latest deliverable is the separate
+**Current deliverable:** [restored LaTeX proceedings PDF](output/pdf/TopoFlow_ICISEA2026_Restored.pdf),
+13 pages, with [editable source](output/pdf/TopoFlow_ICISEA2026_LaTeX.zip).
+It uses the official publisher-linked SVPROC package with a balanced native
+title/author block, serif contact information, a corresponding-author footnote
+and corrected spacing and float placement. All pages were visually inspected;
+content preservation was checked for the complete abstract and research prose,
+11 equations, four images, three tables, all captions and 18 references.
+Both Word manuscripts remain unchanged. See the
+[restoration record](docs/latex_format_restoration.md).
+
+The previous Word conversion is retained below as revision history.
+
+The earlier deliverable is the separate
 [Atlantis proceedings copy](TopoFlow_Atlantis_ICISEA2026.docx), built from the
 Word template linked on the official Atlantis Press author-resources page.
 All 14 rendered pages were inspected. The six-page IEEE input remains unchanged.

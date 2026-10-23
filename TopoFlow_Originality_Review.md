@@ -1,5 +1,14 @@
 # TopoFlow originality and attribution review
 
+**LaTeX restoration, 23 October 2026:** The new
+[proceedings PDF](output/pdf/TopoFlow_ICISEA2026_Restored.pdf) is a formatting-only
+conversion of the retained Word proceedings manuscript. All 13 pages were
+visually inspected. Source comparison preserves the prose, abstract, equations,
+images, table cells, captions, 18 references and author information. Both Word
+files remain unchanged. The [verification record](paper/latex/verification.json)
+and [restoration notes](docs/latex_format_restoration.md) document the checks.
+No new AI detector or database similarity screen was run.
+
 **Formatting update, 23 October 2026:** A separate
 [Atlantis proceedings copy](TopoFlow_Atlantis_ICISEA2026.docx) has been created from
 the official publisher-linked Word template. All 14 pages were inspected. The

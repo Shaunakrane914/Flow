@@ -2,6 +2,17 @@
 
 Prepared for the TopoFlow authors on 22 October 2026
 
+**LaTeX formatting restoration, 23 October 2026:** The current
+[compiled proceedings PDF](output/pdf/TopoFlow_ICISEA2026_Restored.pdf) uses the
+official publisher-linked SVPROC LaTeX package. All 13 pages were inspected.
+The title and author block, serif emails, corresponding-author footnote,
+abstract spacing, equations and float placement are restored. Research text,
+11 equations, four figure images, three tables, 18 references and author details
+are preserved; both Word copies remain unchanged. See the
+[restoration record](docs/latex_format_restoration.md) and
+[editable source bundle](output/pdf/TopoFlow_ICISEA2026_LaTeX.zip).
+Conference-specific page limits and submission-stage requirements remain unverified.
+
 **Proceedings formatting completed, 23 October 2026:** A separate
 [Atlantis-format DOCX](TopoFlow_Atlantis_ICISEA2026.docx) now uses the Word template
 linked on the official Atlantis Press policies page. It has 14 pages, all rendered

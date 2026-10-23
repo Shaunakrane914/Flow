@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "source_sha256": "f9e3c1c178d6845e1e8dc44a3e5b7a97fb872c6fc1ca8d9f5aa29d072d40bf8a",
+  "prose_and_heading_blocks_round_tripped": 85,
+  "abstract_words_preserved": 182,
+  "references_round_tripped": 18,
+  "equations_independently_checked": 11,
+  "figure_files_byte_identical": 4,
+  "data_tables_preserved": 3,
+  "all_four_authors_and_emails_preserved": true,
+  "official_template_files_unmodified": true,
+  "research_rewritten": false,
+  "tex_sha256": "4adcbe63570b497108e7ee2a9bc0311bb3a7fccb4af1408c61d038354c8216e1",
+  "checked_date": "2026-10-23",
+  "source_document": "TopoFlow_Atlantis_ICISEA2026.docx",
+  "pdf_file": "output/pdf/TopoFlow_ICISEA2026_Restored.pdf",
+  "pdf_sha256": "ec47c9d32b407ac91f0b5a050fd984533e84ccb9eb9a032677a077f1b87b0f23",
+  "pdf_pages": 13,
+  "compiler": "Tectonic 0.17.0",
+  "renderer": "Poppler pdftoppm, 140 dpi PNG",
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "pdf_embedded_figures_pixel_identical": [
+    "figure-1.png",
+    "figure-2.png",
+    "figure-3.png",
+    "figure-4.png"
+  ],
+  "overfull_boxes": 0,
+  "missing_characters": 0,
+  "unresolved_citations_or_references": 0,
+  "underfull_box_warnings_visually_reviewed": 5,
+  "page_text_bounds": [
+    {
+      "page": 1,
+      "bounds_pt": [
+        134.39,
+        115.28,
+        482.25,
+        665.66
+      ]
+    },
+    {
+      "page": 2,
+      "bounds_pt": [
+        134.41,
+        93.67,
+        482.53,
+        669.57
+      ]
+    },
+    {
+      "page": 3,
+      "bounds_pt": [
+        134.26,
+        93.67,
+        482.53,
+        616.08
+      ]
+    },
+    {
+      "page": 4,
+      "bounds_pt": [
+        134.41,
+        93.67,
+        482.53,
+        643.04
+      ]
+    },
+    {
+      "page": 5,
+      "bounds_pt": [
+        134.27,
+        93.67,
+        482.53,
+        657.69
+      ]
+    },
+    {
+      "page": 6,
+      "bounds_pt": [
+        134.27,
+        93.67,
+        482.26,
+        661.28
+      ]
+    },
+    {
+      "page": 7,
+      "bounds_pt": [
+        134.27,
+        93.67,
+        482.53,
+        665.85
+      ]
+    },
+    {
+      "page": 8,
+      "bounds_pt": [
+        134.41,
+        93.67,
+        482.54,
+        665.85
+      ]
+    },
+    {
+      "page": 9,
+      "bounds_pt": [
+        134.76,
+        93.67,
+        482.25,
+        654.99
+      ]
+    },
+    {
+      "page": 10,
+      "bounds_pt": [
+        134.39,
+        93.67,
+        482.54,
+        665.77
+      ]
+    },
+    {
+      "page": 11,
+      "bounds_pt": [
+        134.39,
+        93.67,
+        482.54,
+        665.85
+      ]
+    },
+    {
+      "page": 12,
+      "bounds_pt": [
+        134.41,
+        93.67,
+        482.38,
+        665.66
+      ]
+    },
+    {
+      "page": 13,
+      "bounds_pt": [
+        134.76,
+        93.67,
+        482.38,
+        643.6
+      ]
+    }
+  ],
+  "template_package_url": "https://assets.ctfassets.net/b4d0t67iwrjs/6HjuuxMB8tryYfLtWhcT3a/715489d26bdf68def035a1e24f67e2d0/LaTex_Package.zip",
+  "template_package_sha256": "51a9a27a80d02ac45218abc83f465557ae96cc315adaebcaffe60de3fcdc7e9b",
+  "template_files": {
+    "svproc.cls": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560",
+    "aliascnt.sty": "8d17979fd3ca18f4ac7a379d039f47bf63ffe0409d19c5399d6f3611ed50f9d5",
+    "remreset.sty": "d8b2679ec5c20723a4766690cd46b6bc0ffd20a6555205cefc1521ecb65794a4"
+  },
+  "source_word_files_modified": false,
+  "conference_specific_page_limit_verified": false
+}

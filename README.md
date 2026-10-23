@@ -1,5 +1,10 @@
 # TopoFlow GNN
 
+Latest paper format: [restored proceedings PDF](output/pdf/TopoFlow_ICISEA2026_Restored.pdf)
+and [editable LaTeX bundle](output/pdf/TopoFlow_ICISEA2026_LaTeX.zip), using the
+official publisher-linked SVPROC package. All 13 pages were visually checked;
+research content is preserved. [Restoration and verification notes](docs/latex_format_restoration.md).
+
 Latest consolidation: [comparative manuscript](experiments/topoflow_diagnostics/MANUSCRIPT.md)
 and [post-hoc diagnostic report](experiments/topoflow_diagnostics/REPORT.md).
 Impact-stratified errors confirm GAT amplitude overestimation; numerical
